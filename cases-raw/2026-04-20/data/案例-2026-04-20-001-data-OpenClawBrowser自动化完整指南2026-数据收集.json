@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-20-001",
+  "filename": "案例-2026-04-20-001-data-OpenClawBrowser自动化完整指南2026-数据收集",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClawBrowser自动化完整指南2026",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://levelup.gitconnected.com/openclaw-browser-automation-the-complete-guide-for-2026-58826734fc98",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T13:16:12.086Z"
+  },
+  "problem": "Why Browser Automation Through OpenClaw?\n\nTraditional browser automation tools (Puppeteer, Playwright, Selenium) are powerful but require coding expertise. You write scripts, handle selectors, manage browser instances, and debug when websites change their layouts.\n\nOpenClaw adds an AI layer on top of browser automation:\n\n Natural language control: “Go to competitor-x.com and get the price of product Y” instead of writing CSS selectors\n Adaptive navigation: The AI can figure out how to navigate a",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T13:16:12.087Z",
+    "source": "tavily",
+    "chineseDesc": "数据收集",
+    "originalTitle": "OpenClaw Browser Automation: The Complete Guide for 2026"
+  },
+  "status": "raw"
+}

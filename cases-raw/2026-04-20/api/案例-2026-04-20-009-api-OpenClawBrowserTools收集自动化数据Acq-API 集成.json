@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-20-009",
+  "filename": "案例-2026-04-20-009-api-OpenClawBrowserTools收集自动化数据Acq-API 集成",
+  "category": "api",
+  "categoryCn": "API",
+  "title": "OpenClawBrowserTools收集自动化数据Acq",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.tencentcloud.com/techpedia/140758",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T13:16:12.114Z"
+  },
+  "problem": "Technology Encyclopedia Home >OpenClaw Browser Tools Collection - Automation and Data Acquisition Tools\n\n# OpenClaw Browser Tools Collection - Automation and Data Acquisition Tools\n\nCreated on 2026-03-03 19:49:08\n\n707\n\n# OpenClaw Browser Tools Collection: Automation and Data Acquisition Tools\n\nThe modern web is both the world's largest database and its most frustrating API. The data you need is almost always there — on a product page, in a dashboard, behind a login form — but getting it out prog",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T13:16:12.114Z",
+    "source": "tavily",
+    "chineseDesc": "API 集成",
+    "originalTitle": "OpenClaw Browser Tools Collection - Automation and Data Acquisition Tools - Tencent Cloud"
+  },
+  "status": "raw"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-20-003",
+  "filename": "案例-2026-04-20-003-data-Ultimate指南OpenClaw工作流自动化2026-自动化工作流",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "Ultimate指南OpenClaw工作流自动化2026",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://skywork.ai/skypage/en/openclaw-workflow-automation/2037078815943692288",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T13:16:12.095Z"
+  },
+  "problem": ".200001'%20y='0.642676'%20width='57.6'%20height='57.6'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset%20dy='2.7'/%3e%3cfeGaussianBlur%20stdDeviation='5.4'/%3e%3cfeComposite%20in2='hardAlpha'%20operator='out'/%3e%3cfeColorMatrix%20type",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T13:16:12.095Z",
+    "source": "tavily",
+    "chineseDesc": "自动化工作流",
+    "originalTitle": "The Ultimate Guide to OpenClaw Workflow Automation in 2026"
+  },
+  "status": "raw"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-20-008",
+  "filename": "案例-2026-04-20-008-data-onlyOpenClaw教程youlleverneedMar-消息推送",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "onlyOpenClaw教程youlleverneedMar",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.youtube.com/watch?v=CxErCGVo-oo",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T13:16:12.110Z"
+  },
+  "problem": "OpenClaw is the greatest AI tool ever made. Here's your COMPLETE guide on building your first AI employee FULL OpenClaw bootcamp in the Vibe Coding Academy:  Sign up for my free newsletter:  Follow my X:  My $300k/yr AI app:  OpenClaw:  Prompts: Hi Henry, please send me a daily brief every day at 1pm. Please find me the stocks that stand to gain the most from the upcoming AI buildout. I 想要 know which companies with massive moats will stand the benefit from my thesis of AI expanding even mor",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T13:16:12.110Z",
+    "source": "tavily",
+    "chineseDesc": "消息推送",
+    "originalTitle": "The only OpenClaw tutorial you’ll ever need (March 2026 edition)"
+  },
+  "status": "raw"
+}

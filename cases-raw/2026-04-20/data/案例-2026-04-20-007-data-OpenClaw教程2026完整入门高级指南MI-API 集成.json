@@ -1,0 +1,45 @@
+{
+  "id": "case-2026-04-20-007",
+  "filename": "案例-2026-04-20-007-data-OpenClaw教程2026完整入门高级指南MI-API 集成",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClaw教程2026完整入门高级指南MI",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.meta-intelligence.tech/en/insight-openclaw-tutorial",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T13:16:12.108Z"
+  },
+  "problem": "The Hooks (Webhooks) feature lets you automatically execute actions when specific events trigger, configurable in the automation section of `~/.openclaw/openclaw.json`.\n\n`~/.openclaw/openclaw.json`\n\nOpenClaw also has a unique capability: it can create its own Skills. When the AI determines a task requires specific functionality not covered by existing Skills, it can write new skill modules and load them itself. All custom skills are stored in the workspace's skills directory.\n\n`openclaw skills c",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "web_fetch",
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T13:16:12.108Z",
+    "source": "tavily",
+    "chineseDesc": "API 集成",
+    "originalTitle": "OpenClaw Tutorial 2026: Complete Beginner to Advanced Guide | MI"
+  },
+  "status": "raw"
+}
