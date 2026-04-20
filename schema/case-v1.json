@@ -1,0 +1,1 @@
+{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","required":["id","title","category","source","problem","workflow","metadata"],"properties":{"id":{"type":"string"},"title":{"type":"string"},"category":{"type":"array","items":{"type":"string"}},"source":{"type":"object"},"problem":{"type":"string"},"workflow":{"type":"object"},"metadata":{"type":"object"}}}
