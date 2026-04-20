@@ -1,0 +1,69 @@
+{
+  "name": "投资者仪表盘自动化",
+  "version": "1.0.0",
+  "description": "投资者需要跟踪投资组合表现、接收重大价格变动警报，并生成每日汇总报告。手动跟踪多个投资平台耗时且容易错过重要信息。",
+  "author": "node-01",
+  "tags": [
+    "finance",
+    "dashboard",
+    "automation"
+  ],
+  "difficulty": "intermediate",
+  "skills": [
+    "web_search",
+    "api_integration",
+    "data_analysis",
+    "cron",
+    "alerting"
+  ],
+  "integrations": [
+    "Binance API",
+    "Stock APIs",
+    "Telegram/Discord",
+    "Grafana/Dashboard"
+  ],
+  "workflow": {
+    "trigger": "定时任务 + 事件触发",
+    "steps": [
+      "1. 从多个交易所/平台拉取投资数据",
+      "2. 计算投资组合总价值和盈亏",
+      "3. 检测价格异常波动 (>5%)",
+      "4. 生成每日汇总报告",
+      "5. 发送警报到即时通讯工具",
+      "6. 更新可视化仪表盘"
+    ],
+    "output": "投资仪表盘 + 每日报告 + 实时警报"
+  },
+  "config": {
+    "schedule": "0 */6 * * *",
+    "tools": [
+      "tavily",
+      "http-client",
+      "python-runner",
+      "scheduler",
+      "notification"
+    ],
+    "env": [
+      "BINANCE_API_KEY",
+      "BINANCE_API_SECRET"
+    ]
+  },
+  "examples": {
+    "usage": "openclaw skills run skill-20260420-004",
+    "input": "触发条件示例",
+    "output": "投资仪表盘 + 每日报告 + 实时警报"
+  },
+  "metadata": {
+    "sourceCase": "case-20260420-004-investor-dashboard.json",
+    "sourceUrl": "https://www.tencentcloud.com/techpedia/140889",
+    "generatedAt": "2026-04-20T11:46:49.807Z",
+    "efficiency": {
+      "timeSaved": "每天 1-2 小时",
+      "automationLevel": "full-auto",
+      "metrics": {
+        "alertsPerDay": "5-10 条",
+        "reportAccuracy": ">99%"
+      }
+    }
+  }
+}

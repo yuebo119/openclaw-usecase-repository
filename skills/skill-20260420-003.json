@@ -1,0 +1,70 @@
+{
+  "name": "内容机构自动化工作流",
+  "version": "1.0.0",
+  "description": "内容机构需要持续监控竞争对手博客、识别内容缺口、生成大纲、撰写文章、进行 SEO 检查，并将成品排队待审。手动流程耗时且容易遗漏重要信息。",
+  "author": "node-01",
+  "tags": [
+    "marketing",
+    "content-creation",
+    "automation"
+  ],
+  "difficulty": "intermediate",
+  "skills": [
+    "web_search",
+    "web_fetch",
+    "file_ops",
+    "cron",
+    "notion"
+  ],
+  "integrations": [
+    "RSS Feeds",
+    "Google Search API",
+    "Notion CMS",
+    "SEO Tools"
+  ],
+  "workflow": {
+    "trigger": "定时任务 (Cron Job)",
+    "steps": [
+      "1. 监控竞争对手博客 (RSS/网站爬虫)",
+      "2. 识别内容缺口 (关键词分析)",
+      "3. 生成文章大纲 (AI 生成)",
+      "4. 撰写完整文章 (AI 写作)",
+      "5. 运行 SEO 检查 (关键词密度、元数据)",
+      "6. 将成品加入审核队列 (CMS/Notion)"
+    ],
+    "output": "完整的 SEO 优化文章，等待人工审核发布"
+  },
+  "config": {
+    "schedule": "0 */6 * * *",
+    "tools": [
+      "tavily",
+      "http-client",
+      "filesystem",
+      "scheduler",
+      "notion-api"
+    ],
+    "env": [
+      "GOOGLE_SEARCH_API_KEY",
+      "NOTION_API_KEY",
+      "SEO_API_KEY"
+    ]
+  },
+  "examples": {
+    "usage": "openclaw skills run skill-20260420-003",
+    "input": "触发条件示例",
+    "output": "完整的 SEO 优化文章，等待人工审核发布"
+  },
+  "metadata": {
+    "sourceCase": "case-20260420-003-content-agency.json",
+    "sourceUrl": "https://www.tldl.io/blog/openclaw-use-cases-2026",
+    "generatedAt": "2026-04-20T11:46:49.679Z",
+    "efficiency": {
+      "timeSaved": "每篇文章节省 4-6 小时",
+      "automationLevel": "semi-auto",
+      "metrics": {
+        "articlesPerWeek": "10-15 篇",
+        "humanReviewTime": "30 分钟/篇"
+      }
+    }
+  }
+}
