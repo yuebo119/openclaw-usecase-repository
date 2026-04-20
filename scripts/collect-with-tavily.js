@@ -63,30 +63,88 @@ function tavilySearch(query) {
   });
 }
 
-// 从标题提取简洁描述（用于文件名）
-function extractShortTitle(title) {
+// 英文标题关键词翻译映射
+const titleTranslationMap = {
+  // OpenClaw 相关
+  'OpenClaw': 'OpenClaw',
+  'Workflow': '工作流',
+  'Automation': '自动化',
+  'Automations': '自动化',
+  'Use Cases': '用例',
+  'Use Case': '用例',
+  'Tutorial': '教程',
+  'Guide': '指南',
+  'Complete': '完整',
+  'Full': '完整',
+  'Best Practices': '最佳实践',
+  'What is': '什么是',
+  'What Is': '什么是',
+  'The': '',
+  'for': '',
+  'and': '',
+  'with': '',
+  'to': '',
+  
+  // 功能相关
+  'Email': '邮件',
+  'Gmail': 'Gmail',
+  'Digest': '摘要',
+  'Report': '报告',
+  'Daily': '每日',
+  'Personal': '个人',
+  'AI': 'AI',
+  'Assistant': '助手',
+  'Agent': '智能体',
+  'API': 'API',
+  'Integration': '集成',
+  'Code': '代码',
+  'Data': '数据',
+  'Collection': '收集',
+  'Monitoring': '监控',
+  'Dashboard': '仪表盘',
+  'Message': '消息',
+  'Push': '推送',
+  'Notification': '通知',
+  'Schedule': '定时',
+  'Task': '任务',
+  'File': '文件',
+  'Ops': '运维'
+};
+
+// 翻译英文标题为中文
+function translateTitle(title) {
   if (!title) return '自动化案例';
   
-  // 移除特殊字符和多余空格
-  let cleanTitle = title
-    .replace(/[^a-zA-Z0-9\u4e00-\u9fa5\s\-]/g, '')
-    .replace(/\s+/g, ' ')
+  // 如果包含中文，直接提取
+  if (/[\u4e00-\u9fa5]/.test(title)) {
+    return title.replace(/[^a-zA-Z0-9\u4e00-\u9fa5]/g, ' ').substring(0, 20).trim();
+  }
+  
+  // 纯英文标题，翻译关键词
+  let translated = title;
+  
+  // 按长度排序，优先替换长短语
+  const sortedKeys = Object.keys(titleTranslationMap).sort((a, b) => b.length - a.length);
+  
+  for (const key of sortedKeys) {
+    const value = titleTranslationMap[key];
+    const regex = new RegExp(`\\b${key}\\b`, 'gi');
+    translated = translated.replace(regex, value);
+  }
+  
+  // 清理多余空格和字符
+  translated = translated
+    .replace(/\s+/g, '')
+    .replace(/[^a-zA-Z0-9\u4e00-\u9fa5]/g, '')
+    .substring(0, 20)
     .trim();
   
-  // 提取前 30 个字符
-  if (cleanTitle.length > 30) {
-    cleanTitle = cleanTitle.substring(0, 30);
-  }
-  
-  // 如果全是英文，尝试提取关键词
-  if (/^[a-zA-Z\s\-]+$/.test(cleanTitle)) {
-    const words = cleanTitle.split(' ');
-    if (words.length > 4) {
-      cleanTitle = words.slice(0, 4).join('-');
-    }
-  }
-  
-  return cleanTitle || '自动化案例';
+  return translated || '自动化案例';
+}
+
+// 从标题提取简洁描述（用于文件名）
+function extractShortTitle(title) {
+  return translateTitle(title);
 }
 
 // 生成中文描述（用于文件名）

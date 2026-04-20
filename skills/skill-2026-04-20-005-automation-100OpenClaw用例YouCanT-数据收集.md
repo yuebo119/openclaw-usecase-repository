@@ -1,6 +1,6 @@
-# OpenClaw Automations: Complete Guide for 2026 - FlyPix AI
+# 100 OpenClaw Use Cases You Can Try Today - Sphere Partners
 
-> **Skill ID**: `skill-20260420-003`  
+> **Skill ID**: `skill-20260420-005`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,24 +16,24 @@
 
 ## 📋 简介
 
-The recommended implementation workflow for OpenClaw automation, from initial testing through production deployment with essential security measures.
+### 21. Client Onboarding Automation
 
-## The Future of OpenClaw Automation
+When a new client signs a contract, OpenClaw triggers an onboarding sequence: sends a welcome email, creates a dedicated project folder in Google Drive, adds the client to your project management tool, schedules an intro call, and sends you a checklist of anything that still needs a human touch.
 
-OpenClaw represents a shift from AI that talks to AI that acts. But where’s it heading?
+Tools: gog, exec, message, write
 
-According to VentureBeat’s enterprise analysis, the “OpenClaw moment” represents several significant shifts in autonomous AI deployment:
+### 22. Invoice Processing From Email
 
-1. Autonomous agents have moved from labs to general use
-2. Local-first AI automatio...
+When an invoice arrives in your inbox, OpenClaw extracts the vendor, amount, due date, and ...
 
 ---
 
 ## 🛠️ 所需技能
 
+- `web_search`
+- `web_fetch`
 - `file_ops`
-- `api_integration`
-- `data_analysis`
+- `cron`
 
 ---
 
@@ -69,9 +69,10 @@ According to VentureBeat’s enterprise analysis, the “OpenClaw moment” repr
 
 ### 所需工具
 
+- `web_search`
+- `web_fetch`
 - `file_ops`
-- `api_integration`
-- `data_analysis`
+- `cron`
 
 ### 环境变量
 
@@ -94,13 +95,13 @@ According to VentureBeat’s enterprise analysis, the “OpenClaw moment” repr
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-003
+openclaw skills run skill-20260420-005
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw Automations: Complete Guide for 2026 - FlyPix AI" --schedule "0 */6 * * *" --skill "skill-20260420-003"
+openclaw cron add --name "100 OpenClaw Use Cases You Can Try Today - Sphere Partners" --schedule "0 */6 * * *" --skill "skill-20260420-005"
 ```
 
 ---
@@ -108,8 +109,8 @@ openclaw cron add --name "OpenClaw Automations: Complete Guide for 2026 - FlyPix
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://flypix.ai/openclaw-automations-save-time/
-- **生成时间**: 2026-04-20T12:16:38.658Z
+- **原文链接**: https://www.sphereinc.com/blogs/100-openclaw-use-cases-you-can-try-today/
+- **生成时间**: 2026-04-20T12:20:04.917Z
 
 ---
 

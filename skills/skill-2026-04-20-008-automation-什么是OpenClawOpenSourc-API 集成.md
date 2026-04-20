@@ -1,6 +1,6 @@
-# What is OpenClaw? Your Open-Source AI Assistant for 2026
+# What Is OpenClaw? The Open-Source AI Agent That Actually Does ...
 
-> **Skill ID**: `skill-20260420-001`  
+> **Skill ID**: `skill-20260420-008`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,15 +16,19 @@
 
 ## 📋 简介
 
-What is OpenClaw
+### OpenClaw vs. LangGraph / LangChain
 
-OpenClaw (affectionately called “Molty”) is a viral open-source personal AI agent with 68,000 GitHub stars (and counting), created by PSPDFKit founder Peter Steinberger. It brings together the technology of agents with the data and apps you use on your local machine to serve as a high-powered, high-context AI assistant. It operates a local gateway that connects AI models with your favorite tools, integrating with familiar chat apps to facilitate convenient interactions. Many de...
+LangGraph is a framework for building stateful, graph-based agent workflows. It’s excellent for complex multi-step reasoning and has the lowest latency in benchmarks. But it requires Python expertise and significant development work. OpenClaw is a ready-to-run agent, not a framework for building one.
+
+### OpenClaw vs. CrewAI
+
+CrewAI excels at role-based multi-agent collaboration—defining agents with specific roles that work together on a task. It’s beginne...
 
 ---
 
 ## 🛠️ 所需技能
 
-- `file_ops`
+- `web_search`
 
 ---
 
@@ -60,7 +64,7 @@ OpenClaw (affectionately called “Molty”) is a viral open-source personal AI 
 
 ### 所需工具
 
-- `file_ops`
+- `web_search`
 
 ### 环境变量
 
@@ -83,13 +87,13 @@ OpenClaw (affectionately called “Molty”) is a viral open-source personal AI 
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-001
+openclaw skills run skill-20260420-008
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "What is OpenClaw? Your Open-Source AI Assistant for 2026" --schedule "0 */6 * * *" --skill "skill-20260420-001"
+openclaw cron add --name "What Is OpenClaw? The Open-Source AI Agent That Actually Does ..." --schedule "0 */6 * * *" --skill "skill-20260420-008"
 ```
 
 ---
@@ -97,8 +101,8 @@ openclaw cron add --name "What is OpenClaw? Your Open-Source AI Assistant for 20
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.digitalocean.com/resources/articles/what-is-openclaw
-- **生成时间**: 2026-04-20T12:16:38.504Z
+- **原文链接**: https://www.mindstudio.ai/blog/what-is-openclaw-ai-agent/
+- **生成时间**: 2026-04-20T12:20:05.133Z
 
 ---
 

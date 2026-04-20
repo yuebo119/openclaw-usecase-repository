@@ -1,6 +1,6 @@
-# OpenClaw — Personal AI Assistant
+# OpenClaw Full Tutorial for Beginners (Step by Step | One-Click Setup)
 
-> **Skill ID**: `skill-20260420-010`  
+> **Skill ID**: `skill-20260420-007`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,7 +16,7 @@
 
 ## 📋 简介
 
-action button" @sughanthans1Image 192: tomosman "gg man! everyday I speak to more people about OpenClaw and it never fails to amaze!" @tomosmanImage 193: aus_bytes "Essentially - you can automate almost anything you can do on the machine it sits on" @aus_bytesImage 194: jameskraus "Came out of my shell and gave my @openclaw, Shelly, my credit card. Works amazing." @jameskrausImage 195: TheZachMueller "Running fully locally off MiniMax 2.5 and can do the tool parsing for what I need!" @TheZachMue...
+This is the best beginner-friendly OpenClaw Tutorial you'll find! Hostinger VPS (Exclusive 73% Discount Code): 👉  Make sure code "createaprowebsite" is applied! If you’ve been hearing about OpenClaw and wondering how it actually works… this is the only tutorial you need. In this OpenClaw full tutorial for beginners, we walk step-by-step through how to set up OpenClaw, how it works, and how to build your first AI agent — even if you have zero experience. Most tutorials overcomplicate things. Thi...
 
 ---
 
@@ -81,13 +81,13 @@ action button" @sughanthans1Image 192: tomosman "gg man! everyday I speak to mor
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-010
+openclaw skills run skill-20260420-007
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw — Personal AI Assistant" --schedule "0 */6 * * *" --skill "skill-20260420-010"
+openclaw cron add --name "OpenClaw Full Tutorial for Beginners (Step by Step | One-Click Setup)" --schedule "0 */6 * * *" --skill "skill-20260420-007"
 ```
 
 ---
@@ -95,8 +95,8 @@ openclaw cron add --name "OpenClaw — Personal AI Assistant" --schedule "0 */6 
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://openclaw.ai/
-- **生成时间**: 2026-04-20T12:16:39.173Z
+- **原文链接**: https://www.youtube.com/watch?v=HNAv85MfGUI
+- **生成时间**: 2026-04-20T12:20:05.067Z
 
 ---
 
