@@ -1,0 +1,42 @@
+{
+  "id": "case-20260420-007",
+  "filename": "案例-20260420-007-网络搜索-GitHubhesamsheikhawesomeOpenCl-定时任务",
+  "title": "GitHubhesamsheikhawesomeOpenCl",
+  "category": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T12:27:09.912Z"
+  },
+  "problem": "| Local CRM Framework | Turn OpenClaw into a fully local CRM and sales automation platform with `npx denchclaw` — DuckDB, browser automation, multi-view UI, and natural language queries. | [...] | Podcast Production Pipeline | 自动化 the full podcast 工作流 — guest research, episode outlines, show notes, and social media promo — from topic to publish-ready assets. |\n| AI Video Editing via Chat | Edit videos by describing changes in natural language — trim, merge, add music, subtitles, color ",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "cron"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T12:27:09.912Z",
+    "source": "tavily",
+    "chineseDesc": "定时任务",
+    "originalTitle": "GitHub - hesamsheikh/awesome-openclaw-usecases: A community collection of OpenClaw use cases for making life easier. · GitHub"
+  },
+  "status": "inbox"
+}

@@ -1,6 +1,6 @@
-# OpenClaw — Personal AI Assistant
+# OpenClaw用例25waysautomateworkli
 
-> **Skill ID**: `skill-20260420-010`  
+> **Skill ID**: `skill-20260420-002`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,13 +16,20 @@
 
 ## 📋 简介
 
-action button" @sughanthans1Image 192: tomosman "gg man! everyday I speak to more people about OpenClaw and it never fails to amaze!" @tomosmanImage 193: aus_bytes "Essentially - you can automate almost anything you can do on the machine it sits on" @aus_bytesImage 194: jameskraus "Came out of my shell and gave my @openclaw, Shelly, my credit card. Works amazing." @jameskrausImage 195: TheZachMueller "Running fully locally off MiniMax 2.5 and can do the tool parsing for what I need!" @TheZachMue...
+Browser automation lets you log in to web tools, copy data between pages, and submit repetitive forms without 手动 clicks. It’s useful for admin tasks when no API is available.
+
+OpenClaw controls a headless browser to navigate interfaces, fill in fields, and trigger actions automatically.
+
+This works well for tasks like updating product information across platforms, submitting the same form to multiple services, or extracting data from web apps that offer only a user interface.
+
+That said, bro
 
 ---
 
 ## 🛠️ 所需技能
 
-- `web_search`
+- `file_ops`
+- `api_integration`
 
 ---
 
@@ -58,7 +65,8 @@ action button" @sughanthans1Image 192: tomosman "gg man! everyday I speak to mor
 
 ### 所需工具
 
-- `web_search`
+- `file_ops`
+- `api_integration`
 
 ### 环境变量
 
@@ -81,22 +89,22 @@ action button" @sughanthans1Image 192: tomosman "gg man! everyday I speak to mor
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-010
+openclaw skills run skill-20260420-002
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw — Personal AI Assistant" --schedule "0 */6 * * *" --skill "skill-20260420-010"
+openclaw cron add --name "OpenClaw用例25waysautomateworkli" --schedule "0 */6 * * *" --skill "skill-20260420-002"
 ```
 
 ---
 
 ## 📎 来源
 
-- **案例来源**: Tavily Search
-- **原文链接**: https://openclaw.ai/
-- **生成时间**: 2026-04-20T12:23:05.077Z
+- **案例来源**: Tavily 搜索
+- **原文链接**: https://www.hostinger.com/tutorials/openclaw-use-cases
+- **生成时间**: 2026-04-20T12:27:10.069Z
 
 ---
 

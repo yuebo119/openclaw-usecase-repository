@@ -1,6 +1,6 @@
-# 100OpenClaw用例YouCanTryTodaySph
+# ShowcaseWhatPeopleAreBuildingO
 
-> **Skill ID**: `skill-20260420-005`  
+> **Skill ID**: `skill-20260420-006`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,23 +16,12 @@
 
 ## 📋 简介
 
-### 21. Client Onboarding Automation
-
-When a new client signs a contract, OpenClaw triggers an onboarding sequence: sends a welcome email, creates a dedicated project folder in Google Drive, adds the client to your project management tool, schedules an intro call, and sends you a checklist of anything that still needs a human touch.
-
-Tools: gog, exec, message, write
-
-### 22. Invoice 流程ing From Email
-
-When an invoice arrives in your inbox, OpenClaw extracts the vendor, amount, due date, and 
+astuyve @astuyve⚡ Automation ❤️ 16 It may not be AGI, but OpenClaw is automatically negotiating with multiple dealers for my next car via browser, email, and imessage and it's amazing. Image 96: Screenshot View on X →Image 97: dreetje @dreetje⚡ Automation ❤️ 119 My @openclaw has managed to order things itself from @albertheijn (our supermarket) when our cleaning lady sent me a message. It logged in using shared credentials in my @1Password, then waited for the old style text message MFA (read it
 
 ---
 
 ## 🛠️ 所需技能
 
-- `web_search`
-- `web_fetch`
-- `file_ops`
 - `cron`
 
 ---
@@ -69,9 +58,6 @@ When an invoice arrives in your inbox, OpenClaw extracts the vendor, amount, due
 
 ### 所需工具
 
-- `web_search`
-- `web_fetch`
-- `file_ops`
 - `cron`
 
 ### 环境变量
@@ -95,13 +81,13 @@ When an invoice arrives in your inbox, OpenClaw extracts the vendor, amount, due
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-005
+openclaw skills run skill-20260420-006
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "100OpenClaw用例YouCanTryTodaySph" --schedule "0 */6 * * *" --skill "skill-20260420-005"
+openclaw cron add --name "ShowcaseWhatPeopleAreBuildingO" --schedule "0 */6 * * *" --skill "skill-20260420-006"
 ```
 
 ---
@@ -109,8 +95,8 @@ openclaw cron add --name "100OpenClaw用例YouCanTryTodaySph" --schedule "0 */6 
 ## 📎 来源
 
 - **案例来源**: Tavily 搜索
-- **原文链接**: https://www.sphereinc.com/blogs/100-openclaw-use-cases-you-can-try-today/
-- **生成时间**: 2026-04-20T12:27:10.300Z
+- **原文链接**: https://openclaw.ai/showcase
+- **生成时间**: 2026-04-20T12:27:10.377Z
 
 ---
 

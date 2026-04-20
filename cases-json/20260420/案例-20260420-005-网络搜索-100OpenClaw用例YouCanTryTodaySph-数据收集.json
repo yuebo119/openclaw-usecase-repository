@@ -1,0 +1,44 @@
+{
+  "id": "case-20260420-005",
+  "filename": "案例-20260420-005-网络搜索-100OpenClaw用例YouCanTryTodaySph-数据收集",
+  "title": "100OpenClaw用例YouCanTryTodaySph",
+  "category": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.sphereinc.com/blogs/100-openclaw-use-cases-you-can-try-today/",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T12:27:09.911Z"
+  },
+  "problem": "### 21. Client Onboarding Automation\n\nWhen a new client signs a contract, OpenClaw triggers an onboarding sequence: sends a welcome email, creates a dedicated project folder in Google Drive, adds the client to your project management tool, schedules an intro call, and sends you a checklist of anything that still needs a human touch.\n\nTools: gog, exec, message, write\n\n### 22. Invoice 流程ing From Email\n\nWhen an invoice arrives in your inbox, OpenClaw extracts the vendor, amount, due date, and ",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "web_fetch",
+    "file_ops",
+    "cron"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T12:27:09.911Z",
+    "source": "tavily",
+    "chineseDesc": "数据收集",
+    "originalTitle": "100 OpenClaw Use Cases You Can Try Today - Sphere Partners"
+  },
+  "status": "inbox"
+}
