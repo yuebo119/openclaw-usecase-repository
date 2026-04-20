@@ -1,6 +1,6 @@
 {
-  "id": "case-20260420-003",
-  "filename": "案例-20260420-003-文件操作-OpenClaw自动化完整指南2026FlyPixAI-邮件自动化",
+  "id": "case-20260420-006",
+  "filename": "案例-20260420-006-文件操作-OpenClaw自动化完整指南2026FlyPixAI-邮件自动化",
   "title": "OpenClaw自动化完整指南2026FlyPixAI",
   "category": [
     "automation",
@@ -10,9 +10,9 @@
   "source": {
     "url": "https://flypix.ai/openclaw-automations-save-time/",
     "platform": "Tavily 搜索",
-    "collectedAt": "2026-04-20T12:27:09.908Z"
+    "collectedAt": "2026-04-20T12:36:55.774Z"
   },
-  "problem": "The recommended implementation 工作流 for OpenClaw automation, from initial testing through production deployment with essential security measures.\n\n## The Future of OpenClaw Automation\n\nOpenClaw represents a shift from AI that talks to AI that acts. But where’s it heading?\n\nAccording to VentureBeat’s enterprise analysis, the “OpenClaw moment” represents several significant shifts in autonomous AI deployment:\n\n1. Autonomous agents have moved from labs to general use\n2. Local-first AI automatio",
+  "problem": "Our approach addresses the “setup complexity” often found in open-source tools by offering a professional, no-code environment. We’ve seen users save up to 99.7% of their time by automating geospatial analysis that previously took hours of 手动 annotation. By integrating these specific visual capabilities into your broader automation strategy, you can move beyond simple browser tasks and start gathering actionable insights from your physical assets with the same speed and precision as a high-e",
   "workflow": {
     "trigger": "定时任务或事件触发",
     "steps": [
@@ -34,7 +34,7 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T12:27:09.908Z",
+    "collectedAt": "2026-04-20T12:36:55.774Z",
     "source": "tavily",
     "chineseDesc": "邮件自动化",
     "originalTitle": "OpenClaw Automations: Complete Guide for 2026 - FlyPix AI"

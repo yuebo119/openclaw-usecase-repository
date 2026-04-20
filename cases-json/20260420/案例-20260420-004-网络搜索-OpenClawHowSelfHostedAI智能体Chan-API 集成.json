@@ -1,0 +1,43 @@
+{
+  "id": "case-20260420-004",
+  "filename": "案例-20260420-004-网络搜索-OpenClawHowSelfHostedAI智能体Chan-API 集成",
+  "title": "OpenClawHowSelfHostedAI智能体Chan",
+  "category": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://medium.com/@kanerika/openclaw-how-a-self-hosted-ai-agent-changed-automation-in-2026-6ba728345d53",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T12:36:55.771Z"
+  },
+  "problem": "Memory is file-based and surprisingly simple. Conversation logs go into JSONL transcripts. Long-term knowledge lives in Markdown files like MEMORY.md. For recall, it combines vector search with SQLite FTS5 keyword matching, so it can find both semantically similar information and exact phrases. When the agent writes something new, a file monitor triggers an index update immediately.\n   Skills are modular code packages that extend the agent’s abilities. A skill might connect it to GitHub, control",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "file_ops",
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T12:36:55.771Z",
+    "source": "tavily",
+    "chineseDesc": "API 集成",
+    "originalTitle": "OpenClaw: How a Self-Hosted AI Agent Changed Automation in 2026"
+  },
+  "status": "inbox"
+}

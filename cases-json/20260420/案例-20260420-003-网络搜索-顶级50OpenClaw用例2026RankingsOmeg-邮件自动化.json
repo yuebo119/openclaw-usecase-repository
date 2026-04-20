@@ -1,0 +1,41 @@
+{
+  "id": "case-20260420-003",
+  "filename": "案例-20260420-003-网络搜索-顶级50OpenClaw用例2026RankingsOmeg-邮件自动化",
+  "title": "顶级50OpenClaw用例2026RankingsOmeg",
+  "category": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://o-mega.ai/articles/top-50-openclaw-use-cases-2026-rankings",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T12:36:55.770Z"
+  },
+  "problem": "decision to merge, which can speed up development cycles. One widely shared example had an agent doing exactly this: reviewing PRs from a phone (i.e. the user could oversee via phone) and merging code when tests passed ucstrategies.com. [...] OpenClaw users route their scheduling through the agent across multiple platforms – for example, if a meeting request comes via email, the agent can propose times based on your calendar and even send out the invite once you approve. [...] pass ucstrategies.",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T12:36:55.770Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化",
+    "originalTitle": "Top 50 OpenClaw Use Cases (2026 Rankings) - O-mega.ai"
+  },
+  "status": "inbox"
+}

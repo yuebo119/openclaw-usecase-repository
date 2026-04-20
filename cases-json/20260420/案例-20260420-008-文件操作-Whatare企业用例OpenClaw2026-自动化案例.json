@@ -1,0 +1,41 @@
+{
+  "id": "case-20260420-008",
+  "filename": "案例-20260420-008-文件操作-Whatare企业用例OpenClaw2026-自动化案例",
+  "title": "Whatare企业用例OpenClaw2026",
+  "category": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.tencentcloud.com/techpedia/141177",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T12:36:55.776Z"
+  },
+  "problem": "Treat every external system as unreliable: add timeouts and retries with backoff.\n Keep outputs predictable: stable schemas beat clever prose when you 自动化 downstream.\n Store enough context to be useful, not enough to be risky: persist intent and results, not secrets. [...] 1. Visit: Open the exclusive offer at Tencent Cloud Lighthouse Special Offer.\n2. Select: Choose OpenClaw (Clawdbot) under the AI Agents application template.\n3. Deploy: Click Buy Now to launch your 24/7 agent.\n\nFor step-b",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "file_ops"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T12:36:55.776Z",
+    "source": "tavily",
+    "chineseDesc": "自动化案例",
+    "originalTitle": "What are the enterprise use cases for OpenClaw in 2026"
+  },
+  "status": "inbox"
+}

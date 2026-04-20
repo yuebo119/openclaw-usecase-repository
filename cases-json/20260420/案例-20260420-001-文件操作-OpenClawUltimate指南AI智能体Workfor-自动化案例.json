@@ -1,0 +1,41 @@
+{
+  "id": "case-20260420-001",
+  "filename": "案例-20260420-001-文件操作-OpenClawUltimate指南AI智能体Workfor-自动化案例",
+  "title": "OpenClawUltimate指南AI智能体Workfor",
+  "category": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://o-mega.ai/articles/openclaw-creating-the-ai-agent-workforce-ultimate-guide-2026",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T12:36:55.765Z"
+  },
+  "problem": "Setup Tips and Best Practices: If you’re non-technical and attempting this, a few tips:\n\n   Use Community Configs: Many have shared their `openclaw.json` config files (which define models, skills, etc.). Starting from a proven template can skip a lot of trial and error.\n\n   Dedicated Accounts: As mentioned, create separate accounts for the agent where possible. For example, a secondary Google account that has access to a shared calendar instead of letting it loose on your primary Google account.",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "file_ops"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T12:36:55.766Z",
+    "source": "tavily",
+    "chineseDesc": "自动化案例",
+    "originalTitle": "OpenClaw: Ultimate Guide to AI Agent Workforce 2026 - O-mega.ai"
+  },
+  "status": "inbox"
+}
