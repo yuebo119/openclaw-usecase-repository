@@ -1,0 +1,36 @@
+{
+  "name": "自动化案例-20260420",
+  "version": "1.0.0",
+  "description": "自动化需求",
+  "author": "node-01",
+  "tags": [
+    "automation"
+  ],
+  "difficulty": "beginner",
+  "skills": [],
+  "integrations": [],
+  "workflow": {
+    "trigger": "定时",
+    "steps": [
+      "执行"
+    ],
+    "output": "结果"
+  },
+  "config": {
+    "schedule": "* * * * *",
+    "tools": [],
+    "env": [
+      "暂无特殊要求"
+    ]
+  },
+  "examples": {
+    "usage": "openclaw skills run skill-20260420-001",
+    "input": "触发条件示例",
+    "output": "结果"
+  },
+  "metadata": {
+    "sourceCase": "case-20260420-001.json",
+    "sourceUrl": "https://example.com",
+    "generatedAt": "2026-04-20T11:46:39.121Z"
+  }
+}
