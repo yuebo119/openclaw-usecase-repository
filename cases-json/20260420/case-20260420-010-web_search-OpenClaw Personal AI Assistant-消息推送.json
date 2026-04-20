@@ -1,6 +1,6 @@
 {
   "id": "case-20260420-010",
-  "filename": "case-20260420-010-web_search-消息推送",
+  "filename": "case-20260420-010-web_search-OpenClaw Personal AI Assistant-消息推送",
   "title": "OpenClaw — Personal AI Assistant",
   "category": [
     "automation",
@@ -10,7 +10,7 @@
   "source": {
     "url": "https://openclaw.ai/",
     "platform": "Tavily Search",
-    "collectedAt": "2026-04-20T12:13:50.338Z"
+    "collectedAt": "2026-04-20T12:16:38.434Z"
   },
   "problem": "action button\" @sughanthans1Image 192: tomosman \"gg man! everyday I speak to more people about OpenClaw and it never fails to amaze!\" @tomosmanImage 193: aus_bytes \"Essentially - you can automate almost anything you can do on the machine it sits on\" @aus_bytesImage 194: jameskraus \"Came out of my shell and gave my @openclaw, Shelly, my credit card. Works amazing.\" @jameskrausImage 195: TheZachMueller \"Running fully locally off MiniMax 2.5 and can do the tool parsing for what I need!\" @TheZachMue...",
   "workflow": {
@@ -32,7 +32,7 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T12:13:50.338Z",
+    "collectedAt": "2026-04-20T12:16:38.434Z",
     "source": "tavily",
     "chineseDesc": "消息推送"
   },

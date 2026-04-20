@@ -195,7 +195,9 @@ const category = caseData.category[0] || 'automation';
 
 // 优先使用 JSON 中已存储的中文描述
 const chineseDesc = caseData.metadata?.chineseDesc || generateChineseDescription(caseData);
-const outputName = `skill-${dateStr}-${seqNum}-${category}-${chineseDesc}.md`;
+const shortTitle = extractShortTitle(caseData);
+// 文件名包含标题关键词
+const outputName = `skill-${dateStr}-${seqNum}-${category}-${shortTitle}-${chineseDesc}.md`;
 const outputPath = path.join(outputDir, outputName);
 
 // 生成一句话用途描述
@@ -271,6 +273,23 @@ function getEnvVars(integration) {
     'Grafana/Dashboard': []
   };
   return envMap[integration] || ['TODO'];
+}
+
+// 从标题提取简洁描述
+function extractShortTitle(caseData) {
+  const title = caseData.title || '';
+  if (!title) return '自动化';
+  
+  let cleanTitle = title
+    .replace(/[^a-zA-Z0-9\u4e00-\u9fa5\s\-]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  
+  if (cleanTitle.length > 20) {
+    cleanTitle = cleanTitle.substring(0, 20);
+  }
+  
+  return cleanTitle || '自动化';
 }
 
 // 生成中文描述（用于文件名）- 贴合案例实际内容

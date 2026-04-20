@@ -1,6 +1,6 @@
-# Is OpenClaw Worth the Hype? I Spent 10 Days Finding Out
+# What is OpenClaw? Your Open-Source AI Assistant for 2026
 
-> **Skill ID**: `skill-20260420-009`  
+> **Skill ID**: `skill-20260420-001`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,22 +16,15 @@
 
 ## 📋 简介
 
-I’m sure you’ve understood by now this is no longer about automation. It’s more like having a Sauron’s eye watching your day 24/7. It knows the context and nudges you at the right moment.
+What is OpenClaw
 
-  
-
-So when I said OpenClaw isn’t just a Telegram wrapper, this is what I meant.
-
-But here’s the thing I kept coming back to: all of this power comes with a security trade-off. And most guides I found glossed right over it.
-
-So I spent the last week and a half figuring out the most secure way to actually set t...
+OpenClaw (affectionately called “Molty”) is a viral open-source personal AI agent with 68,000 GitHub stars (and counting), created by PSPDFKit founder Peter Steinberger. It brings together the technology of agents with the data and apps you use on your local machine to serve as a high-powered, high-context AI assistant. It operates a local gateway that connects AI models with your favorite tools, integrating with familiar chat apps to facilitate convenient interactions. Many de...
 
 ---
 
 ## 🛠️ 所需技能
 
 - `file_ops`
-- `cron`
 
 ---
 
@@ -68,7 +61,6 @@ So I spent the last week and a half figuring out the most secure way to actually
 ### 所需工具
 
 - `file_ops`
-- `cron`
 
 ### 环境变量
 
@@ -91,13 +83,13 @@ So I spent the last week and a half figuring out the most secure way to actually
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-009
+openclaw skills run skill-20260420-001
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "Is OpenClaw Worth the Hype? I Spent 10 Days Finding Out" --schedule "0 */6 * * *" --skill "skill-20260420-009"
+openclaw cron add --name "What is OpenClaw? Your Open-Source AI Assistant for 2026" --schedule "0 */6 * * *" --skill "skill-20260420-001"
 ```
 
 ---
@@ -105,8 +97,8 @@ openclaw cron add --name "Is OpenClaw Worth the Hype? I Spent 10 Days Finding Ou
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://aimaker.substack.com/p/openclaw-review-setup-guide
-- **生成时间**: 2026-04-20T12:13:51.586Z
+- **原文链接**: https://www.digitalocean.com/resources/articles/what-is-openclaw
+- **生成时间**: 2026-04-20T12:16:38.504Z
 
 ---
 

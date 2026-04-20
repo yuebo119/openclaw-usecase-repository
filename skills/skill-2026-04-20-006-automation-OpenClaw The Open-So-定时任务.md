@@ -1,6 +1,6 @@
-# What Is OpenClaw? The Open-Source AI Agent That Actually Does ...
+# OpenClaw | The Open-Source Personal AI Assistant & Autonomous ...
 
-> **Skill ID**: `skill-20260420-008`  
+> **Skill ID**: `skill-20260420-006`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,19 +16,20 @@
 
 ## 📋 简介
 
-### OpenClaw vs. LangGraph / LangChain
+OpenClawOpenClaw
 
-LangGraph is a framework for building stateful, graph-based agent workflows. It’s excellent for complex multi-step reasoning and has the lowest latency in benchmarks. But it requires Python expertise and significant development work. OpenClaw is a ready-to-run agent, not a framework for building one.
+## Works With Everything You Love
 
-### OpenClaw vs. CrewAI
+OpenClaw is more than an assistant; it is a portal to a new reality where your AI has eyes and hands. It bridges the gap between 'what you can imagine' and 'what actually works' by gluing all the parts together into an incredible experience.
 
-CrewAI excels at role-based multi-agent collaboration—defining agents with specific roles that work together on a task. It’s beginne...
+OpenClaw remembers you and becomes uniquely yours. It knows your Obsidian notes, your WHOOP metrics, and your biomarker goals, allowing it to provide deeply personalized insights and long-term assistance ...
 
 ---
 
 ## 🛠️ 所需技能
 
-- `web_search`
+- `file_ops`
+- `cron`
 
 ---
 
@@ -64,7 +65,8 @@ CrewAI excels at role-based multi-agent collaboration—defining agents with spe
 
 ### 所需工具
 
-- `web_search`
+- `file_ops`
+- `cron`
 
 ### 环境变量
 
@@ -87,13 +89,13 @@ CrewAI excels at role-based multi-agent collaboration—defining agents with spe
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-008
+openclaw skills run skill-20260420-006
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "What Is OpenClaw? The Open-Source AI Agent That Actually Does ..." --schedule "0 */6 * * *" --skill "skill-20260420-008"
+openclaw cron add --name "OpenClaw | The Open-Source Personal AI Assistant & Autonomous ..." --schedule "0 */6 * * *" --skill "skill-20260420-006"
 ```
 
 ---
@@ -101,8 +103,8 @@ openclaw cron add --name "What Is OpenClaw? The Open-Source AI Agent That Actual
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.mindstudio.ai/blog/what-is-openclaw-ai-agent/
-- **生成时间**: 2026-04-20T12:13:51.450Z
+- **原文链接**: https://open-claw.org/
+- **生成时间**: 2026-04-20T12:16:38.864Z
 
 ---
 

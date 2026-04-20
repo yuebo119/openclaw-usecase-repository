@@ -1,6 +1,6 @@
-# 100 OpenClaw Use Cases You Can Try Today - Sphere Partners
+# OpenClaw — Personal AI Assistant
 
-> **Skill ID**: `skill-20260420-005`  
+> **Skill ID**: `skill-20260420-010`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,24 +16,13 @@
 
 ## 📋 简介
 
-### 21. Client Onboarding Automation
-
-When a new client signs a contract, OpenClaw triggers an onboarding sequence: sends a welcome email, creates a dedicated project folder in Google Drive, adds the client to your project management tool, schedules an intro call, and sends you a checklist of anything that still needs a human touch.
-
-Tools: gog, exec, message, write
-
-### 22. Invoice Processing From Email
-
-When an invoice arrives in your inbox, OpenClaw extracts the vendor, amount, due date, and ...
+action button" @sughanthans1Image 192: tomosman "gg man! everyday I speak to more people about OpenClaw and it never fails to amaze!" @tomosmanImage 193: aus_bytes "Essentially - you can automate almost anything you can do on the machine it sits on" @aus_bytesImage 194: jameskraus "Came out of my shell and gave my @openclaw, Shelly, my credit card. Works amazing." @jameskrausImage 195: TheZachMueller "Running fully locally off MiniMax 2.5 and can do the tool parsing for what I need!" @TheZachMue...
 
 ---
 
 ## 🛠️ 所需技能
 
 - `web_search`
-- `web_fetch`
-- `file_ops`
-- `cron`
 
 ---
 
@@ -70,9 +59,6 @@ When an invoice arrives in your inbox, OpenClaw extracts the vendor, amount, due
 ### 所需工具
 
 - `web_search`
-- `web_fetch`
-- `file_ops`
-- `cron`
 
 ### 环境变量
 
@@ -95,13 +81,13 @@ When an invoice arrives in your inbox, OpenClaw extracts the vendor, amount, due
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-005
+openclaw skills run skill-20260420-010
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "100 OpenClaw Use Cases You Can Try Today - Sphere Partners" --schedule "0 */6 * * *" --skill "skill-20260420-005"
+openclaw cron add --name "OpenClaw — Personal AI Assistant" --schedule "0 */6 * * *" --skill "skill-20260420-010"
 ```
 
 ---
@@ -109,8 +95,8 @@ openclaw cron add --name "100 OpenClaw Use Cases You Can Try Today - Sphere Part
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.sphereinc.com/blogs/100-openclaw-use-cases-you-can-try-today/
-- **生成时间**: 2026-04-20T12:13:51.017Z
+- **原文链接**: https://openclaw.ai/
+- **生成时间**: 2026-04-20T12:16:39.173Z
 
 ---
 

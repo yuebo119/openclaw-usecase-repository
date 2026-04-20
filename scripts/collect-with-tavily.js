@@ -63,6 +63,32 @@ function tavilySearch(query) {
   });
 }
 
+// 从标题提取简洁描述（用于文件名）
+function extractShortTitle(title) {
+  if (!title) return '自动化案例';
+  
+  // 移除特殊字符和多余空格
+  let cleanTitle = title
+    .replace(/[^a-zA-Z0-9\u4e00-\u9fa5\s\-]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  
+  // 提取前 30 个字符
+  if (cleanTitle.length > 30) {
+    cleanTitle = cleanTitle.substring(0, 30);
+  }
+  
+  // 如果全是英文，尝试提取关键词
+  if (/^[a-zA-Z\s\-]+$/.test(cleanTitle)) {
+    const words = cleanTitle.split(' ');
+    if (words.length > 4) {
+      cleanTitle = words.slice(0, 4).join('-');
+    }
+  }
+  
+  return cleanTitle || '自动化案例';
+}
+
 // 生成中文描述（用于文件名）
 function generateChineseFilename(title, content) {
   const fullText = (title + ' ' + content).toLowerCase();
@@ -99,8 +125,10 @@ function generateCaseFromResult(result, index) {
   
   // 生成中文描述用于文件名
   const chineseDesc = generateChineseFilename(result.title, result.content);
+  const shortTitle = extractShortTitle(result.title);
   const category = extractedSkills.skills[0] || 'automation';
-  const chineseFilename = `case-${date}-${String(index + 1).padStart(3, '0')}-${category}-${chineseDesc}`;
+  // 文件名格式：case-日期 - 序号 - 分类 - 标题关键词 - 描述
+  const chineseFilename = `case-${date}-${String(index + 1).padStart(3, '0')}-${category}-${shortTitle}-${chineseDesc}`;
   
   return {
     id: caseId,

@@ -1,6 +1,6 @@
 {
   "id": "case-20260420-002",
-  "filename": "case-20260420-002-file_ops-数据收集",
+  "filename": "case-20260420-002-file_ops-OpenClaw use cases 25 ways to -数据收集",
   "title": "OpenClaw use cases: 25 ways to automate work and life - Hostinger",
   "category": [
     "automation",
@@ -10,7 +10,7 @@
   "source": {
     "url": "https://www.hostinger.com/tutorials/openclaw-use-cases",
     "platform": "Tavily Search",
-    "collectedAt": "2026-04-20T12:13:50.333Z"
+    "collectedAt": "2026-04-20T12:16:38.428Z"
   },
   "problem": "Browser automation lets you log in to web tools, copy data between pages, and submit repetitive forms without manual clicks. It’s useful for admin tasks when no API is available.\n\nOpenClaw controls a headless browser to navigate interfaces, fill in fields, and trigger actions automatically.\n\nThis works well for tasks like updating product information across platforms, submitting the same form to multiple services, or extracting data from web apps that offer only a user interface.\n\nThat said, bro...",
   "workflow": {
@@ -33,7 +33,7 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T12:13:50.333Z",
+    "collectedAt": "2026-04-20T12:16:38.428Z",
     "source": "tavily",
     "chineseDesc": "数据收集"
   },

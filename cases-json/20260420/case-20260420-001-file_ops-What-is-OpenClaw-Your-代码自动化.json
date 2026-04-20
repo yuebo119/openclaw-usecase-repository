@@ -1,6 +1,6 @@
 {
   "id": "case-20260420-001",
-  "filename": "case-20260420-001-file_ops-代码自动化",
+  "filename": "case-20260420-001-file_ops-What-is-OpenClaw-Your-代码自动化",
   "title": "What is OpenClaw? Your Open-Source AI Assistant for 2026",
   "category": [
     "automation",
@@ -10,7 +10,7 @@
   "source": {
     "url": "https://www.digitalocean.com/resources/articles/what-is-openclaw",
     "platform": "Tavily Search",
-    "collectedAt": "2026-04-20T12:13:50.332Z"
+    "collectedAt": "2026-04-20T12:16:38.427Z"
   },
   "problem": "What is OpenClaw\n\nOpenClaw (affectionately called “Molty”) is a viral open-source personal AI agent with 68,000 GitHub stars (and counting), created by PSPDFKit founder Peter Steinberger. It brings together the technology of agents with the data and apps you use on your local machine to serve as a high-powered, high-context AI assistant. It operates a local gateway that connects AI models with your favorite tools, integrating with familiar chat apps to facilitate convenient interactions. Many de...",
   "workflow": {
@@ -32,7 +32,7 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T12:13:50.332Z",
+    "collectedAt": "2026-04-20T12:16:38.427Z",
     "source": "tavily",
     "chineseDesc": "代码自动化"
   },

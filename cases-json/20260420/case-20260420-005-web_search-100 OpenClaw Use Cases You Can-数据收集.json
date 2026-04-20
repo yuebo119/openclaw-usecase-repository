@@ -1,6 +1,6 @@
 {
   "id": "case-20260420-005",
-  "filename": "case-20260420-005-web_search-数据收集",
+  "filename": "case-20260420-005-web_search-100 OpenClaw Use Cases You Can-数据收集",
   "title": "100 OpenClaw Use Cases You Can Try Today - Sphere Partners",
   "category": [
     "automation",
@@ -10,7 +10,7 @@
   "source": {
     "url": "https://www.sphereinc.com/blogs/100-openclaw-use-cases-you-can-try-today/",
     "platform": "Tavily Search",
-    "collectedAt": "2026-04-20T12:13:50.335Z"
+    "collectedAt": "2026-04-20T12:16:38.432Z"
   },
   "problem": "### 21. Client Onboarding Automation\n\nWhen a new client signs a contract, OpenClaw triggers an onboarding sequence: sends a welcome email, creates a dedicated project folder in Google Drive, adds the client to your project management tool, schedules an intro call, and sends you a checklist of anything that still needs a human touch.\n\nTools: gog, exec, message, write\n\n### 22. Invoice Processing From Email\n\nWhen an invoice arrives in your inbox, OpenClaw extracts the vendor, amount, due date, and ...",
   "workflow": {
@@ -35,7 +35,7 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T12:13:50.335Z",
+    "collectedAt": "2026-04-20T12:16:38.432Z",
     "source": "tavily",
     "chineseDesc": "数据收集"
   },
