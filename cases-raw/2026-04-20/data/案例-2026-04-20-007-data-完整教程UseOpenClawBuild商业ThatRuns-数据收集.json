@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-20-007",
+  "filename": "案例-2026-04-20-007-data-完整教程UseOpenClawBuild商业ThatRuns-数据收集",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "完整教程UseOpenClawBuild商业ThatRuns",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://creatoreconomy.so/p/use-openclaw-to-build-a-business-that-runs-itself-nat-eliason",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T13:35:14.830Z"
+  },
+  "problem": "Top 10 takeaways I learned from this episode\n\nImage 5\n\nThe Stripe dashboard doesn’t lie — Nat’s OpenClaw bot made $3,500 in week one\n\n1.   Set up a 3-layer memory system for OpenClaw first. This is the single biggest unlock. From Nat: “Get the memory structure in first because then your conversations from day one will be useful.” Here’s what Felix uses:\n\n    1.   Layer 1: Knowledge graph. A ~/life/ folder using the PARA system (projects, areas, resources, archives). Stores durable facts about pe",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "file_ops"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T13:35:14.830Z",
+    "source": "tavily",
+    "chineseDesc": "数据收集",
+    "originalTitle": "Full Tutorial: Use OpenClaw to Build a Business That Runs Itself | Nat Eliason"
+  },
+  "status": "raw"
+}

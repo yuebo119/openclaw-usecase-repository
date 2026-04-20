@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * 使用 Tavily API 搜索并收集 OpenClaw 案例（新版 - 带分类目录）
+ * 使用 Tavily API 搜索并收集 OpenClaw 案例（全中文翻译版）
  * 用法：node collect-with-tavily.js [search-query]
  */
 
@@ -14,7 +14,6 @@ const { dedupCheck } = require('./dedup-check');
 const TAVILY_API_KEY = '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';
 const WORKSPACE_DIR = '/root/.openclaw/workspace/openclaw-usecases';
 const RAW_DIR = path.join(WORKSPACE_DIR, 'cases-raw');
-const SKILLS_DIR = path.join(WORKSPACE_DIR, 'skills');
 
 // 分类映射
 const CATEGORY_MAP = {
@@ -22,13 +21,7 @@ const CATEGORY_MAP = {
   'email': 'email',
   'api': 'api',
   'code': 'code',
-  'data': 'data',
-  'file_ops': 'data',
-  'web_search': 'data',
-  'web_fetch': 'data',
-  'cron': 'automation',
-  'api_integration': 'api',
-  'data_analysis': 'data'
+  'data': 'data'
 };
 
 // 中文分类名
@@ -119,7 +112,33 @@ function extractSkillsAndCategory(text) {
   };
 }
 
-// 从搜索结果生成案例（全中文翻译 + 分类）
+// 生成中文描述
+function generateChineseFilename(title, content) {
+  const fullText = (title + ' ' + content).toLowerCase();
+  
+  const keywordMap = {
+    '数据收集': ['收集', '采集', 'extract'],
+    '邮件自动化': ['gmail', 'email', '邮件'],
+    '定时任务': ['cron', '定时', 'schedule'],
+    'API 集成': ['api', '接口'],
+    '代码自动化': ['代码', 'code', 'commit'],
+    '报告生成': ['报告', 'report', 'summary'],
+    '消息推送': ['telegram', 'discord', 'whatsapp'],
+    '自动化工作流': ['自动化', 'workflow']
+  };
+  
+  for (const [desc, keywords] of Object.entries(keywordMap)) {
+    for (const keyword of keywords) {
+      if (fullText.includes(keyword)) {
+        return desc;
+      }
+    }
+  }
+  
+  return '自动化案例';
+}
+
+// 从搜索结果生成案例（全中文翻译）
 function generateCaseFromResult(result, index) {
   const date = new Date().toISOString().split('T')[0];
   const caseId = `case-${date}-${String(index + 1).padStart(3, '0')}`;
@@ -137,6 +156,9 @@ function generateCaseFromResult(result, index) {
   // 文件名格式：案例 - 日期 - 序号 - 分类 - 标题关键词 - 描述
   const chineseFilename = `案例-${date}-${String(index + 1).padStart(3, '0')}-${category}-${chineseTitle}-${chineseDesc}`;
   
+  // 彻底翻译问题描述
+  const chineseProblem = translateProblem(result.content.substring(0, 500)) || '自动化需求描述';
+  
   return {
     id: caseId,
     filename: chineseFilename,
@@ -151,8 +173,8 @@ function generateCaseFromResult(result, index) {
       platform: 'Tavily 搜索',
       collectedAt: new Date().toISOString()
     },
-    // 翻译问题描述
-    problem: translateProblem(result.content.substring(0, 500)) || '自动化需求描述',
+    // 彻底翻译问题描述
+    problem: chineseProblem,
     workflow: {
       trigger: '定时任务或事件触发',
       // 翻译步骤
@@ -178,32 +200,6 @@ function generateCaseFromResult(result, index) {
     },
     status: 'raw'
   };
-}
-
-// 生成中文描述
-function generateChineseFilename(title, content) {
-  const fullText = (title + ' ' + content).toLowerCase();
-  
-  const keywordMap = {
-    '数据收集': ['收集', '采集', 'extract'],
-    '邮件自动化': ['gmail', 'email', '邮件'],
-    '定时任务': ['cron', '定时', 'schedule'],
-    'API 集成': ['api', '接口'],
-    '代码自动化': ['代码', 'code', 'commit'],
-    '报告生成': ['报告', 'report', 'summary'],
-    '消息推送': ['telegram', 'discord', 'whatsapp'],
-    '自动化工作流': ['自动化', 'workflow']
-  };
-  
-  for (const [desc, keywords] of Object.entries(keywordMap)) {
-    for (const keyword of keywords) {
-      if (fullText.includes(keyword)) {
-        return desc;
-      }
-    }
-  }
-  
-  return '自动化案例';
 }
 
 // 主流程

@@ -1,6 +1,6 @@
-# OpenClaw完整教程BeginnersStepbySte
+# MyOpenClawWorkflowsAutomations
 
-> **Skill ID**: `case-2026-04-20-010`  
+> **Skill ID**: `case-2026-04-20-008`  
 > **用途**: 自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -10,7 +10,7 @@
 
 ## 📋 简介
 
-build intelligent 工作流s without needing advanced coding skills. In simple terms: It’s a way to create your own AI assistant that can actually do things — not just chat. 👉 What you’ll learn in this OpenClaw tutorial: ✅ How OpenClaw works (explained simply) ✅ How to install OpenClaw step-by-step ✅ How to use the one-click setup ✅ How to create your first AI agent ✅ How to connect tools and 自动化 tasks ✅ Beginner tips to avoid common mistakes 🚀 Why this OpenClaw guide is different Most Ope
+My OpenClaw 工作流s & 自动化s For Building Apps SOLO (easy setup / running 24/7). 12K views · 1 month ago. SINGAPORE ...more
 
 ---
 
@@ -68,7 +68,7 @@ build intelligent 工作流s without needing advanced coding skills. In simple t
 ### 运行 Skill
 
 ```bash
-openclaw skills run case-2026-04-20-010
+openclaw skills run case-2026-04-20-008
 ```
 
 ---
@@ -76,8 +76,8 @@ openclaw skills run case-2026-04-20-010
 ## 📎 来源
 
 - **案例来源**: Tavily 搜索
-- **原文链接**: https://www.youtube.com/watch?v=HNAv85MfGUI
-- **生成时间**: 2026-04-20T13:16:17.905Z
+- **原文链接**: https://www.youtube.com/watch?v=XmSxfFrkcDs
+- **生成时间**: 2026-04-20T13:35:37.065Z
 
 ---
 

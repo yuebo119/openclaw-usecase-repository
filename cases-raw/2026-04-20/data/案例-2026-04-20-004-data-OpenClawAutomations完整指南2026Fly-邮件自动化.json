@@ -1,9 +1,9 @@
 {
   "id": "case-2026-04-20-004",
-  "filename": "案例-2026-04-20-004-data-OpenClaw自动化完整指南2026FlyPixAI-邮件自动化",
+  "filename": "案例-2026-04-20-004-data-OpenClawAutomations完整指南2026Fly-邮件自动化",
   "category": "data",
   "categoryCn": "数据",
-  "title": "OpenClaw自动化完整指南2026FlyPixAI",
+  "title": "OpenClawAutomations完整指南2026Fly",
   "categoryTags": [
     "automation",
     "productivity"
@@ -12,9 +12,9 @@
   "source": {
     "url": "https://flypix.ai/openclaw-automations-save-time/",
     "platform": "Tavily 搜索",
-    "collectedAt": "2026-04-20T13:16:12.098Z"
+    "collectedAt": "2026-04-20T13:35:14.821Z"
   },
-  "problem": "Our approach addresses the “setup complexity” often found in open-source tools by offering a professional, no-code environment. We’ve seen users save up to 99.7% of their time by automating geospatial analysis that previously took hours of 手动 annotation. By integrating these specific visual capabilities into your broader automation strategy, you can move beyond simple browser tasks and start gathering actionable insights from your physical assets with the same speed and precision as a high-e",
+  "problem": "The seven core modules that power OpenClaw’s 自动化 capabilities, with common 工作流 examples used by the developer community.\n\n## Real OpenClaw 自动化 Use Cases\n\nTheory matters less than practice. Here’s what people actually build with OpenClaw in 2026.\n\n### Business 自动化\n\nCommunity members have shared experiences automating business 任务s.\n\nCommon business 工作流s include:\n\n Lead generation and qualification pipelines\n Client reporting 自动化 with 数据 aggregation\n Social",
   "workflow": {
     "trigger": "定时任务或事件触发",
     "steps": [
@@ -25,9 +25,7 @@
     "output": "自动化任务完成"
   },
   "skills": [
-    "file_ops",
-    "api_integration",
-    "data_analysis"
+    "api_integration"
   ],
   "integrations": [],
   "efficiency": {
@@ -36,7 +34,7 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T13:16:12.098Z",
+    "collectedAt": "2026-04-20T13:35:14.821Z",
     "source": "tavily",
     "chineseDesc": "邮件自动化",
     "originalTitle": "OpenClaw Automations: Complete Guide for 2026 - FlyPix AI"

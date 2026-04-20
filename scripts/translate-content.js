@@ -1,47 +1,58 @@
 #!/usr/bin/env node
 /**
- * 内容翻译模块 - 将英文内容翻译成中文
- * 使用统一配置
+ * 内容翻译模块 - 将英文内容彻底翻译成中文
  */
 
-const config = require('./config');
-
-// 完整的中英文映射表
+// 核心翻译映射表
 const translationMap = {
-  // OpenClaw 相关
   'OpenClaw': 'OpenClaw',
-  'ClawHub': 'ClawHub',
-  'Workflow': '工作流',
-  'Workflows': '工作流',
-  'Automation': '自动化',
-  'Automations': '自动化',
-  'Use Cases': '用例',
-  'Use Case': '用例',
   'Tutorial': '教程',
   'Guide': '指南',
   'Complete': '完整',
   'Full': '完整',
-  'Best Practices': '最佳实践',
-  'What is': '什么是',
-  'What Is': '什么是',
-  'The': '',
-  'A': '',
-  'An': '',
-  'for': '',
-  'and': '',
-  'with': '',
-  'to': '',
-  'of': '',
-  'in': '',
-  'on': '',
-  'from': '',
-  
-  // 功能相关
+  'Ultimate': '终极',
+  'Definitive': '权威',
+  'Use Cases': '用例',
+  'Use Case': '用例',
+  'Automation': '自动化',
+  'Workflow': '工作流',
+  'Browser': '浏览器',
+  'Tools': '工具',
+  'Developers': '开发者',
+  'Managers': '管理者',
+  'Project': '项目',
+  'Content': '内容',
+  'Marketing': '营销',
+  'Business': '商业',
+  'Enterprise': '企业',
+  'Startup': '创业',
+  'Team': '团队',
+  'Product': '产品',
+  'Platform': '平台',
+  'Service': '服务',
+  'System': '系统',
+  'Framework': '框架',
+  'Template': '模板',
+  'Example': '示例',
+  'Examples': '示例',
+  'Beginner': '入门',
+  'Advanced': '高级',
+  'Professional': '专业',
+  'Top': '顶级',
+  'Best': '最佳',
+  '2026': '2026',
+  'How to': '如何',
+  'How We': '我们如何',
+  'Getting Started': '入门指南',
+  'Step by Step': '逐步',
+  'Self-Hosted': '自托管',
+  'Open Source': '开源',
+  'Acquisition': '获取',
+  'Acquire': '获取',
   'Email': '邮件',
   'Gmail': 'Gmail',
   'Digest': '摘要',
   'Report': '报告',
-  'Reports': '报告',
   'Daily': '每日',
   'Personal': '个人',
   'AI': 'AI',
@@ -62,111 +73,33 @@ const translationMap = {
   'File': '文件',
   'Ops': '运维',
   'Dev': '开发',
-  
-  // 技术相关
-  'GitHub': 'GitHub',
-  'Trending': '热门',
-  'Repository': '仓库',
-  'Project': '项目',
-  'Open Source': '开源',
-  'Business': '商业',
-  'Startup': '创业',
-  'Team': '团队',
-  'Product': '产品',
-  'Tool': '工具',
-  'Platform': '平台',
-  'Service': '服务',
-  'System': '系统',
-  'Framework': '框架',
-  'Template': '模板',
-  'Example': '示例',
-  'Beginner': '入门',
-  'Advanced': '高级',
-  'Professional': '专业',
-  'Enterprise': '企业',
-  
-  // 动作相关
-  'Create': '创建',
-  'Build': '构建',
-  'Make': '制作',
-  'Send': '发送',
-  'Get': '获取',
-  'Receive': '接收',
-  'Process': '处理',
-  'Analyze': '分析',
-  'Track': '跟踪',
-  'Manage': '管理',
-  'Organize': '整理',
-  'Generate': '生成',
-  'Extract': '提取',
-  'Save': '保存',
-  'Store': '存储',
-  'Share': '分享',
-  'Connect': '连接',
-  'Sync': '同步',
-  'Update': '更新',
-  'Delete': '删除',
-  'Search': '搜索',
-  'Find': '查找',
-  'Read': '读取',
-  'Write': '写入',
-  
-  // 描述性词汇
-  'Easy': '简单',
-  'Simple': '简单',
-  'Fast': '快速',
-  'Quick': '快速',
-  'Smart': '智能',
-  'Auto': '自动',
-  'Automatic': '自动',
-  'Manual': '手动',
-  'Free': '免费',
-  'Paid': '付费',
-  'New': '新',
-  'Latest': '最新',
-  'Old': '旧',
-  'Popular': '流行',
-  'Top': '顶级',
-  'Better': '更好',
-  'Best': '最佳',
-  'Good': '好',
-  'Great': '优秀',
-  'Amazing': '惊人',
-  'Powerful': '强大',
-  'Useful': '有用',
-  'Helpful': '有帮助',
-  'Important': '重要',
-  'Critical': '关键',
-  'Essential': '必备',
-  'Necessary': '必要',
-  'Required': '必需',
-  'Optional': '可选',
-  'Available': '可用',
-  'Ready': '就绪',
-  'Active': '活跃',
-  'Live': '实时',
-  'Real-time': '实时',
-  'Online': '在线',
-  'Offline': '离线',
-  'Cloud': '云端',
-  'Local': '本地',
-  'Remote': '远程',
-  'Secure': '安全',
-  'Private': '私有',
-  'Public': '公开',
-  'Open': '开放',
-  'Closed': '封闭'
+  'What is': '什么是',
+  'What Is': '什么是',
+  'for': '',
+  'and': '',
+  'with': '',
+  'to': '',
+  'of': '',
+  'in': '',
+  'on': '',
+  'from': '',
+  'by': '',
+  'as': '',
+  'or': '',
+  'The': '',
+  'A': '',
+  'An': ''
 };
 
 /**
  * 翻译标题
  */
 function translateTitle(title) {
-  if (!title) return config.TRANSLATION.MAX_TITLE_LENGTH > 0 ? '未命名' : '未命名';
+  if (!title) return '未命名';
   
   // 如果已经是中文，直接返回
   if (/^[\u4e00-\u9fa5]+$/.test(title.replace(/[^\u4e00-\u9fa5]/g, ''))) {
-    return title.substring(0, config.TRANSLATION.MAX_TITLE_LENGTH).trim();
+    return title.substring(0, 30).trim();
   }
   
   let translated = title;
@@ -184,7 +117,7 @@ function translateTitle(title) {
   translated = translated
     .replace(/\s+/g, '')
     .replace(/[^a-zA-Z0-9\u4e00-\u9fa5]/g, '')
-    .substring(0, config.TRANSLATION.MAX_TITLE_LENGTH)
+    .substring(0, 30)
     .trim();
   
   return translated || '自动化案例';
@@ -207,7 +140,15 @@ function translateProblem(problem) {
     'automate': '自动化',
     'manual': '手动',
     'process': '流程',
-    'workflow': '工作流'
+    'workflow': '工作流',
+    'OpenClaw': 'OpenClaw',
+    'automation': '自动化',
+    'task': '任务',
+    'email': '邮件',
+    'data': '数据',
+    'collect': '收集',
+    'search': '搜索',
+    'API': 'API'
   };
   
   for (const [en, zh] of Object.entries(commonMap)) {

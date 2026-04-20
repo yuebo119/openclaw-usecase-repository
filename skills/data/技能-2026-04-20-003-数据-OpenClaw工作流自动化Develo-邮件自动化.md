@@ -1,6 +1,6 @@
-# OpenClaw教程2026完整入门高级指南MI
+# OpenClaw工作流自动化Developer指南
 
-> **Skill ID**: `case-2026-04-20-007`  
+> **Skill ID**: `case-2026-04-20-003`  
 > **用途**: 自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -10,20 +10,23 @@
 
 ## 📋 简介
 
-The Hooks (Webhooks) feature lets you automatically execute actions when specific events trigger, configurable in the automation section of `~/.openclaw/openclaw.json`.
+#### Create the Slack app + enable Socket Mode
 
-`~/.openclaw/openclaw.json`
-
-OpenClaw also has a unique capability: it can create its own Skills. When the AI determines a task requires specific functionality not covered by existing Skills, it can write new skill modules and load them itself. All custom skills are stored in the workspace's skills directory.
-
-`openclaw skills c
+1. Go to 
+2. Click Create New App → From scratch → Give App Name → Select Workspace
+3. Open Socket Mode and turn it ON → In Basic Information → App-Level Tokens, generate a token with scope connections:write
+4. Copy this App Token (xapp-...)
+5. Go to OAuth & Permissions
+6. Add bot scopes (minimum needed):  
+   chat:write, app\_mentions:read, channels:history, groups:history, im:history, im:read, im:write, mpim:history, reactions:read, reactions:wri
 
 ---
 
 ## 🛠️ 所需技能
 
 - `web_search`
-- `web_fetch`
+- `file_ops`
+- `cron`
 - `api_integration`
 
 ---
@@ -61,7 +64,8 @@ OpenClaw also has a unique capability: it can create its own Skills. When the AI
 ### 所需工具
 
 - `web_search`
-- `web_fetch`
+- `file_ops`
+- `cron`
 - `api_integration`
 
 ---
@@ -78,7 +82,7 @@ OpenClaw also has a unique capability: it can create its own Skills. When the AI
 ### 运行 Skill
 
 ```bash
-openclaw skills run case-2026-04-20-007
+openclaw skills run case-2026-04-20-003
 ```
 
 ---
@@ -86,8 +90,8 @@ openclaw skills run case-2026-04-20-007
 ## 📎 来源
 
 - **案例来源**: Tavily 搜索
-- **原文链接**: https://www.meta-intelligence.tech/en/insight-openclaw-tutorial
-- **生成时间**: 2026-04-20T13:16:17.903Z
+- **原文链接**: https://www.devshorts.in/p/openclaw-workflow-and-automation
+- **生成时间**: 2026-04-20T13:35:37.062Z
 
 ---
 

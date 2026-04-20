@@ -1,6 +1,6 @@
-# OpenClawBrowserTools收集自动化数据Acq
+# OpenClawAIWorkflowsHowIAIStepS
 
-> **Skill ID**: `case-2026-04-20-009`  
+> **Skill ID**: `case-2026-04-20-006`  
 > **用途**: 自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -10,23 +10,25 @@
 
 ## 📋 简介
 
-Technology Encyclopedia Home >OpenClaw Browser Tools Collection - Automation and Data Acquisition Tools
+Rounded Logo
+Logo Text
 
-# OpenClaw Browser Tools Collection - Automation and Data Acquisition Tools
+# OpenClaw 工作流s
 
-Created on 2026-03-03 19:49:08
+Step-by-step OpenClaw 工作流s from How I AI expert interviews. Each guide includes prompts, code snippets, and practical tips.
 
-707
+How to Build a Custom AI-Powered Text Digest for Slack Notifications
 
-# OpenClaw Browser Tools Collection: Automation and Data Acquisition Tools
+### How to Build a Custom AI-Powered Text Digest for Slack Notifications
 
-The modern web is both the world's largest database and its most frustrating API. The data you need is almost always there — on a product page, in a dashboard, behind a login form — but getting it out prog
+Overwhelmed by Slack? Learn how to use an AI agent to automatically pull, filter, and categorize your Slack notifications into a daily text digest, separating urgent items from noi
 
 ---
 
 ## 🛠️ 所需技能
 
-- `api_integration`
+- `web_search`
+- `file_ops`
 
 ---
 
@@ -62,7 +64,8 @@ The modern web is both the world's largest database and its most frustrating API
 
 ### 所需工具
 
-- `api_integration`
+- `web_search`
+- `file_ops`
 
 ---
 
@@ -78,7 +81,7 @@ The modern web is both the world's largest database and its most frustrating API
 ### 运行 Skill
 
 ```bash
-openclaw skills run case-2026-04-20-009
+openclaw skills run case-2026-04-20-006
 ```
 
 ---
@@ -86,8 +89,8 @@ openclaw skills run case-2026-04-20-009
 ## 📎 来源
 
 - **案例来源**: Tavily 搜索
-- **原文链接**: https://www.tencentcloud.com/techpedia/140758
-- **生成时间**: 2026-04-20T13:16:17.897Z
+- **原文链接**: https://chatprd.ai/how-i-ai/workflows/tool/openclaw
+- **生成时间**: 2026-04-20T13:35:37.064Z
 
 ---
 

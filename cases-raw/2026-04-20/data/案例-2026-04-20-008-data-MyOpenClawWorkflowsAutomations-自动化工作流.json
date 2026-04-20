@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-20-008",
+  "filename": "案例-2026-04-20-008-data-MyOpenClawWorkflowsAutomations-自动化工作流",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "MyOpenClawWorkflowsAutomations",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.youtube.com/watch?v=XmSxfFrkcDs",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T13:35:14.834Z"
+  },
+  "problem": "My OpenClaw 工作流s & 自动化s For Building Apps SOLO (easy setup / running 24/7). 12K views · 1 month ago. SINGAPORE ...more",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T13:35:14.834Z",
+    "source": "tavily",
+    "chineseDesc": "自动化工作流",
+    "originalTitle": "My OpenClaw Workflows & Automations For Building Apps SOLO ..."
+  },
+  "status": "raw"
+}

@@ -1,4 +1,4 @@
-# OpenClawHowSelfHostedAI智能体Chan
+# OpenClaw自动化教程收集ProcessDesignEf
 
 > **Skill ID**: `case-2026-04-20-002`  
 > **用途**: 自动化任务完成  
@@ -10,15 +10,27 @@
 
 ## 📋 简介
 
-MolTHub is the marketplace. Developers publish skills here that give OpenClaw new abilities, things like new app integrations, 工作流 templates, and automation scripts. Users browse, install, and start using them right away. It has been a major driver of how fast OpenClaw’s capabilities have expanded. But it also comes with a serious catch. Every skill is third-party code running with full agent-level access on someone’s machine. That means a single bad actor can push malicious code to thousan
+Deploy OpenClaw in Seconds
+
+OpenClaw, now supported for easy deployment on TencentCloud.Your 7/24 Personal AI Assistant.Get up to 80% off your first instance. ONLY $1.68/months.
+
+# OpenClaw 自动化 Tutorial 收集ion - 流程 Design and Efficiency
+
+Created on 2026-03-03 19:49:04
+
+208
+
+If you have ever said 'I'll clean this up later,' you already know how ops debt forms.
+
+That is also where a small amount of structure changes everything.
+
+OpenClaw 自动化 Tutorial 收集ion: 流程 Desi
 
 ---
 
 ## 🛠️ 所需技能
 
-- `web_search`
 - `file_ops`
-- `api_integration`
 
 ---
 
@@ -54,9 +66,7 @@ MolTHub is the marketplace. Developers publish skills here that give OpenClaw ne
 
 ### 所需工具
 
-- `web_search`
 - `file_ops`
-- `api_integration`
 
 ---
 
@@ -80,8 +90,8 @@ openclaw skills run case-2026-04-20-002
 ## 📎 来源
 
 - **案例来源**: Tavily 搜索
-- **原文链接**: https://medium.com/@kanerika/openclaw-how-a-self-hosted-ai-agent-changed-automation-in-2026-6ba728345d53
-- **生成时间**: 2026-04-20T13:16:17.900Z
+- **原文链接**: https://www.tencentcloud.com/techpedia/140696
+- **生成时间**: 2026-04-20T13:35:37.062Z
 
 ---
 

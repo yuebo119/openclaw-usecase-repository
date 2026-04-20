@@ -1,6 +1,6 @@
-# onlyOpenClaw教程youlleverneedMar
+# OpenClaw教程Beginners逐步2026YouTu
 
-> **Skill ID**: `case-2026-04-20-008`  
+> **Skill ID**: `case-2026-04-20-009`  
 > **用途**: 自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -10,13 +10,13 @@
 
 ## 📋 简介
 
-OpenClaw is the greatest AI tool ever made. Here's your COMPLETE guide on building your first AI employee FULL OpenClaw bootcamp in the Vibe Coding Academy:  Sign up for my free newsletter:  Follow my X:  My $300k/yr AI app:  OpenClaw:  Prompts: Hi Henry, please send me a daily brief every day at 1pm. Please find me the stocks that stand to gain the most from the upcoming AI buildout. I 想要 know which companies with massive moats will stand the benefit from my thesis of AI expanding even mor
+Set Up OpenClaw (Hostinger) - https://santrelmedia.com/OpenClaw Use code: SANTREL10 to save 10% Clawhub: https://clawhub.ai/ Auth:
 
 ---
 
 ## 🛠️ 所需技能
 
-- `web_search`
+- `file_ops`
 
 ---
 
@@ -52,7 +52,7 @@ OpenClaw is the greatest AI tool ever made. Here's your COMPLETE guide on buildi
 
 ### 所需工具
 
-- `web_search`
+- `file_ops`
 
 ---
 
@@ -68,7 +68,7 @@ OpenClaw is the greatest AI tool ever made. Here's your COMPLETE guide on buildi
 ### 运行 Skill
 
 ```bash
-openclaw skills run case-2026-04-20-008
+openclaw skills run case-2026-04-20-009
 ```
 
 ---
@@ -76,8 +76,8 @@ openclaw skills run case-2026-04-20-008
 ## 📎 来源
 
 - **案例来源**: Tavily 搜索
-- **原文链接**: https://www.youtube.com/watch?v=CxErCGVo-oo
-- **生成时间**: 2026-04-20T13:16:17.904Z
+- **原文链接**: https://www.youtube.com/watch?v=pSi4hAJVnxI
+- **生成时间**: 2026-04-20T13:35:37.065Z
 
 ---
 
