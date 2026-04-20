@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 /**
  * 内容翻译模块 - 将英文内容翻译成中文
+ * 使用统一配置
  */
+
+const config = require('./config');
 
 // 完整的中英文映射表
 const translationMap = {
@@ -155,13 +158,15 @@ const translationMap = {
   'Closed': '封闭'
 };
 
-// 翻译标题
+/**
+ * 翻译标题
+ */
 function translateTitle(title) {
-  if (!title) return '未命名';
+  if (!title) return config.TRANSLATION.MAX_TITLE_LENGTH > 0 ? '未命名' : '未命名';
   
   // 如果已经是中文，直接返回
   if (/^[\u4e00-\u9fa5]+$/.test(title.replace(/[^\u4e00-\u9fa5]/g, ''))) {
-    return title.substring(0, 30).trim();
+    return title.substring(0, config.TRANSLATION.MAX_TITLE_LENGTH).trim();
   }
   
   let translated = title;
@@ -179,13 +184,15 @@ function translateTitle(title) {
   translated = translated
     .replace(/\s+/g, '')
     .replace(/[^a-zA-Z0-9\u4e00-\u9fa5]/g, '')
-    .substring(0, 30)
+    .substring(0, config.TRANSLATION.MAX_TITLE_LENGTH)
     .trim();
   
   return translated || '自动化案例';
 }
 
-// 翻译问题描述
+/**
+ * 翻译问题描述
+ */
 function translateProblem(problem) {
   if (!problem) return '';
   
@@ -210,7 +217,9 @@ function translateProblem(problem) {
   return translated.substring(0, 500);
 }
 
-// 翻译工作流步骤
+/**
+ * 翻译工作流步骤
+ */
 function translateSteps(steps) {
   if (!steps || !Array.isArray(steps)) return [];
   
@@ -239,5 +248,6 @@ function translateSteps(steps) {
 module.exports = {
   translateTitle,
   translateProblem,
-  translateSteps
+  translateSteps,
+  translationMap
 };

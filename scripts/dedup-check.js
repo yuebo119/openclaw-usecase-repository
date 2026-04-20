@@ -1,14 +1,12 @@
 #!/usr/bin/env node
 /**
  * 案例去重检查模块
- * 检测新案例是否与已有案例重复
+ * 使用最新目录结构
  */
 
 const fs = require('fs');
 const path = require('path');
-
-const WORKSPACE_DIR = '/root/.openclaw/workspace/openclaw-usecases';
-const JSON_DIR = path.join(WORKSPACE_DIR, 'cases-json');
+const config = require('./config');
 
 /**
  * 计算两个字符串的相似度 (Levenshtein 距离)
@@ -62,7 +60,7 @@ function checkUrlDuplicate(newUrl, existingCases) {
 /**
  * 检查标题相似度
  */
-function checkTitleDuplicate(newTitle, existingCases, threshold = 0.85) {
+function checkTitleDuplicate(newTitle, existingCases, threshold = config.DEDUP.TITLE_SIMILARITY_THRESHOLD) {
   for (const existing of existingCases) {
     if (!existing.title) continue;
     
@@ -83,7 +81,7 @@ function checkTitleDuplicate(newTitle, existingCases, threshold = 0.85) {
 /**
  * 检查 7 天内相同分类的相似案例
  */
-function checkRecentDuplicate(newCase, existingCases, days = 7) {
+function checkRecentDuplicate(newCase, existingCases, days = config.DEDUP.RECENT_DAYS) {
   const newDate = new Date(newCase.metadata?.collectedAt || Date.now());
   const thresholdTime = new Date(newDate.getTime() - (days * 24 * 60 * 60 * 1000));
   
@@ -94,8 +92,8 @@ function checkRecentDuplicate(newCase, existingCases, days = 7) {
     if (existingDate < thresholdTime) continue;
     
     // 检查分类是否相同
-    const newCategory = newCase.category?.[0] || 'automation';
-    const existingCategory = existing.category?.[0] || 'automation';
+    const newCategory = newCase.category || 'automation';
+    const existingCategory = existing.category || 'automation';
     
     if (newCategory !== existingCategory) continue;
     
@@ -105,7 +103,7 @@ function checkRecentDuplicate(newCase, existingCases, days = 7) {
       (existing.title || '').toLowerCase()
     );
     
-    if (similarity > 0.7) {
+    if (similarity > config.DEDUP.RECENT_SIMILARITY_THRESHOLD) {
       return {
         isDuplicate: true,
         reason: `${days}天内相同分类的相似案例 (${(similarity * 100).toFixed(1)}%)`,
@@ -119,34 +117,45 @@ function checkRecentDuplicate(newCase, existingCases, days = 7) {
 }
 
 /**
- * 加载已有案例
+ * 加载已有案例（从新目录结构）
  */
 function loadExistingCases() {
   const existingCases = [];
+  const rawDir = config.DIRECTORIES.RAW;
   
-  // 遍历所有日期目录
-  if (!fs.existsSync(JSON_DIR)) {
+  if (!fs.existsSync(rawDir)) {
     return existingCases;
   }
   
-  const dateDirs = fs.readdirSync(JSON_DIR);
+  // 遍历所有日期目录
+  const dateDirs = fs.readdirSync(rawDir);
   
   for (const dateDir of dateDirs) {
-    const datePath = path.join(JSON_DIR, dateDir);
+    const datePath = path.join(rawDir, dateDir);
     if (!fs.statSync(datePath).isDirectory()) continue;
     
-    const files = fs.readdirSync(datePath);
+    // 遍历分类目录
+    const categories = fs.readdirSync(datePath);
     
-    for (const file of files) {
-      if (!file.endsWith('.json')) continue;
+    for (const category of categories) {
+      const categoryPath = path.join(datePath, category);
+      if (!fs.statSync(categoryPath).isDirectory()) continue;
       
-      const filePath = path.join(datePath, file);
-      try {
-        const content = fs.readFileSync(filePath, 'utf8');
-        const caseData = JSON.parse(content);
-        existingCases.push(caseData);
-      } catch (e) {
-        console.warn(`⚠️  读取文件失败：${file}`);
+      const files = fs.readdirSync(categoryPath);
+      
+      for (const file of files) {
+        if (!file.endsWith('.json')) continue;
+        
+        const filePath = path.join(categoryPath, file);
+        try {
+          const content = fs.readFileSync(filePath, 'utf8');
+          const caseData = JSON.parse(content);
+          caseData._filePath = filePath;
+          caseData._filename = file;
+          existingCases.push(caseData);
+        } catch (e) {
+          console.warn(`⚠️  读取文件失败：${file}`);
+        }
       }
     }
   }
@@ -221,5 +230,8 @@ if (require.main === module) {
 module.exports = {
   dedupCheck,
   stringSimilarity,
-  loadExistingCases
+  loadExistingCases,
+  checkUrlDuplicate,
+  checkTitleDuplicate,
+  checkRecentDuplicate
 };

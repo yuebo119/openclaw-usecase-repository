@@ -1,17 +1,15 @@
 #!/usr/bin/env node
 /**
  * 批量去重已有案例
- * 扫描所有案例，检测并删除重复的
+ * 使用最新目录结构
  */
 
 const fs = require('fs');
 const path = require('path');
+const config = require('./config');
 const { dedupCheck, loadExistingCases } = require('./dedup-check');
 
-const WORKSPACE_DIR = '/root/.openclaw/workspace/openclaw-usecases';
-const JSON_DIR = path.join(WORKSPACE_DIR, 'cases-json');
-const SKILLS_DIR = path.join(WORKSPACE_DIR, 'skills');
-const LOG_FILE = '/var/log/openclaw-dedup.log';
+const LOG_FILE = config.LOGS.DEDUP;
 
 function log(message) {
   const timestamp = new Date().toISOString();
@@ -25,33 +23,42 @@ function log(message) {
  */
 function loadAllCaseFiles() {
   const caseFiles = [];
+  const rawDir = config.DIRECTORIES.RAW;
   
-  if (!fs.existsSync(JSON_DIR)) {
+  if (!fs.existsSync(rawDir)) {
     return caseFiles;
   }
   
-  const dateDirs = fs.readdirSync(JSON_DIR);
+  const dateDirs = fs.readdirSync(rawDir);
   
   for (const dateDir of dateDirs) {
-    const datePath = path.join(JSON_DIR, dateDir);
+    const datePath = path.join(rawDir, dateDir);
     if (!fs.statSync(datePath).isDirectory()) continue;
     
-    const files = fs.readdirSync(datePath);
+    const categories = fs.readdirSync(datePath);
     
-    for (const file of files) {
-      if (!file.endsWith('.json')) continue;
+    for (const category of categories) {
+      const categoryPath = path.join(datePath, category);
+      if (!fs.statSync(categoryPath).isDirectory()) continue;
       
-      const filePath = path.join(datePath, file);
-      try {
-        const content = fs.readFileSync(filePath, 'utf8');
-        const caseData = JSON.parse(content);
-        caseFiles.push({
-          path: filePath,
-          filename: file,
-          data: caseData
-        });
-      } catch (e) {
-        log(`⚠️  读取失败：${file} - ${e.message}`);
+      const files = fs.readdirSync(categoryPath);
+      
+      for (const file of files) {
+        if (!file.endsWith('.json')) continue;
+        
+        const filePath = path.join(categoryPath, file);
+        try {
+          const content = fs.readFileSync(filePath, 'utf8');
+          const caseData = JSON.parse(content);
+          caseFiles.push({
+            path: filePath,
+            filename: file,
+            category: category,
+            data: caseData
+          });
+        } catch (e) {
+          log(`⚠️  读取失败：${file} - ${e.message}`);
+        }
       }
     }
   }
@@ -69,7 +76,7 @@ function deleteCaseFiles(caseFile) {
   if (fs.existsSync(caseFile.path)) {
     fs.unlinkSync(caseFile.path);
     deleted.push(caseFile.path);
-    log(`  🗑️  已删除：${path.basename(caseFile.path)}`);
+    log(`  🗑️  已删除：${caseFile.filename}`);
   }
   
   // 删除对应的 Skill 文件
@@ -81,14 +88,22 @@ function deleteCaseFiles(caseFile) {
     const dateStr = `${date[1].substring(0,4)}-${date[1].substring(4,6)}-${date[1].substring(6,8)}`;
     const skillPattern = `技能-${dateStr}-${seqNum}-`;
     
-    if (fs.existsSync(SKILLS_DIR)) {
-      const skillFiles = fs.readdirSync(SKILLS_DIR);
-      for (const skillFile of skillFiles) {
-        if (skillFile.includes(skillPattern)) {
-          const skillPath = path.join(SKILLS_DIR, skillFile);
-          fs.unlinkSync(skillPath);
-          deleted.push(skillPath);
-          log(`  🗑️  已删除：${skillFile}`);
+    const skillsDir = config.DIRECTORIES.SKILLS;
+    if (fs.existsSync(skillsDir)) {
+      // 遍历所有分类目录
+      const categories = fs.readdirSync(skillsDir);
+      for (const category of categories) {
+        const categoryPath = path.join(skillsDir, category);
+        if (!fs.statSync(categoryPath).isDirectory()) continue;
+        
+        const skillFiles = fs.readdirSync(categoryPath);
+        for (const skillFile of skillFiles) {
+          if (skillFile.includes(skillPattern)) {
+            const skillPath = path.join(categoryPath, skillFile);
+            fs.unlinkSync(skillPath);
+            deleted.push(skillPath);
+            log(`  🗑️  已删除 Skill: ${skillFile}`);
+          }
         }
       }
     }
