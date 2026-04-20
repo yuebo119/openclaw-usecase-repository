@@ -69,13 +69,23 @@ function extractSkillsFromText(text) {
 // 生成 Skill ID
 const skillId = caseData.id.replace('case-', 'skill-');
 
+// 生成一句话用途说明
+const usageSummary = generateUsageSummary(caseData);
+
 // 生成 Markdown 格式的 Skill
 const markdown = `# ${caseData.title}
 
 > **Skill ID**: \`${skillId}\`  
+> **用途**: ${usageSummary}  
 > **难度**: ${translateDifficulty(caseData.difficulty)}  
 > **分类**: ${caseData.category.join(' / ')}  
 > **版本**: 1.0.0
+
+---
+
+## 💡 一句话说明
+
+${usageSummary}
 
 ---
 
@@ -176,8 +186,37 @@ const outputDir = path.join(workspaceDir, 'skills');
 // 确保目录存在
 fs.mkdirSync(outputDir, { recursive: true });
 
-const outputName = `${skillId}.md`;
+// 生成详细文件名：skill-日期 - 序号 - 用途描述.md
+const shortDesc = generateShortDescription(caseData.title, caseData.problem);
+const outputName = `${skillId}-${shortDesc}.md`;
 const outputPath = path.join(outputDir, outputName);
+
+// 生成一句话用途描述
+function generateShortDescription(title, problem) {
+  // 从标题或问题中提取关键词
+  const keywords = {
+    '内容机构': 'content-automation',
+    '自动化工作流': 'workflow-auto',
+    '投资者': 'investor-dashboard',
+    '仪表盘': 'dashboard-monitor',
+    'GitHub': 'github-trending',
+    '自动化': 'automation',
+    '监控': 'monitoring',
+    '报告': 'reporting',
+    '收集': 'collection'
+  };
+  
+  const text = (title + ' ' + problem).toLowerCase();
+  
+  for (const [key, value] of Object.entries(keywords)) {
+    if (text.includes(key.toLowerCase())) {
+      return value;
+    }
+  }
+  
+  // 默认使用标题前 20 个字符
+  return title.substring(0, 20).replace(/[^a-zA-Z0-9\u4e00-\u9fa5]/g, '-');
+}
 
 fs.writeFileSync(outputPath, markdown, 'utf8');
 
@@ -225,4 +264,29 @@ function getEnvVars(integration) {
     'Grafana/Dashboard': []
   };
   return envMap[integration] || ['TODO'];
+}
+
+// 生成一句话用途说明
+function generateUsageSummary(caseData) {
+  const workflow = caseData.workflow || {};
+  const trigger = workflow.trigger || '触发';
+  const output = workflow.output || '输出结果';
+  
+  // 从工作流生成用途说明
+  const summaries = {
+    '内容机构': '通过定时任务自动监控竞争对手博客，生成 SEO 优化文章，节省 4-6 小时/篇',
+    '投资者': '自动跟踪投资组合表现，检测价格异常波动，生成每日报告并发送警报',
+    'GitHub': '定时收集 GitHub Trending 项目，分析技术趋势，推送热门项目报告',
+    '自动化': '自动化执行重复性任务，减少人工干预，提高工作效率'
+  };
+  
+  const title = caseData.title;
+  for (const [key, summary] of Object.entries(summaries)) {
+    if (title.includes(key)) {
+      return summary;
+    }
+  }
+  
+  // 默认格式：通过 [触发条件]，实现 [输出结果]
+  return `通过${trigger.replace(/\(.*\)/, '')}，实现${output}`;
 }
