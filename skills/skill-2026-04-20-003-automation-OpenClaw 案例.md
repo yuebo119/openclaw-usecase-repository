@@ -1,6 +1,6 @@
-# OpenClaw Full Tutorial for Beginners (Step by Step | One-Click Setup)
+# OpenClaw use cases: 25 ways to automate work and life - Hostinger
 
-> **Skill ID**: `skill-20260420-010`  
+> **Skill ID**: `skill-20260420-003`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,13 +16,20 @@
 
 ## 📋 简介
 
-build intelligent workflows without needing advanced coding skills. In simple terms: It’s a way to create your own AI assistant that can actually do things — not just chat. 👉 What you’ll learn in this OpenClaw tutorial: ✅ How OpenClaw works (explained simply) ✅ How to install OpenClaw step-by-step ✅ How to use the one-click setup ✅ How to create your first AI agent ✅ How to connect tools and automate tasks ✅ Beginner tips to avoid common mistakes 🚀 Why this OpenClaw guide is different Most Ope...
+People use OpenClaw to handle everyday admin, support developer workflows, and manage long-running jobs that would otherwise need manual checks.
+
+OpenClaw can run on a personal device, such as a desktop or Mac mini, but that means keeping the machine powered on and connected to the internet.
+
+For 24/7 reliability, like scheduled morning briefs, continuous monitoring, or automations that run while you sleep, hosting it on a server makes more sense.
+
+Running OpenClaw on your own server gives you f...
 
 ---
 
 ## 🛠️ 所需技能
 
 - `cron`
+- `api_integration`
 
 ---
 
@@ -59,6 +66,7 @@ build intelligent workflows without needing advanced coding skills. In simple te
 ### 所需工具
 
 - `cron`
+- `api_integration`
 
 ### 环境变量
 
@@ -81,13 +89,13 @@ build intelligent workflows without needing advanced coding skills. In simple te
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-010
+openclaw skills run skill-20260420-003
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw Full Tutorial for Beginners (Step by Step | One-Click Setup)" --schedule "0 */6 * * *" --skill "skill-20260420-010"
+openclaw cron add --name "OpenClaw use cases: 25 ways to automate work and life - Hostinger" --schedule "0 */6 * * *" --skill "skill-20260420-003"
 ```
 
 ---
@@ -95,8 +103,8 @@ openclaw cron add --name "OpenClaw Full Tutorial for Beginners (Step by Step | O
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.youtube.com/watch?v=HNAv85MfGUI
-- **生成时间**: 2026-04-20T11:53:55.567Z
+- **原文链接**: https://www.hostinger.com/tutorials/openclaw-use-cases
+- **生成时间**: 2026-04-20T11:54:48.965Z
 
 ---
 

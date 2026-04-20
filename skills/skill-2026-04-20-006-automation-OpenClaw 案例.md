@@ -1,6 +1,6 @@
-# OpenClaw Automation Tools - Process Design and Execution Tools - Tencent Cloud
+# OpenClaw Automation Best Practices-Process Design and Efficiency Improvement - Tencent Cloud
 
-> **Skill ID**: `skill-20260420-002`  
+> **Skill ID**: `skill-20260420-006`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,19 +16,15 @@
 
 ## 📋 简介
 
-```
-workflow: customer_onboardingtriggers: -event: new_signupsteps: -name: validate_emailtype: ruleaction: check_email_deliverabilityon_fail: send_verification_email -name: classify_customertype: aiprompt:"Based on this signup data, classify the customer as: enterprise, smb, or individual" -name: route_to_teamtype: switchinput:classify_customer.outputcases:enterprise: assign_to_enterprise_salessmb: assign_to_smb_teamindividual: send_self_serve_onboarding
-```
+OpenClaw (often deployed as Clawdbot) is a pragmatic way to build those workflows: you combine skills, triggers, and policies so that routine operations can run consistently, while humans stay in control of approvals and exceptions. When you want a clean cloud footprint, deploying on Tencent Cloud Lighthouse keeps the setup simple, high performance, and cost-effective. If you want to start fast, the Tencent Cloud Lighthouse Special Offer landing page is a good place to begin.
 
-Notice how rule-based steps (email v...
+## OpenClaw Automa...
 
 ---
 
 ## 🛠️ 所需技能
 
 - `file_ops`
-- `cron`
-- `api_integration`
 
 ---
 
@@ -65,8 +61,6 @@ Notice how rule-based steps (email v...
 ### 所需工具
 
 - `file_ops`
-- `cron`
-- `api_integration`
 
 ### 环境变量
 
@@ -89,13 +83,13 @@ Notice how rule-based steps (email v...
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-002
+openclaw skills run skill-20260420-006
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw Automation Tools - Process Design and Execution Tools - Tencent Cloud" --schedule "0 */6 * * *" --skill "skill-20260420-002"
+openclaw cron add --name "OpenClaw Automation Best Practices-Process Design and Efficiency Improvement - Tencent Cloud" --schedule "0 */6 * * *" --skill "skill-20260420-006"
 ```
 
 ---
@@ -103,8 +97,8 @@ openclaw cron add --name "OpenClaw Automation Tools - Process Design and Executi
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.tencentcloud.com/techpedia/140762
-- **生成时间**: 2026-04-20T11:53:54.984Z
+- **原文链接**: https://www.tencentcloud.com/techpedia/140636
+- **生成时间**: 2026-04-20T11:54:49.178Z
 
 ---
 

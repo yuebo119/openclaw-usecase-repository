@@ -117,7 +117,7 @@ openclaw cron add --name "投资者仪表盘自动化" --schedule "0 */6 * * *" 
 
 - **案例来源**: Tencent Cloud
 - **原文链接**: https://www.tencentcloud.com/techpedia/140889
-- **生成时间**: 2026-04-20T11:52:42.156Z
+- **生成时间**: 2026-04-20T11:55:09.158Z
 
 ---
 

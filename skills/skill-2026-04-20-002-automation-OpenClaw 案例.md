@@ -1,6 +1,6 @@
-# OpenClaw Workflow and Automation - The Developer Guide
+# OpenClaw Automation Tools - Process Design and Execution Tools - Tencent Cloud
 
-> **Skill ID**: `skill-20260420-001`  
+> **Skill ID**: `skill-20260420-002`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -17,13 +17,18 @@
 ## 📋 简介
 
 ```
-   openclaw cron add \ --name "Daily AI digest from Gmail label" \ --session isolated \ --cron "0 10   " \ --tz "Asia/Kolkata" \ --message 'Using gog with account "your-email-id", check Gmail label "AI digest" for emails from the last 24 hours. Extract the most important AI updates/news, deduplicate repeated stories, and send a concise WhatsApp digest with: (1) top updates as bullets, (2) why each matters in one line, and (3) links/sources when available. If no relevant emails are found, say...
+workflow: customer_onboardingtriggers: -event: new_signupsteps: -name: validate_emailtype: ruleaction: check_email_deliverabilityon_fail: send_verification_email -name: classify_customertype: aiprompt:"Based on this signup data, classify the customer as: enterprise, smb, or individual" -name: route_to_teamtype: switchinput:classify_customer.outputcases:enterprise: assign_to_enterprise_salessmb: assign_to_smb_teamindividual: send_self_serve_onboarding
+```
+
+Notice how rule-based steps (email v...
 
 ---
 
 ## 🛠️ 所需技能
 
+- `file_ops`
 - `cron`
+- `api_integration`
 
 ---
 
@@ -59,7 +64,9 @@
 
 ### 所需工具
 
+- `file_ops`
 - `cron`
+- `api_integration`
 
 ### 环境变量
 
@@ -82,13 +89,13 @@
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-001
+openclaw skills run skill-20260420-002
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw Workflow and Automation - The Developer Guide" --schedule "0 */6 * * *" --skill "skill-20260420-001"
+openclaw cron add --name "OpenClaw Automation Tools - Process Design and Execution Tools - Tencent Cloud" --schedule "0 */6 * * *" --skill "skill-20260420-002"
 ```
 
 ---
@@ -96,8 +103,8 @@ openclaw cron add --name "OpenClaw Workflow and Automation - The Developer Guide
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.devshorts.in/p/openclaw-workflow-and-automation
-- **生成时间**: 2026-04-20T11:53:54.891Z
+- **原文链接**: https://www.tencentcloud.com/techpedia/140762
+- **生成时间**: 2026-04-20T11:54:48.893Z
 
 ---
 

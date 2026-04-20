@@ -1,6 +1,6 @@
-# Showcase — What People Are Building with OpenClaw
+# OpenClaw Full Tutorial for Beginners (Step by Step | One-Click Setup)
 
-> **Skill ID**: `skill-20260420-009`  
+> **Skill ID**: `skill-20260420-010`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,7 +16,7 @@
 
 ## 📋 简介
 
-astuyve @astuyve⚡ Automation ❤️ 16 It may not be AGI, but OpenClaw is automatically negotiating with multiple dealers for my next car via browser, email, and imessage and it's amazing. Image 96: Screenshot View on X →Image 97: dreetje @dreetje⚡ Automation ❤️ 119 My @openclaw has managed to order things itself from @albertheijn (our supermarket) when our cleaning lady sent me a message. It logged in using shared credentials in my @1Password, then waited for the old style text message MFA (read it...
+build intelligent workflows without needing advanced coding skills. In simple terms: It’s a way to create your own AI assistant that can actually do things — not just chat. 👉 What you’ll learn in this OpenClaw tutorial: ✅ How OpenClaw works (explained simply) ✅ How to install OpenClaw step-by-step ✅ How to use the one-click setup ✅ How to create your first AI agent ✅ How to connect tools and automate tasks ✅ Beginner tips to avoid common mistakes 🚀 Why this OpenClaw guide is different Most Ope...
 
 ---
 
@@ -81,13 +81,13 @@ astuyve @astuyve⚡ Automation ❤️ 16 It may not be AGI, but OpenClaw is auto
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-009
+openclaw skills run skill-20260420-010
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "Showcase — What People Are Building with OpenClaw" --schedule "0 */6 * * *" --skill "skill-20260420-009"
+openclaw cron add --name "OpenClaw Full Tutorial for Beginners (Step by Step | One-Click Setup)" --schedule "0 */6 * * *" --skill "skill-20260420-010"
 ```
 
 ---
@@ -95,8 +95,8 @@ openclaw cron add --name "Showcase — What People Are Building with OpenClaw" -
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://openclaw.ai/showcase
-- **生成时间**: 2026-04-20T11:53:55.494Z
+- **原文链接**: https://www.youtube.com/watch?v=HNAv85MfGUI
+- **生成时间**: 2026-04-20T11:54:49.472Z
 
 ---
 

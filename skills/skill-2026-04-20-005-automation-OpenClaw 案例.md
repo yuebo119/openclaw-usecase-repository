@@ -1,6 +1,6 @@
-# Meet OpenClaw - A Revolution in AI Workflow Automation - VPSBG.eu
+# ClawFlows: 111 Prebuilt AI Workflows for Your OpenClaw Agent
 
-> **Skill ID**: `skill-20260420-004`  
+> **Skill ID**: `skill-20260420-005`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,14 +16,18 @@
 
 ## 📋 简介
 
-Unlike other automation platforms like n8n and Zapier, OpenClaw takes into account additional factors like context and task priority, and then makes decisions based on them. This allows it to always be ready for anything you throw at it. This versatility means that it can combine multiple different actions or tasks into one flow that it can execute and learn from should it fail. This, ultimately, means that complex multi-staged tasks like research, writing, editing, notification, delegation and ...
+### Smart Home Automation Workflows (Category 2)
+
+Consider a typical arrival home: you unlock the door and want the lights on, the thermostat adjusted, and music playing. The Arrival Routine workflow handles this by detecting phone geofence entry and triggering all three actions. The Departure Routine reverses the process, locking doors, arming security, and switching to an energy-saving HVAC mode.
+
+Energy Optimization runs on an hourly schedule, analyzing current utility rates and solar panel o...
 
 ---
 
 ## 🛠️ 所需技能
 
-- `web_search`
-- `api_integration`
+- `file_ops`
+- `cron`
 
 ---
 
@@ -59,8 +63,8 @@ Unlike other automation platforms like n8n and Zapier, OpenClaw takes into accou
 
 ### 所需工具
 
-- `web_search`
-- `api_integration`
+- `file_ops`
+- `cron`
 
 ### 环境变量
 
@@ -83,13 +87,13 @@ Unlike other automation platforms like n8n and Zapier, OpenClaw takes into accou
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-004
+openclaw skills run skill-20260420-005
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "Meet OpenClaw - A Revolution in AI Workflow Automation - VPSBG.eu" --schedule "0 */6 * * *" --skill "skill-20260420-004"
+openclaw cron add --name "ClawFlows: 111 Prebuilt AI Workflows for Your OpenClaw Agent" --schedule "0 */6 * * *" --skill "skill-20260420-005"
 ```
 
 ---
@@ -97,8 +101,8 @@ openclaw cron add --name "Meet OpenClaw - A Revolution in AI Workflow Automation
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.vpsbg.eu/blog/meet-openclaw-a-revolution-in-ai-workflow-automation
-- **生成时间**: 2026-04-20T11:53:55.145Z
+- **原文链接**: https://www.sitepoint.com/clawflows-prebuilt-ai-workflows-openclaw/
+- **生成时间**: 2026-04-20T11:54:49.109Z
 
 ---
 

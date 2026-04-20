@@ -1,6 +1,6 @@
-# ClawFlows: 111 Prebuilt AI Workflows for Your OpenClaw Agent
+# OpenClaw Automations: Complete Guide for 2026
 
-> **Skill ID**: `skill-20260420-005`  
+> **Skill ID**: `skill-20260420-008`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,18 +16,15 @@
 
 ## 📋 简介
 
-### Smart Home Automation Workflows (Category 2)
-
-Consider a typical arrival home: you unlock the door and want the lights on, the thermostat adjusted, and music playing. The Arrival Routine workflow handles this by detecting phone geofence entry and triggering all three actions. The Departure Routine reverses the process, locking doors, arming security, and switching to an energy-saving HVAC mode.
-
-Energy Optimization runs on an hourly schedule, analyzing current utility rates and solar panel o...
+Our approach addresses the “setup complexity” often found in open-source tools by offering a professional, no-code environment. We’ve seen users save up to 99.7% of their time by automating geospatial analysis that previously took hours of manual annotation. By integrating these specific visual capabilities into your broader automation strategy, you can move beyond simple browser tasks and start gathering actionable insights from your physical assets with the same speed and precision as a high-e...
 
 ---
 
 ## 🛠️ 所需技能
 
 - `file_ops`
-- `cron`
+- `api_integration`
+- `data_analysis`
 
 ---
 
@@ -64,7 +61,8 @@ Energy Optimization runs on an hourly schedule, analyzing current utility rates 
 ### 所需工具
 
 - `file_ops`
-- `cron`
+- `api_integration`
+- `data_analysis`
 
 ### 环境变量
 
@@ -87,13 +85,13 @@ Energy Optimization runs on an hourly schedule, analyzing current utility rates 
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-005
+openclaw skills run skill-20260420-008
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "ClawFlows: 111 Prebuilt AI Workflows for Your OpenClaw Agent" --schedule "0 */6 * * *" --skill "skill-20260420-005"
+openclaw cron add --name "OpenClaw Automations: Complete Guide for 2026" --schedule "0 */6 * * *" --skill "skill-20260420-008"
 ```
 
 ---
@@ -101,8 +99,8 @@ openclaw cron add --name "ClawFlows: 111 Prebuilt AI Workflows for Your OpenClaw
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.sitepoint.com/clawflows-prebuilt-ai-workflows-openclaw/
-- **生成时间**: 2026-04-20T11:53:55.214Z
+- **原文链接**: https://flypix.ai/openclaw-automations-save-time/
+- **生成时间**: 2026-04-20T11:54:49.318Z
 
 ---
 

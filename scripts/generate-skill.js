@@ -186,9 +186,13 @@ const outputDir = path.join(workspaceDir, 'skills');
 // 确保目录存在
 fs.mkdirSync(outputDir, { recursive: true });
 
-// 生成详细文件名：skill-日期 - 序号 - 用途描述.md
-const shortDesc = generateShortDescription(caseData.title, caseData.problem);
-const outputName = `${skillId}-${shortDesc}.md`;
+// 生成详细文件名：skill-日期 - 序号 - 分类 - 中文用途描述.md
+const date = caseData.id.match(/case-(\d{8})-(\d+)/);
+const dateStr = date ? `${date[1].substring(0,4)}-${date[1].substring(4,6)}-${date[1].substring(6,8)}` : new Date().toISOString().split('T')[0];
+const seqNum = date ? date[2] : '001';
+const category = caseData.category[0] || 'automation';
+const chineseDesc = generateChineseDescription(caseData.title, caseData.category);
+const outputName = `skill-${dateStr}-${seqNum}-${category}-${chineseDesc}.md`;
 const outputPath = path.join(outputDir, outputName);
 
 // 生成一句话用途描述
@@ -264,6 +268,41 @@ function getEnvVars(integration) {
     'Grafana/Dashboard': []
   };
   return envMap[integration] || ['TODO'];
+}
+
+// 生成中文描述（用于文件名）
+function generateChineseDescription(title, categories) {
+  const categoryMap = {
+    'marketing': '营销',
+    'content-creation': '内容创作',
+    'automation': '自动化',
+    'finance': '金融',
+    'dashboard': '仪表盘',
+    'development': '开发',
+    'productivity': '效率'
+  };
+  
+  const titleMap = {
+    '内容机构': '内容机构工作流',
+    '投资者': '投资者监控',
+    '仪表盘': '数据监控',
+    'GitHub': 'GitHub 监控',
+    '自动化': '自动化任务',
+    'OpenClaw': 'OpenClaw 案例',
+    'Workflow': '工作流',
+    'Automation': '自动化'
+  };
+  
+  // 优先使用标题映射
+  for (const [key, value] of Object.entries(titleMap)) {
+    if (title.includes(key)) {
+      return value;
+    }
+  }
+  
+  // 否则使用分类
+  const catName = categories && categories[0] ? categoryMap[categories[0]] : '通用';
+  return catName + '案例';
 }
 
 // 生成一句话用途说明

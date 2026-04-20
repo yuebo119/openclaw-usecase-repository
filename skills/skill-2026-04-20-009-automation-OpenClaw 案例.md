@@ -1,6 +1,6 @@
-# OpenClaw Automation Best Practices-Process Design and Efficiency Improvement - Tencent Cloud
+# Showcase — What People Are Building with OpenClaw
 
-> **Skill ID**: `skill-20260420-006`  
+> **Skill ID**: `skill-20260420-009`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,15 +16,13 @@
 
 ## 📋 简介
 
-OpenClaw (often deployed as Clawdbot) is a pragmatic way to build those workflows: you combine skills, triggers, and policies so that routine operations can run consistently, while humans stay in control of approvals and exceptions. When you want a clean cloud footprint, deploying on Tencent Cloud Lighthouse keeps the setup simple, high performance, and cost-effective. If you want to start fast, the Tencent Cloud Lighthouse Special Offer landing page is a good place to begin.
-
-## OpenClaw Automa...
+astuyve @astuyve⚡ Automation ❤️ 16 It may not be AGI, but OpenClaw is automatically negotiating with multiple dealers for my next car via browser, email, and imessage and it's amazing. Image 96: Screenshot View on X →Image 97: dreetje @dreetje⚡ Automation ❤️ 119 My @openclaw has managed to order things itself from @albertheijn (our supermarket) when our cleaning lady sent me a message. It logged in using shared credentials in my @1Password, then waited for the old style text message MFA (read it...
 
 ---
 
 ## 🛠️ 所需技能
 
-- `file_ops`
+- `cron`
 
 ---
 
@@ -60,7 +58,7 @@ OpenClaw (often deployed as Clawdbot) is a pragmatic way to build those workflow
 
 ### 所需工具
 
-- `file_ops`
+- `cron`
 
 ### 环境变量
 
@@ -83,13 +81,13 @@ OpenClaw (often deployed as Clawdbot) is a pragmatic way to build those workflow
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-006
+openclaw skills run skill-20260420-009
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw Automation Best Practices-Process Design and Efficiency Improvement - Tencent Cloud" --schedule "0 */6 * * *" --skill "skill-20260420-006"
+openclaw cron add --name "Showcase — What People Are Building with OpenClaw" --schedule "0 */6 * * *" --skill "skill-20260420-009"
 ```
 
 ---
@@ -97,8 +95,8 @@ openclaw cron add --name "OpenClaw Automation Best Practices-Process Design and 
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.tencentcloud.com/techpedia/140636
-- **生成时间**: 2026-04-20T11:53:55.275Z
+- **原文链接**: https://openclaw.ai/showcase
+- **生成时间**: 2026-04-20T11:54:49.391Z
 
 ---
 
