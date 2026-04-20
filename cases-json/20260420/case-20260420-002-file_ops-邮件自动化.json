@@ -1,5 +1,6 @@
 {
   "id": "case-20260420-002",
+  "filename": "case-20260420-002-file_ops-邮件自动化",
   "title": "OpenClaw Automation Tools - Process Design and Execution Tools - Tencent Cloud",
   "category": [
     "automation",
@@ -9,7 +10,7 @@
   "source": {
     "url": "https://www.tencentcloud.com/techpedia/140762",
     "platform": "Tavily Search",
-    "collectedAt": "2026-04-20T11:53:54.822Z"
+    "collectedAt": "2026-04-20T12:13:21.343Z"
   },
   "problem": "```\nworkflow: customer_onboardingtriggers: -event: new_signupsteps: -name: validate_emailtype: ruleaction: check_email_deliverabilityon_fail: send_verification_email -name: classify_customertype: aiprompt:\"Based on this signup data, classify the customer as: enterprise, smb, or individual\" -name: route_to_teamtype: switchinput:classify_customer.outputcases:enterprise: assign_to_enterprise_salessmb: assign_to_smb_teamindividual: send_self_serve_onboarding\n```\n\nNotice how rule-based steps (email v...",
   "workflow": {
@@ -33,8 +34,9 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T11:53:54.822Z",
-    "source": "tavily"
+    "collectedAt": "2026-04-20T12:13:21.343Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化"
   },
   "status": "inbox"
 }

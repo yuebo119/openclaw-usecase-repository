@@ -1,5 +1,6 @@
 {
   "id": "case-20260420-009",
+  "filename": "case-20260420-009-cron-邮件自动化",
   "title": "Showcase — What People Are Building with OpenClaw",
   "category": [
     "automation",
@@ -9,7 +10,7 @@
   "source": {
     "url": "https://openclaw.ai/showcase",
     "platform": "Tavily Search",
-    "collectedAt": "2026-04-20T11:53:54.827Z"
+    "collectedAt": "2026-04-20T12:13:21.348Z"
   },
   "problem": "astuyve @astuyve⚡ Automation ❤️ 16 It may not be AGI, but OpenClaw is automatically negotiating with multiple dealers for my next car via browser, email, and imessage and it's amazing. Image 96: Screenshot View on X →Image 97: dreetje @dreetje⚡ Automation ❤️ 119 My @openclaw has managed to order things itself from @albertheijn (our supermarket) when our cleaning lady sent me a message. It logged in using shared credentials in my @1Password, then waited for the old style text message MFA (read it...",
   "workflow": {
@@ -31,8 +32,9 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T11:53:54.827Z",
-    "source": "tavily"
+    "collectedAt": "2026-04-20T12:13:21.348Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化"
   },
   "status": "inbox"
 }

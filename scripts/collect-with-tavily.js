@@ -63,6 +63,32 @@ function tavilySearch(query) {
   });
 }
 
+// 生成中文描述（用于文件名）
+function generateChineseFilename(title, content) {
+  const fullText = (title + ' ' + content).toLowerCase();
+  
+  const keywordMap = {
+    '数据收集': ['收集', '采集', 'extract', 'scrape'],
+    '邮件自动化': ['gmail', 'email', '邮件', 'smtp'],
+    '定时任务': ['cron', '定时', 'schedule', '每天'],
+    'API 集成': ['api', '接口', 'integration'],
+    '代码自动化': ['代码', 'code', 'commit', 'git'],
+    '报告生成': ['报告', 'report', 'summary', 'digest'],
+    '消息推送': ['telegram', 'discord', 'slack', 'whatsapp'],
+    '自动化工作流': ['自动化', 'workflow', 'auto']
+  };
+  
+  for (const [desc, keywords] of Object.entries(keywordMap)) {
+    for (const keyword of keywords) {
+      if (fullText.includes(keyword)) {
+        return desc;
+      }
+    }
+  }
+  
+  return '自动化案例';
+}
+
 // 从搜索结果生成案例
 function generateCaseFromResult(result, index) {
   const date = new Date().toISOString().split('T')[0].replace(/-/g, '');
@@ -71,8 +97,14 @@ function generateCaseFromResult(result, index) {
   // 从内容中提取技能
   const extractedSkills = extractSkills(result.content + result.title);
   
+  // 生成中文描述用于文件名
+  const chineseDesc = generateChineseFilename(result.title, result.content);
+  const category = extractedSkills.skills[0] || 'automation';
+  const chineseFilename = `case-${date}-${String(index + 1).padStart(3, '0')}-${category}-${chineseDesc}`;
+  
   return {
     id: caseId,
+    filename: chineseFilename,
     title: result.title,
     category: ['automation', 'productivity'],
     difficulty: 'intermediate',
@@ -100,7 +132,8 @@ function generateCaseFromResult(result, index) {
     metadata: {
       nodeId: 'node-01',
       collectedAt: new Date().toISOString(),
-      source: 'tavily'
+      source: 'tavily',
+      chineseDesc: chineseDesc
     },
     status: 'inbox'
   };
@@ -155,7 +188,7 @@ function extractSkills(text) {
     let caseCount = 0;
     for (const result of searchResult.results || []) {
       const caseData = generateCaseFromResult(result, caseCount);
-      const caseFile = path.join(dateDir, `${caseData.id}.json`);
+      const caseFile = path.join(dateDir, `${caseData.filename}.json`);
       
       fs.writeFileSync(caseFile, JSON.stringify(caseData, null, 2), 'utf8');
       console.log(`✓ 案例已保存：${caseFile}`);

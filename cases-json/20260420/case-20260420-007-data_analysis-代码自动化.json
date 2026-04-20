@@ -1,5 +1,6 @@
 {
   "id": "case-20260420-007",
+  "filename": "case-20260420-007-data_analysis-代码自动化",
   "title": "OpenClaw Business Use Cases: Workflow Examples and Enterprise Risks | Codebridge",
   "category": [
     "automation",
@@ -9,7 +10,7 @@
   "source": {
     "url": "https://www.codebridge.tech/articles/openclaw-case-studies-for-business-workflows-that-show-where-autonomous-ai-creates-value-and-where-enterprises-need-guardrails",
     "platform": "Tavily Search",
-    "collectedAt": "2026-04-20T11:53:54.826Z"
+    "collectedAt": "2026-04-20T12:13:21.347Z"
   },
   "problem": "Official implementations — documented in OpenClaw’s showcase or core materials\n Community workflows — real-world usage patterns reported by developers and advanced users\n Market signals — independent reporting that shows broader adoption and industry movement\n\nThese case studies should be read as documented implementations and emerging workflow patterns, not as universal proof of enterprise maturity. They are most valuable as signals of where OpenClaw-style systems are beginning to create practi...",
   "workflow": {
@@ -31,8 +32,9 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T11:53:54.826Z",
-    "source": "tavily"
+    "collectedAt": "2026-04-20T12:13:21.347Z",
+    "source": "tavily",
+    "chineseDesc": "代码自动化"
   },
   "status": "inbox"
 }

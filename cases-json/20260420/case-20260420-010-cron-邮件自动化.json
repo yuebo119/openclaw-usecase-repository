@@ -1,5 +1,6 @@
 {
   "id": "case-20260420-010",
+  "filename": "case-20260420-010-cron-邮件自动化",
   "title": "OpenClaw Full Tutorial for Beginners (Step by Step | One-Click Setup)",
   "category": [
     "automation",
@@ -9,7 +10,7 @@
   "source": {
     "url": "https://www.youtube.com/watch?v=HNAv85MfGUI",
     "platform": "Tavily Search",
-    "collectedAt": "2026-04-20T11:53:54.828Z"
+    "collectedAt": "2026-04-20T12:13:21.348Z"
   },
   "problem": "build intelligent workflows without needing advanced coding skills. In simple terms: It’s a way to create your own AI assistant that can actually do things — not just chat. 👉 What you’ll learn in this OpenClaw tutorial: ✅ How OpenClaw works (explained simply) ✅ How to install OpenClaw step-by-step ✅ How to use the one-click setup ✅ How to create your first AI agent ✅ How to connect tools and automate tasks ✅ Beginner tips to avoid common mistakes 🚀 Why this OpenClaw guide is different Most Ope...",
   "workflow": {
@@ -31,8 +32,9 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T11:53:54.828Z",
-    "source": "tavily"
+    "collectedAt": "2026-04-20T12:13:21.348Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化"
   },
   "status": "inbox"
 }

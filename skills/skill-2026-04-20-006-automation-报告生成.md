@@ -1,6 +1,6 @@
-# OpenClaw Full Tutorial for Beginners (Step by Step | One-Click Setup)
+# OpenClaw Automation Best Practices-Process Design and Efficiency Improvement - Tencent Cloud
 
-> **Skill ID**: `skill-20260420-010`  
+> **Skill ID**: `skill-20260420-006`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,13 +16,15 @@
 
 ## 📋 简介
 
-build intelligent workflows without needing advanced coding skills. In simple terms: It’s a way to create your own AI assistant that can actually do things — not just chat. 👉 What you’ll learn in this OpenClaw tutorial: ✅ How OpenClaw works (explained simply) ✅ How to install OpenClaw step-by-step ✅ How to use the one-click setup ✅ How to create your first AI agent ✅ How to connect tools and automate tasks ✅ Beginner tips to avoid common mistakes 🚀 Why this OpenClaw guide is different Most Ope...
+OpenClaw (often deployed as Clawdbot) is a pragmatic way to build those workflows: you combine skills, triggers, and policies so that routine operations can run consistently, while humans stay in control of approvals and exceptions. When you want a clean cloud footprint, deploying on Tencent Cloud Lighthouse keeps the setup simple, high performance, and cost-effective. If you want to start fast, the Tencent Cloud Lighthouse Special Offer landing page is a good place to begin.
+
+## OpenClaw Automa...
 
 ---
 
 ## 🛠️ 所需技能
 
-- `cron`
+- `file_ops`
 
 ---
 
@@ -58,7 +60,7 @@ build intelligent workflows without needing advanced coding skills. In simple te
 
 ### 所需工具
 
-- `cron`
+- `file_ops`
 
 ### 环境变量
 
@@ -81,13 +83,13 @@ build intelligent workflows without needing advanced coding skills. In simple te
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-010
+openclaw skills run skill-20260420-006
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw Full Tutorial for Beginners (Step by Step | One-Click Setup)" --schedule "0 */6 * * *" --skill "skill-20260420-010"
+openclaw cron add --name "OpenClaw Automation Best Practices-Process Design and Efficiency Improvement - Tencent Cloud" --schedule "0 */6 * * *" --skill "skill-20260420-006"
 ```
 
 ---
@@ -95,8 +97,8 @@ openclaw cron add --name "OpenClaw Full Tutorial for Beginners (Step by Step | O
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.youtube.com/watch?v=HNAv85MfGUI
-- **生成时间**: 2026-04-20T12:10:34.989Z
+- **原文链接**: https://www.tencentcloud.com/techpedia/140636
+- **生成时间**: 2026-04-20T12:13:51.169Z
 
 ---
 

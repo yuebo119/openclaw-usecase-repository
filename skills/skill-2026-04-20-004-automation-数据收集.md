@@ -1,6 +1,6 @@
-# Is OpenClaw Worth the Hype? I Spent 10 Days Finding Out
+# OpenClaw Automation Best Practices-Process Design and ...
 
-> **Skill ID**: `skill-20260420-009`  
+> **Skill ID**: `skill-20260420-004`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,22 +16,17 @@
 
 ## 📋 简介
 
-I’m sure you’ve understood by now this is no longer about automation. It’s more like having a Sauron’s eye watching your day 24/7. It knows the context and nudges you at the right moment.
+OpenClaw (often deployed as Clawdbot) is a pragmatic way to build those workflows: you combine skills, triggers, and policies so that routine operations can run consistently, while humans stay in control of approvals and exceptions. When you want a clean cloud footprint, deploying on Tencent Cloud Lighthouse keeps the setup simple, high performance, and cost-effective. If you want to start fast, the Tencent Cloud Lighthouse Special Offer landing page is a good place to begin.
 
-  
-
-So when I said OpenClaw isn’t just a Telegram wrapper, this is what I meant.
-
-But here’s the thing I kept coming back to: all of this power comes with a security trade-off. And most guides I found glossed right over it.
-
-So I spent the last week and a half figuring out the most secure way to actually set t...
+## OpenClaw Automa...
 
 ---
 
 ## 🛠️ 所需技能
 
-- `file_ops`
+- `web_fetch`
 - `cron`
+- `data_analysis`
 
 ---
 
@@ -67,8 +62,9 @@ So I spent the last week and a half figuring out the most secure way to actually
 
 ### 所需工具
 
-- `file_ops`
+- `web_fetch`
 - `cron`
+- `data_analysis`
 
 ### 环境变量
 
@@ -91,13 +87,13 @@ So I spent the last week and a half figuring out the most secure way to actually
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-009
+openclaw skills run skill-20260420-004
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "Is OpenClaw Worth the Hype? I Spent 10 Days Finding Out" --schedule "0 */6 * * *" --skill "skill-20260420-009"
+openclaw cron add --name "OpenClaw Automation Best Practices-Process Design and ..." --schedule "0 */6 * * *" --skill "skill-20260420-004"
 ```
 
 ---
@@ -105,8 +101,8 @@ openclaw cron add --name "Is OpenClaw Worth the Hype? I Spent 10 Days Finding Ou
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://aimaker.substack.com/p/openclaw-review-setup-guide
-- **生成时间**: 2026-04-20T12:13:51.586Z
+- **原文链接**: https://www.tencentcloud.com/techpedia/140636
+- **生成时间**: 2026-04-20T12:13:50.803Z
 
 ---
 

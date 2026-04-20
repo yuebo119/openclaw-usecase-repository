@@ -1,5 +1,6 @@
 {
   "id": "case-20260420-005",
+  "filename": "case-20260420-005-file_ops-邮件自动化",
   "title": "ClawFlows: 111 Prebuilt AI Workflows for Your OpenClaw Agent",
   "category": [
     "automation",
@@ -9,7 +10,7 @@
   "source": {
     "url": "https://www.sitepoint.com/clawflows-prebuilt-ai-workflows-openclaw/",
     "platform": "Tavily Search",
-    "collectedAt": "2026-04-20T11:53:54.824Z"
+    "collectedAt": "2026-04-20T12:13:21.345Z"
   },
   "problem": "### Smart Home Automation Workflows (Category 2)\n\nConsider a typical arrival home: you unlock the door and want the lights on, the thermostat adjusted, and music playing. The Arrival Routine workflow handles this by detecting phone geofence entry and triggering all three actions. The Departure Routine reverses the process, locking doors, arming security, and switching to an energy-saving HVAC mode.\n\nEnergy Optimization runs on an hourly schedule, analyzing current utility rates and solar panel o...",
   "workflow": {
@@ -32,8 +33,9 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T11:53:54.824Z",
-    "source": "tavily"
+    "collectedAt": "2026-04-20T12:13:21.345Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化"
   },
   "status": "inbox"
 }

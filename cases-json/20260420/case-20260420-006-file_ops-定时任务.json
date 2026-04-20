@@ -1,0 +1,41 @@
+{
+  "id": "case-20260420-006",
+  "filename": "case-20260420-006-file_ops-定时任务",
+  "title": "OpenClaw | The Open-Source Personal AI Assistant & Autonomous ...",
+  "category": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://open-claw.org/",
+    "platform": "Tavily Search",
+    "collectedAt": "2026-04-20T12:13:50.336Z"
+  },
+  "problem": "OpenClawOpenClaw\n\n## Works With Everything You Love\n\nOpenClaw is more than an assistant; it is a portal to a new reality where your AI has eyes and hands. It bridges the gap between 'what you can imagine' and 'what actually works' by gluing all the parts together into an incredible experience.\n\nOpenClaw remembers you and becomes uniquely yours. It knows your Obsidian notes, your WHOOP metrics, and your biomarker goals, allowing it to provide deeply personalized insights and long-term assistance ...",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "file_ops",
+    "cron"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T12:13:50.336Z",
+    "source": "tavily",
+    "chineseDesc": "定时任务"
+  },
+  "status": "inbox"
+}

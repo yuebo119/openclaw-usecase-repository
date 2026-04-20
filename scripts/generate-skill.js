@@ -187,11 +187,14 @@ const outputDir = path.join(workspaceDir, 'skills');
 fs.mkdirSync(outputDir, { recursive: true });
 
 // 生成详细文件名：skill-日期 - 序号 - 分类 - 中文用途描述.md
+// 如果 JSON 已经有 filename 字段，直接使用
 const date = caseData.id.match(/case-(\d{8})-(\d+)/);
 const dateStr = date ? `${date[1].substring(0,4)}-${date[1].substring(4,6)}-${date[1].substring(6,8)}` : new Date().toISOString().split('T')[0];
 const seqNum = date ? date[2] : '001';
 const category = caseData.category[0] || 'automation';
-const chineseDesc = generateChineseDescription(caseData);
+
+// 优先使用 JSON 中已存储的中文描述
+const chineseDesc = caseData.metadata?.chineseDesc || generateChineseDescription(caseData);
 const outputName = `skill-${dateStr}-${seqNum}-${category}-${chineseDesc}.md`;
 const outputPath = path.join(outputDir, outputName);
 

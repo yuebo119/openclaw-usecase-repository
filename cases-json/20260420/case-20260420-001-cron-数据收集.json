@@ -1,5 +1,6 @@
 {
   "id": "case-20260420-001",
+  "filename": "case-20260420-001-cron-数据收集",
   "title": "OpenClaw Workflow and Automation - The Developer Guide",
   "category": [
     "automation",
@@ -9,7 +10,7 @@
   "source": {
     "url": "https://www.devshorts.in/p/openclaw-workflow-and-automation",
     "platform": "Tavily Search",
-    "collectedAt": "2026-04-20T11:53:54.821Z"
+    "collectedAt": "2026-04-20T12:13:21.343Z"
   },
   "problem": "```\n   openclaw cron add \\ --name \"Daily AI digest from Gmail label\" \\ --session isolated \\ --cron \"0 10   \" \\ --tz \"Asia/Kolkata\" \\ --message 'Using gog with account \"your-email-id\", check Gmail label \"AI digest\" for emails from the last 24 hours. Extract the most important AI updates/news, deduplicate repeated stories, and send a concise WhatsApp digest with: (1) top updates as bullets, (2) why each matters in one line, and (3) links/sources when available. If no relevant emails are found, say...",
   "workflow": {
@@ -31,8 +32,9 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T11:53:54.821Z",
-    "source": "tavily"
+    "collectedAt": "2026-04-20T12:13:21.343Z",
+    "source": "tavily",
+    "chineseDesc": "数据收集"
   },
   "status": "inbox"
 }

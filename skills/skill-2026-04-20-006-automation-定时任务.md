@@ -1,6 +1,6 @@
-# Is OpenClaw Worth the Hype? I Spent 10 Days Finding Out
+# OpenClaw | The Open-Source Personal AI Assistant & Autonomous ...
 
-> **Skill ID**: `skill-20260420-009`  
+> **Skill ID**: `skill-20260420-006`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,15 +16,13 @@
 
 ## 📋 简介
 
-I’m sure you’ve understood by now this is no longer about automation. It’s more like having a Sauron’s eye watching your day 24/7. It knows the context and nudges you at the right moment.
+OpenClawOpenClaw
 
-  
+## Works With Everything You Love
 
-So when I said OpenClaw isn’t just a Telegram wrapper, this is what I meant.
+OpenClaw is more than an assistant; it is a portal to a new reality where your AI has eyes and hands. It bridges the gap between 'what you can imagine' and 'what actually works' by gluing all the parts together into an incredible experience.
 
-But here’s the thing I kept coming back to: all of this power comes with a security trade-off. And most guides I found glossed right over it.
-
-So I spent the last week and a half figuring out the most secure way to actually set t...
+OpenClaw remembers you and becomes uniquely yours. It knows your Obsidian notes, your WHOOP metrics, and your biomarker goals, allowing it to provide deeply personalized insights and long-term assistance ...
 
 ---
 
@@ -91,13 +89,13 @@ So I spent the last week and a half figuring out the most secure way to actually
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-009
+openclaw skills run skill-20260420-006
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "Is OpenClaw Worth the Hype? I Spent 10 Days Finding Out" --schedule "0 */6 * * *" --skill "skill-20260420-009"
+openclaw cron add --name "OpenClaw | The Open-Source Personal AI Assistant & Autonomous ..." --schedule "0 */6 * * *" --skill "skill-20260420-006"
 ```
 
 ---
@@ -105,8 +103,8 @@ openclaw cron add --name "Is OpenClaw Worth the Hype? I Spent 10 Days Finding Ou
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://aimaker.substack.com/p/openclaw-review-setup-guide
-- **生成时间**: 2026-04-20T12:13:51.586Z
+- **原文链接**: https://open-claw.org/
+- **生成时间**: 2026-04-20T12:13:51.098Z
 
 ---
 

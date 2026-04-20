@@ -1,5 +1,6 @@
 {
   "id": "case-20260420-008",
+  "filename": "case-20260420-008-file_ops-邮件自动化",
   "title": "OpenClaw Automations: Complete Guide for 2026",
   "category": [
     "automation",
@@ -9,7 +10,7 @@
   "source": {
     "url": "https://flypix.ai/openclaw-automations-save-time/",
     "platform": "Tavily Search",
-    "collectedAt": "2026-04-20T11:53:54.827Z"
+    "collectedAt": "2026-04-20T12:13:21.347Z"
   },
   "problem": "Our approach addresses the “setup complexity” often found in open-source tools by offering a professional, no-code environment. We’ve seen users save up to 99.7% of their time by automating geospatial analysis that previously took hours of manual annotation. By integrating these specific visual capabilities into your broader automation strategy, you can move beyond simple browser tasks and start gathering actionable insights from your physical assets with the same speed and precision as a high-e...",
   "workflow": {
@@ -33,8 +34,9 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T11:53:54.827Z",
-    "source": "tavily"
+    "collectedAt": "2026-04-20T12:13:21.347Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化"
   },
   "status": "inbox"
 }

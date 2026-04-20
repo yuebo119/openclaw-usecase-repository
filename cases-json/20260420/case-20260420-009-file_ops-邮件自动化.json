@@ -1,0 +1,41 @@
+{
+  "id": "case-20260420-009",
+  "filename": "case-20260420-009-file_ops-邮件自动化",
+  "title": "Is OpenClaw Worth the Hype? I Spent 10 Days Finding Out",
+  "category": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://aimaker.substack.com/p/openclaw-review-setup-guide",
+    "platform": "Tavily Search",
+    "collectedAt": "2026-04-20T12:13:50.338Z"
+  },
+  "problem": "I’m sure you’ve understood by now this is no longer about automation. It’s more like having a Sauron’s eye watching your day 24/7. It knows the context and nudges you at the right moment.\n\n  \n\nSo when I said OpenClaw isn’t just a Telegram wrapper, this is what I meant.\n\nBut here’s the thing I kept coming back to: all of this power comes with a security trade-off. And most guides I found glossed right over it.\n\nSo I spent the last week and a half figuring out the most secure way to actually set t...",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "file_ops",
+    "cron"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T12:13:50.338Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化"
+  },
+  "status": "inbox"
+}

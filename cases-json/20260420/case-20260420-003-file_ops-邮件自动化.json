@@ -1,0 +1,42 @@
+{
+  "id": "case-20260420-003",
+  "filename": "case-20260420-003-file_ops-邮件自动化",
+  "title": "OpenClaw Automations: Complete Guide for 2026 - FlyPix AI",
+  "category": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://flypix.ai/openclaw-automations-save-time/",
+    "platform": "Tavily Search",
+    "collectedAt": "2026-04-20T12:13:50.334Z"
+  },
+  "problem": "The recommended implementation workflow for OpenClaw automation, from initial testing through production deployment with essential security measures.\n\n## The Future of OpenClaw Automation\n\nOpenClaw represents a shift from AI that talks to AI that acts. But where’s it heading?\n\nAccording to VentureBeat’s enterprise analysis, the “OpenClaw moment” represents several significant shifts in autonomous AI deployment:\n\n1. Autonomous agents have moved from labs to general use\n2. Local-first AI automatio...",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "file_ops",
+    "api_integration",
+    "data_analysis"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T12:13:50.334Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化"
+  },
+  "status": "inbox"
+}
