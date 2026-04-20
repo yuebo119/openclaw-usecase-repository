@@ -17,6 +17,55 @@ if (!caseFile || !fs.existsSync(caseFile)) {
 // 读取案例
 const caseData = JSON.parse(fs.readFileSync(caseFile, 'utf8'));
 
+// 如果案例中没有 skills 字段，尝试从描述中提取
+if (!caseData.skills || caseData.skills.length === 0) {
+  console.log('⚠️  案例缺少 skills 字段，尝试从描述中提取...');
+  const extractedSkills = extractSkillsFromText(caseData.problem + ' ' + caseData.workflow.output);
+  caseData.skills = extractedSkills.skills;
+  caseData.integrations = extractedSkills.integrations;
+  console.log(`✓ 提取到技能：${caseData.skills.join(', ') || '无'}`);
+  console.log(`✓ 提取到集成：${caseData.integrations.join(', ') || '无'}`);
+}
+
+// 技能提取函数
+function extractSkillsFromText(text) {
+  const skillKeywords = {
+    'web_search': ['搜索', '查找', 'search', 'google'],
+    'web_fetch': ['爬取', '抓取', 'fetch', 'scrape'],
+    'file_ops': ['文件', '保存', '存储', 'file', 'save'],
+    'cron': ['定时', '周期', 'schedule', 'cron', '每天'],
+    'notion': ['Notion'],
+    'api_integration': ['API', '接口'],
+    'data_analysis': ['分析', 'analysis', 'data'],
+    'alerting': ['警报', 'alert', '通知']
+  };
+  
+  const detectedSkills = [];
+  const detectedIntegrations = [];
+  
+  for (const [skill, keywords] of Object.entries(skillKeywords)) {
+    for (const keyword of keywords) {
+      if (text.toLowerCase().includes(keyword.toLowerCase())) {
+        if (!detectedSkills.includes(skill)) {
+          detectedSkills.push(skill);
+        }
+        break;
+      }
+    }
+  }
+  
+  // 检测集成服务
+  if (text.toLowerCase().includes('google')) detectedIntegrations.push('Google API');
+  if (text.toLowerCase().includes('notion')) detectedIntegrations.push('Notion CMS');
+  if (text.toLowerCase().includes('telegram')) detectedIntegrations.push('Telegram');
+  if (text.toLowerCase().includes('discord')) detectedIntegrations.push('Discord');
+  
+  return {
+    skills: detectedSkills,
+    integrations: detectedIntegrations
+  };
+}
+
 // 生成 Skill ID
 const skillId = caseData.id.replace('case-', 'skill-');
 
