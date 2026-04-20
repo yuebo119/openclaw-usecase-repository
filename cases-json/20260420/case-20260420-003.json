@@ -1,0 +1,39 @@
+{
+  "id": "case-20260420-003",
+  "title": "OpenClaw use cases: 25 ways to automate work and life - Hostinger",
+  "category": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.hostinger.com/tutorials/openclaw-use-cases",
+    "platform": "Tavily Search",
+    "collectedAt": "2026-04-20T11:53:54.823Z"
+  },
+  "problem": "People use OpenClaw to handle everyday admin, support developer workflows, and manage long-running jobs that would otherwise need manual checks.\n\nOpenClaw can run on a personal device, such as a desktop or Mac mini, but that means keeping the machine powered on and connected to the internet.\n\nFor 24/7 reliability, like scheduled morning briefs, continuous monitoring, or automations that run while you sleep, hosting it on a server makes more sense.\n\nRunning OpenClaw on your own server gives you f...",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "cron",
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T11:53:54.823Z",
+    "source": "tavily"
+  },
+  "status": "inbox"
+}
