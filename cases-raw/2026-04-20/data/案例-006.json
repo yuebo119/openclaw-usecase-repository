@@ -1,0 +1,26 @@
+{
+  "id": "case-2026-04-20-006",
+  "title": "OpenClaw AI 工作流：逐步指南与实战案例",
+  "category": "data",
+  "categoryCn": "数据",
+  "difficulty": "中级",
+  "problem": "来自「我如何使用 AI」专家访谈的 OpenClaw 工作流逐步指南。每份指南包含提示词、代码片段和实用技巧。案例：如何构建自定义 AI 驱动的文本摘要用于 Slack 通知——被 Slack 消息淹没？学习如何使用 AI 智能体自动提取、过滤和分类 Slack 通知为每日文本摘要，将紧急事项从噪音中分离。",
+  "workflow": {
+    "trigger": "Slack 通知过多导致信息过载",
+    "steps": [
+      "配置 Slack 消息监听器",
+      "设置 AI 过滤和分类规则",
+      "创建紧急度评分机制",
+      "生成每日文本摘要",
+      "通过推送渠道发送摘要"
+    ],
+    "output": "每日自动生成分类摘要，紧急消息即时推送"
+  },
+  "skills": ["web_search", "file_ops"],
+  "source": {
+    "url": "https://chatprd.ai/how-i-ai/workflows/tool/openclaw",
+    "platform": "Tavily 搜索"
+  },
+  "translated": true,
+  "translator": "glm-5"
+}

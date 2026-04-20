@@ -1,0 +1,26 @@
+{
+  "id": "case-2026-04-20-002",
+  "title": "OpenClaw 自动化教程合集：流程设计与效率提升",
+  "category": "data",
+  "categoryCn": "数据",
+  "difficulty": "中级",
+  "problem": "在腾讯云上秒级部署 OpenClaw。你 7x24 小时的个人 AI 助手。首次实例最高享受 8 折优惠。如果你曾说过我之后再整理，你就知道运维债务是如何形成的。而这恰恰是一点结构化就能改变一切的地方。本教程合集聚焦流程设计与效率提升。",
+  "workflow": {
+    "trigger": "运维任务积累导致效率下降",
+    "steps": [
+      "识别重复性运维任务",
+      "设计自动化流程结构",
+      "在 OpenClaw 中配置工作流",
+      "测试并优化自动化效率",
+      "持续监控并改进"
+    ],
+    "output": "完成运维任务自动化，显著减少手动操作时间"
+  },
+  "skills": ["file_ops"],
+  "source": {
+    "url": "https://www.tencentcloud.com/techpedia/140696",
+    "platform": "Tavily 搜索"
+  },
+  "translated": true,
+  "translator": "glm-5"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "case-2026-04-20-009",
+  "title": "OpenClaw 新手教程 2026：逐步配置指南",
+  "category": "data",
+  "categoryCn": "数据",
+  "difficulty": "入门",
+  "problem": "在 Hostinger 上部署 OpenClaw，使用优惠码可享折扣。ClawHub 技能市场提供认证和配置指导，帮助新手快速上手。",
+  "workflow": {
+    "trigger": "新用户首次接触 OpenClaw",
+    "steps": [
+      "选择云服务商并部署 OpenClaw",
+      "完成基础认证配置",
+      "浏览 ClawHub 技能市场安装所需技能",
+      "配置第一个自动化任务",
+      "验证运行结果"
+    ],
+    "output": "完成 OpenClaw 新手配置并运行第一个自动化任务"
+  },
+  "skills": ["file_ops"],
+  "source": {
+    "url": "https://www.youtube.com/watch?v=pSi4hAJVnxI",
+    "platform": "Tavily 搜索"
+  },
+  "translated": true,
+  "translator": "glm-5"
+}

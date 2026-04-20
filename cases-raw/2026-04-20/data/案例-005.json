@@ -1,0 +1,26 @@
+{
+  "id": "case-2026-04-20-005",
+  "title": "你唯一需要的 OpenClaw 教程（2026 年 3 月版）",
+  "category": "data",
+  "categoryCn": "数据",
+  "difficulty": "入门",
+  "problem": "OpenClaw 是有史以来最伟大的 AI 工具。这是你构建第一个 AI 员工的完整指南。在 Vibe Coding 学院中有完整的 OpenClaw 训练营。示例提示词：你好 Henry，请每天下午 1 点给我发送每日简报。请帮我找出从即将到来的 AI 建设中获益最大的股票。我想知道哪些拥有巨大护城河的公司将从中受益。",
+  "workflow": {
+    "trigger": "用户需要每日信息简报和投资分析",
+    "steps": [
+      "配置 OpenClaw 定时任务（每日下午 1 点）",
+      "设置信息搜索和聚合工作流",
+      "配置股票筛选逻辑",
+      "设置消息推送渠道",
+      "测试并启用自动运行"
+    ],
+    "output": "每日自动推送信息简报和投资分析报告"
+  },
+  "skills": ["web_search"],
+  "source": {
+    "url": "https://www.youtube.com/watch?v=CxErCGVo-oo",
+    "platform": "Tavily 搜索"
+  },
+  "translated": true,
+  "translator": "glm-5"
+}

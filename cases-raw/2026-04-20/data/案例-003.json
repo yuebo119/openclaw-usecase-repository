@@ -1,0 +1,26 @@
+{
+  "id": "case-2026-04-20-003",
+  "title": "OpenClaw 工作流与自动化：开发者完整指南",
+  "category": "data",
+  "categoryCn": "数据",
+  "difficulty": "中级",
+  "problem": "创建 Slack 应用并启用 Socket 模式的完整步骤：1. 前往 Slack API 页面；2. 点击从零开始创建新应用，命名并选择工作区；3. 开启 Socket 模式，生成 App-Level Token（需要 connections:write 权限）；4. 复制 App Token；5. 进入 OAuth 权限页面添加机器人权限范围。",
+  "workflow": {
+    "trigger": "开发者需要将 OpenClaw 接入 Slack",
+    "steps": [
+      "创建 Slack 应用并配置权限",
+      "启用 Socket 模式并生成 Token",
+      "在 OpenClaw 中配置 Slack 集成",
+      "设置消息监听和自动回复",
+      "测试工作流并部署"
+    ],
+    "output": "完成 OpenClaw 与 Slack 的集成，实现消息自动处理"
+  },
+  "skills": ["web_search", "file_ops", "cron", "api_integration"],
+  "source": {
+    "url": "https://www.devshorts.in/p/openclaw-workflow-and-automation",
+    "platform": "Tavily 搜索"
+  },
+  "translated": true,
+  "translator": "glm-5"
+}

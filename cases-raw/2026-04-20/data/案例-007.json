@@ -1,0 +1,26 @@
+{
+  "id": "case-2026-04-20-007",
+  "title": "完整教程：用 OpenClaw 构建自动运行的商业",
+  "category": "data",
+  "categoryCn": "数据",
+  "difficulty": "高级",
+  "problem": "从本集学到的 10 大要点：Stripe 后台不会说谎——Nat 的 OpenClaw 机器人在第一周就赚了 3500 美元。首先为 OpenClaw 设置三层记忆系统，这是最大的解锁。Nat 说先把记忆结构搭好，因为这样你从第一天起的对话就是有用的。Felix 使用的结构：第一层知识图谱，使用 PARA 系统的 life 文件夹，存储关于人和项目的持久信息。",
+  "workflow": {
+    "trigger": "创业者希望构建自动化盈利系统",
+    "steps": [
+      "搭建三层记忆系统（知识图谱、工作记忆、上下文）",
+      "配置 PARA 文件夹结构",
+      "设置自动客服和订单处理流程",
+      "连接支付和通知系统",
+      "启用 7x24 自动运行模式"
+    ],
+    "output": "第一周自动收入 3500 美元的 AI 商业系统"
+  },
+  "skills": ["file_ops"],
+  "source": {
+    "url": "https://creatoreconomy.so/p/use-openclaw-to-build-a-business-that-runs-itself-nat-eliason",
+    "platform": "Tavily 搜索"
+  },
+  "translated": true,
+  "translator": "glm-5"
+}

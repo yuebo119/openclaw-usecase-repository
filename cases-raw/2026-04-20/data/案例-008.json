@@ -1,0 +1,26 @@
+{
+  "id": "case-2026-04-20-008",
+  "title": "我的 OpenClaw 工作流与自动化：独立开发者的应用构建",
+  "category": "data",
+  "categoryCn": "数据",
+  "difficulty": "中级",
+  "problem": "我的 OpenClaw 工作流与自动化——独立构建应用的完整方案，简单配置且 7x24 运行。适合一人团队使用 OpenClaw 实现全栈自动化的实战经验分享。",
+  "workflow": {
+    "trigger": "独立开发者需要 7x24 运行的自动化应用",
+    "steps": [
+      "设计应用架构与自动化节点",
+      "配置 OpenClaw 工作流引擎",
+      "设置定时任务和触发器",
+      "部署到云服务器实现持续运行",
+      "监控运行状态并优化"
+    ],
+    "output": "7x24 自动运行的应用系统，一人团队即可维护"
+  },
+  "skills": ["web_search"],
+  "source": {
+    "url": "https://www.youtube.com/watch?v=XmSxfFrkcDs",
+    "platform": "Tavily 搜索"
+  },
+  "translated": true,
+  "translator": "glm-5"
+}

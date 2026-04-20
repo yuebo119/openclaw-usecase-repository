@@ -1,0 +1,26 @@
+{
+  "id": "case-2026-04-20-001",
+  "title": "OpenClaw 入门完整教程：逐步指南与一键部署",
+  "category": "data",
+  "categoryCn": "数据",
+  "difficulty": "入门",
+  "problem": "无需高级编程技能即可构建智能工作流。简单来说：这是一种创建你自己 AI 助手的方式，不仅能聊天，还能真正执行任务。你将在本教程中学到：OpenClaw 的工作原理、如何逐步安装、如何使用一键部署、如何创建第一个 AI 智能体、如何连接工具并自动化任务。",
+  "workflow": {
+    "trigger": "用户首次安装 OpenClaw",
+    "steps": [
+      "下载并安装 OpenClaw",
+      "使用一键部署完成初始配置",
+      "创建第一个 AI 智能体",
+      "连接外部工具如 Gmail 和日历",
+      "设置自动化任务并运行"
+    ],
+    "output": "完成 OpenClaw 基础部署并创建可运行的 AI 助手"
+  },
+  "skills": ["web_search"],
+  "source": {
+    "url": "https://www.youtube.com/watch?v=HNAv85MfGUI",
+    "platform": "Tavily 搜索"
+  },
+  "translated": true,
+  "translator": "glm-5"
+}
