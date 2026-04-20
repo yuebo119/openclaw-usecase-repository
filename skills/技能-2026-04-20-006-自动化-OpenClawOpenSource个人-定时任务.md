@@ -1,6 +1,6 @@
-# OpenClaw — Personal AI Assistant
+# OpenClaw | The Open-Source Personal AI Assistant & Autonomous ...
 
-> **Skill ID**: `skill-20260420-010`  
+> **Skill ID**: `skill-20260420-006`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,13 +16,20 @@
 
 ## 📋 简介
 
-action button" @sughanthans1Image 192: tomosman "gg man! everyday I speak to more people about OpenClaw and it never fails to amaze!" @tomosmanImage 193: aus_bytes "Essentially - you can automate almost anything you can do on the machine it sits on" @aus_bytesImage 194: jameskraus "Came out of my shell and gave my @openclaw, Shelly, my credit card. Works amazing." @jameskrausImage 195: TheZachMueller "Running fully locally off MiniMax 2.5 and can do the tool parsing for what I need!" @TheZachMue...
+OpenClawOpenClaw
+
+## Works With Everything You Love
+
+OpenClaw is more than an assistant; it is a portal to a new reality where your AI has eyes and hands. It bridges the gap between 'what you can imagine' and 'what actually works' by gluing all the parts together into an incredible experience.
+
+OpenClaw remembers you and becomes uniquely yours. It knows your Obsidian notes, your WHOOP metrics, and your biomarker goals, allowing it to provide deeply personalized insights and long-term assistance ...
 
 ---
 
 ## 🛠️ 所需技能
 
-- `web_search`
+- `file_ops`
+- `cron`
 
 ---
 
@@ -58,7 +65,8 @@ action button" @sughanthans1Image 192: tomosman "gg man! everyday I speak to mor
 
 ### 所需工具
 
-- `web_search`
+- `file_ops`
+- `cron`
 
 ### 环境变量
 
@@ -81,13 +89,13 @@ action button" @sughanthans1Image 192: tomosman "gg man! everyday I speak to mor
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-010
+openclaw skills run skill-20260420-006
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw — Personal AI Assistant" --schedule "0 */6 * * *" --skill "skill-20260420-010"
+openclaw cron add --name "OpenClaw | The Open-Source Personal AI Assistant & Autonomous ..." --schedule "0 */6 * * *" --skill "skill-20260420-006"
 ```
 
 ---
@@ -95,8 +103,8 @@ openclaw cron add --name "OpenClaw — Personal AI Assistant" --schedule "0 */6 
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://openclaw.ai/
-- **生成时间**: 2026-04-20T12:20:05.290Z
+- **原文链接**: https://open-claw.org/
+- **生成时间**: 2026-04-20T12:23:04.817Z
 
 ---
 

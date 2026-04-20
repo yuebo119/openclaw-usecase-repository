@@ -1,6 +1,6 @@
 {
   "id": "case-20260420-004",
-  "filename": "case-20260420-004-web_fetch-OpenClaw自动化最佳实践Proce-数据收集",
+  "filename": "案例-20260420-004-网页抓取-OpenClaw自动化最佳实践Proce-数据收集",
   "title": "OpenClaw Automation Best Practices-Process Design and ...",
   "category": [
     "automation",
@@ -10,7 +10,7 @@
   "source": {
     "url": "https://www.tencentcloud.com/techpedia/140636",
     "platform": "Tavily Search",
-    "collectedAt": "2026-04-20T12:19:41.219Z"
+    "collectedAt": "2026-04-20T12:20:57.464Z"
   },
   "problem": "OpenClaw (often deployed as Clawdbot) is a pragmatic way to build those workflows: you combine skills, triggers, and policies so that routine operations can run consistently, while humans stay in control of approvals and exceptions. When you want a clean cloud footprint, deploying on Tencent Cloud Lighthouse keeps the setup simple, high performance, and cost-effective. If you want to start fast, the Tencent Cloud Lighthouse Special Offer landing page is a good place to begin.\n\n## OpenClaw Automa...",
   "workflow": {
@@ -34,7 +34,7 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T12:19:41.219Z",
+    "collectedAt": "2026-04-20T12:20:57.464Z",
     "source": "tavily",
     "chineseDesc": "数据收集"
   },

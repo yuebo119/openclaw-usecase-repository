@@ -1,6 +1,6 @@
 {
   "id": "case-20260420-008",
-  "filename": "case-20260420-008-web_search-什么是OpenClawOpenSourc-API 集成",
+  "filename": "案例-20260420-008-网络搜索-什么是OpenClawOpenSourc-API 集成",
   "title": "What Is OpenClaw? The Open-Source AI Agent That Actually Does ...",
   "category": [
     "automation",
@@ -10,7 +10,7 @@
   "source": {
     "url": "https://www.mindstudio.ai/blog/what-is-openclaw-ai-agent/",
     "platform": "Tavily Search",
-    "collectedAt": "2026-04-20T12:19:41.222Z"
+    "collectedAt": "2026-04-20T12:20:57.468Z"
   },
   "problem": "### OpenClaw vs. LangGraph / LangChain\n\nLangGraph is a framework for building stateful, graph-based agent workflows. It’s excellent for complex multi-step reasoning and has the lowest latency in benchmarks. But it requires Python expertise and significant development work. OpenClaw is a ready-to-run agent, not a framework for building one.\n\n### OpenClaw vs. CrewAI\n\nCrewAI excels at role-based multi-agent collaboration—defining agents with specific roles that work together on a task. It’s beginne...",
   "workflow": {
@@ -32,7 +32,7 @@
   },
   "metadata": {
     "nodeId": "node-01",
-    "collectedAt": "2026-04-20T12:19:41.222Z",
+    "collectedAt": "2026-04-20T12:20:57.468Z",
     "source": "tavily",
     "chineseDesc": "API 集成"
   },

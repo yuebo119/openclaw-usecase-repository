@@ -185,8 +185,31 @@ function generateCaseFromResult(result, index) {
   const chineseDesc = generateChineseFilename(result.title, result.content);
   const shortTitle = extractShortTitle(result.title);
   const category = extractedSkills.skills[0] || 'automation';
-  // 文件名格式：case-日期 - 序号 - 分类 - 标题关键词 - 描述
-  const chineseFilename = `case-${date}-${String(index + 1).padStart(3, '0')}-${category}-${shortTitle}-${chineseDesc}`;
+  
+  // 分类中文映射
+  const categoryMap = {
+    'automation': '自动化',
+    'productivity': '效率',
+    'development': '开发',
+    'marketing': '营销',
+    'finance': '金融'
+  };
+  const chineseCategory = categoryMap[category] || '自动化';
+  
+  // 技能中文映射
+  const skillMap = {
+    'web_search': '网络搜索',
+    'web_fetch': '网页抓取',
+    'file_ops': '文件操作',
+    'cron': '定时任务',
+    'api_integration': 'API 集成',
+    'data_analysis': '数据分析',
+    'alerting': '警报通知'
+  };
+  const chineseSkill = skillMap[category] || category;
+  
+  // 文件名格式：案例 - 日期 - 序号 - 技能 - 标题 - 描述
+  const chineseFilename = `案例-${date}-${String(index + 1).padStart(3, '0')}-${chineseSkill}-${shortTitle}-${chineseDesc}`;
   
   return {
     id: caseId,

@@ -1,6 +1,6 @@
-# Is OpenClaw Worth the Hype? I Spent 10 Days Finding Out
+# 100 OpenClaw Use Cases You Can Try Today - Sphere Partners
 
-> **Skill ID**: `skill-20260420-009`  
+> **Skill ID**: `skill-20260420-005`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,20 +16,22 @@
 
 ## 📋 简介
 
-I’m sure you’ve understood by now this is no longer about automation. It’s more like having a Sauron’s eye watching your day 24/7. It knows the context and nudges you at the right moment.
+### 21. Client Onboarding Automation
 
-  
+When a new client signs a contract, OpenClaw triggers an onboarding sequence: sends a welcome email, creates a dedicated project folder in Google Drive, adds the client to your project management tool, schedules an intro call, and sends you a checklist of anything that still needs a human touch.
 
-So when I said OpenClaw isn’t just a Telegram wrapper, this is what I meant.
+Tools: gog, exec, message, write
 
-But here’s the thing I kept coming back to: all of this power comes with a security trade-off. And most guides I found glossed right over it.
+### 22. Invoice Processing From Email
 
-So I spent the last week and a half figuring out the most secure way to actually set t...
+When an invoice arrives in your inbox, OpenClaw extracts the vendor, amount, due date, and ...
 
 ---
 
 ## 🛠️ 所需技能
 
+- `web_search`
+- `web_fetch`
 - `file_ops`
 - `cron`
 
@@ -67,6 +69,8 @@ So I spent the last week and a half figuring out the most secure way to actually
 
 ### 所需工具
 
+- `web_search`
+- `web_fetch`
 - `file_ops`
 - `cron`
 
@@ -91,13 +95,13 @@ So I spent the last week and a half figuring out the most secure way to actually
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-009
+openclaw skills run skill-20260420-005
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "Is OpenClaw Worth the Hype? I Spent 10 Days Finding Out" --schedule "0 */6 * * *" --skill "skill-20260420-009"
+openclaw cron add --name "100 OpenClaw Use Cases You Can Try Today - Sphere Partners" --schedule "0 */6 * * *" --skill "skill-20260420-005"
 ```
 
 ---
@@ -105,8 +109,8 @@ openclaw cron add --name "Is OpenClaw Worth the Hype? I Spent 10 Days Finding Ou
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://aimaker.substack.com/p/openclaw-review-setup-guide
-- **生成时间**: 2026-04-20T12:20:05.218Z
+- **原文链接**: https://www.sphereinc.com/blogs/100-openclaw-use-cases-you-can-try-today/
+- **生成时间**: 2026-04-20T12:23:04.754Z
 
 ---
 

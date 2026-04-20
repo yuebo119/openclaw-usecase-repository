@@ -191,13 +191,27 @@ fs.mkdirSync(outputDir, { recursive: true });
 const date = caseData.id.match(/case-(\d{8})-(\d+)/);
 const dateStr = date ? `${date[1].substring(0,4)}-${date[1].substring(4,6)}-${date[1].substring(6,8)}` : new Date().toISOString().split('T')[0];
 const seqNum = date ? date[2] : '001';
-const category = caseData.category[0] || 'automation';
 
 // 优先使用 JSON 中已存储的中文描述
 const chineseDesc = caseData.metadata?.chineseDesc || generateChineseDescription(caseData);
 const shortTitle = extractShortTitle(caseData);
-// 文件名包含标题关键词
-const outputName = `skill-${dateStr}-${seqNum}-${category}-${shortTitle}-${chineseDesc}.md`;
+const category = caseData.category[0] || 'automation';
+
+// 分类中文映射
+const categoryMap = {
+  'automation': '自动化',
+  'productivity': '效率',
+  'development': '开发',
+  'marketing': '营销',
+  'finance': '金融'
+};
+const chineseCategory = categoryMap[category] || '自动化';
+
+// 技能中文映射（使用分类的中文）
+const chineseSkill = chineseCategory;
+
+// 文件名包含标题关键词（全中文）
+const outputName = `技能-${dateStr}-${seqNum}-${chineseCategory}-${shortTitle}-${chineseDesc}.md`;
 const outputPath = path.join(outputDir, outputName);
 
 // 生成一句话用途描述

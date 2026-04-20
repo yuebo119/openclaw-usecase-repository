@@ -5,9 +5,9 @@ cd /root/.openclaw/workspace/openclaw-usecases
 
 echo "=== 为案例生成 Skills ==="
 
-for file in cases-json/*/case-*.json; do
+for file in cases-json/*/*.json; do
   [ -f "$file" ] || continue
-  echo "生成：$(basename $file)"
+  echo "生成：$(basename "$file")"
   node scripts/generate-skill.js "$file"
 done
 
