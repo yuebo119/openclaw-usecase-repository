@@ -275,48 +275,77 @@ function generateChineseDescription(caseData) {
   const title = caseData.title || '';
   const problem = caseData.problem || '';
   const workflow = caseData.workflow || {};
+  const steps = workflow.steps || [];
   const output = workflow.output || '';
   
-  // 关键词映射表
+  // 组合文本用于匹配
+  const fullText = (title + ' ' + problem + ' ' + output + ' ' + steps.join(' ')).toLowerCase();
+  
+  // 详细关键词映射表（按优先级排序）
   const keywordMap = {
     // 内容创作类
-    '内容机构': '内容创作自动化',
-    '监控竞争对手': '竞品监控',
-    'SEO 优化': 'SEO 内容生成',
-    '文章': '自动写作',
+    '内容创作自动化': ['内容机构', '监控竞争对手', '生成 seo', '撰写文章'],
+    '竞品监控': ['竞争对手', '竞品分析', '市场监控'],
+    'SEO 内容生成': ['seo 优化', '关键词密度', '元数据'],
+    '自动写作': ['撰写', '生成文章', '生成大纲'],
     
     // 金融投资类
-    '投资者': '投资监控',
-    '投资组合': '投资管理',
-    '价格': '价格监控',
-    '警报': '实时警报',
-    'Binance': '加密货币监控',
+    '投资监控': ['投资者', '投资组合', '投资跟踪'],
+    '价格监控': ['价格异常', '价格波动', '价格跟踪'],
+    '加密货币监控': ['binance', 'crypto', '加密货币'],
+    '实时警报': ['警报', '报警', '通知', 'alert'],
+    '每日报告': ['每日报告', '日报', 'daily report'],
     
     // 开发工具类
-    'GitHub': 'GitHub 监控',
-    'Trending': '热门项目',
-    '代码': '代码自动化',
+    'GitHub 监控': ['github', 'trending', '热门项目', '仓库'],
+    '代码自动化': ['代码', 'code', 'commit', 'push'],
+    'API 集成': ['api', '接口', 'integration'],
+    
+    // 数据监控类
+    '数据仪表盘': ['仪表盘', 'dashboard', '可视化', 'grafana'],
+    '数据分析': ['数据分析', 'analysis', 'metrics'],
+    '数据收集': ['收集', '采集', 'extract', 'scrape'],
+    
+    // 通讯通知类
+    '邮件自动化': ['email', '邮件', 'gmail', 'smtp'],
+    '消息推送': ['telegram', 'discord', 'slack', '微信', 'qq'],
+    'whatsapp 推送': ['whatsapp'],
+    
+    // 定时任务类
+    '定时任务': ['定时', 'cron', 'schedule', '周期'],
+    '自动报告': ['报告', 'report', '汇总', 'summary'],
+    '自动摘要': ['摘要', 'digest', '总结', 'summarize'],
+    
+    // 文件处理类
+    '文件处理': ['文件', '保存', '存储', 'file', 'save'],
+    '文档管理': ['文档', 'notion', '笔记', 'doc'],
     
     // 通用自动化
-    '自动化': '自动化工作流',
-    '定时': '定时任务',
-    '报告': '自动报告',
-    'OpenClaw': 'OpenClaw 应用'
+    '自动化工作流': ['自动化', 'workflow', '自动'],
+    'OpenClaw 应用': ['openclaw']
   };
   
-  // 组合文本用于匹配
-  const fullText = title + ' ' + problem + ' ' + output;
-  
-  // 查找匹配的关键词
-  for (const [key, value] of Object.entries(keywordMap)) {
-    if (fullText.toLowerCase().includes(key.toLowerCase())) {
-      return value;
+  // 查找匹配的关键词（返回第一个匹配的）
+  for (const [desc, keywords] of Object.entries(keywordMap)) {
+    for (const keyword of keywords) {
+      if (fullText.includes(keyword.toLowerCase())) {
+        return desc;
+      }
     }
   }
   
-  // 如果没有匹配，从标题提取前 20 个字符
+  // 如果标题包含具体信息，从标题提取
   if (title.length > 0) {
-    return title.substring(0, 20).replace(/[^a-zA-Z0-9\u4e00-\u9fa5]/g, '');
+    // 提取英文标题中的关键词
+    const enTitle = title.replace(/[^a-zA-Z\s]/g, '');
+    if (enTitle.length > 0 && enTitle.length < 50) {
+      return enTitle.substring(0, 30).trim();
+    }
+    // 否则使用中文字符
+    const zhTitle = title.replace(/[^\u4e00-\u9fa5]/g, '');
+    if (zhTitle.length > 0) {
+      return zhTitle.substring(0, 15);
+    }
   }
   
   return '自动化案例';

@@ -1,6 +1,6 @@
-# OpenClaw Workflow and Automation - The Developer Guide
+# OpenClaw use cases: 25 ways to automate work and life - Hostinger
 
-> **Skill ID**: `skill-20260420-001`  
+> **Skill ID**: `skill-20260420-003`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,14 +16,20 @@
 
 ## 📋 简介
 
-```
-   openclaw cron add \ --name "Daily AI digest from Gmail label" \ --session isolated \ --cron "0 10   " \ --tz "Asia/Kolkata" \ --message 'Using gog with account "your-email-id", check Gmail label "AI digest" for emails from the last 24 hours. Extract the most important AI updates/news, deduplicate repeated stories, and send a concise WhatsApp digest with: (1) top updates as bullets, (2) why each matters in one line, and (3) links/sources when available. If no relevant emails are found, say...
+People use OpenClaw to handle everyday admin, support developer workflows, and manage long-running jobs that would otherwise need manual checks.
+
+OpenClaw can run on a personal device, such as a desktop or Mac mini, but that means keeping the machine powered on and connected to the internet.
+
+For 24/7 reliability, like scheduled morning briefs, continuous monitoring, or automations that run while you sleep, hosting it on a server makes more sense.
+
+Running OpenClaw on your own server gives you f...
 
 ---
 
 ## 🛠️ 所需技能
 
 - `cron`
+- `api_integration`
 
 ---
 
@@ -60,6 +66,7 @@
 ### 所需工具
 
 - `cron`
+- `api_integration`
 
 ### 环境变量
 
@@ -82,13 +89,13 @@
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-001
+openclaw skills run skill-20260420-003
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw Workflow and Automation - The Developer Guide" --schedule "0 */6 * * *" --skill "skill-20260420-001"
+openclaw cron add --name "OpenClaw use cases: 25 ways to automate work and life - Hostinger" --schedule "0 */6 * * *" --skill "skill-20260420-003"
 ```
 
 ---
@@ -96,8 +103,8 @@ openclaw cron add --name "OpenClaw Workflow and Automation - The Developer Guide
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.devshorts.in/p/openclaw-workflow-and-automation
-- **生成时间**: 2026-04-20T12:05:08.860Z
+- **原文链接**: https://www.hostinger.com/tutorials/openclaw-use-cases
+- **生成时间**: 2026-04-20T12:10:34.481Z
 
 ---
 

@@ -1,6 +1,6 @@
-# OpenClaw Automation Tools - Process Design and Execution Tools - Tencent Cloud
+# OpenClaw Automations: Complete Guide for 2026
 
-> **Skill ID**: `skill-20260420-002`  
+> **Skill ID**: `skill-20260420-008`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,19 +16,15 @@
 
 ## 📋 简介
 
-```
-workflow: customer_onboardingtriggers: -event: new_signupsteps: -name: validate_emailtype: ruleaction: check_email_deliverabilityon_fail: send_verification_email -name: classify_customertype: aiprompt:"Based on this signup data, classify the customer as: enterprise, smb, or individual" -name: route_to_teamtype: switchinput:classify_customer.outputcases:enterprise: assign_to_enterprise_salessmb: assign_to_smb_teamindividual: send_self_serve_onboarding
-```
-
-Notice how rule-based steps (email v...
+Our approach addresses the “setup complexity” often found in open-source tools by offering a professional, no-code environment. We’ve seen users save up to 99.7% of their time by automating geospatial analysis that previously took hours of manual annotation. By integrating these specific visual capabilities into your broader automation strategy, you can move beyond simple browser tasks and start gathering actionable insights from your physical assets with the same speed and precision as a high-e...
 
 ---
 
 ## 🛠️ 所需技能
 
 - `file_ops`
-- `cron`
 - `api_integration`
+- `data_analysis`
 
 ---
 
@@ -65,8 +61,8 @@ Notice how rule-based steps (email v...
 ### 所需工具
 
 - `file_ops`
-- `cron`
 - `api_integration`
+- `data_analysis`
 
 ### 环境变量
 
@@ -89,13 +85,13 @@ Notice how rule-based steps (email v...
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-002
+openclaw skills run skill-20260420-008
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw Automation Tools - Process Design and Execution Tools - Tencent Cloud" --schedule "0 */6 * * *" --skill "skill-20260420-002"
+openclaw cron add --name "OpenClaw Automations: Complete Guide for 2026" --schedule "0 */6 * * *" --skill "skill-20260420-008"
 ```
 
 ---
@@ -103,8 +99,8 @@ openclaw cron add --name "OpenClaw Automation Tools - Process Design and Executi
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.tencentcloud.com/techpedia/140762
-- **生成时间**: 2026-04-20T12:05:08.929Z
+- **原文链接**: https://flypix.ai/openclaw-automations-save-time/
+- **生成时间**: 2026-04-20T12:10:34.845Z
 
 ---
 
