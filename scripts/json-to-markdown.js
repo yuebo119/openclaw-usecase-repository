@@ -94,8 +94,10 @@ ${caseData.setup.costEstimate || '免费'}
 *此案例由 OpenClaw 自动收集并整理*
 `;
 
-// 输出 Markdown 文件
-const outputDir = path.dirname(caseFile);
+// 输出 Markdown 文件到独立目录
+const inputDir = path.dirname(caseFile);
+const parentDir = path.dirname(inputDir);
+const outputDir = path.join(parentDir, 'cases-markdown');
 const outputName = path.basename(caseFile, '.json') + '.md';
 const outputPath = path.join(outputDir, outputName);
 
