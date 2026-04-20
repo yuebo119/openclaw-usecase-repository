@@ -1,6 +1,6 @@
-# OpenClaw use cases: 25 ways to automate work and life - Hostinger
+# ClawFlows: 111 Prebuilt AI Workflows for Your OpenClaw Agent
 
-> **Skill ID**: `skill-20260420-003`  
+> **Skill ID**: `skill-20260420-005`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,20 +16,18 @@
 
 ## 📋 简介
 
-People use OpenClaw to handle everyday admin, support developer workflows, and manage long-running jobs that would otherwise need manual checks.
+### Smart Home Automation Workflows (Category 2)
 
-OpenClaw can run on a personal device, such as a desktop or Mac mini, but that means keeping the machine powered on and connected to the internet.
+Consider a typical arrival home: you unlock the door and want the lights on, the thermostat adjusted, and music playing. The Arrival Routine workflow handles this by detecting phone geofence entry and triggering all three actions. The Departure Routine reverses the process, locking doors, arming security, and switching to an energy-saving HVAC mode.
 
-For 24/7 reliability, like scheduled morning briefs, continuous monitoring, or automations that run while you sleep, hosting it on a server makes more sense.
-
-Running OpenClaw on your own server gives you f...
+Energy Optimization runs on an hourly schedule, analyzing current utility rates and solar panel o...
 
 ---
 
 ## 🛠️ 所需技能
 
+- `file_ops`
 - `cron`
-- `api_integration`
 
 ---
 
@@ -65,8 +63,8 @@ Running OpenClaw on your own server gives you f...
 
 ### 所需工具
 
+- `file_ops`
 - `cron`
-- `api_integration`
 
 ### 环境变量
 
@@ -89,13 +87,13 @@ Running OpenClaw on your own server gives you f...
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-003
+openclaw skills run skill-20260420-005
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw use cases: 25 ways to automate work and life - Hostinger" --schedule "0 */6 * * *" --skill "skill-20260420-003"
+openclaw cron add --name "ClawFlows: 111 Prebuilt AI Workflows for Your OpenClaw Agent" --schedule "0 */6 * * *" --skill "skill-20260420-005"
 ```
 
 ---
@@ -103,8 +101,8 @@ openclaw cron add --name "OpenClaw use cases: 25 ways to automate work and life 
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.hostinger.com/tutorials/openclaw-use-cases
-- **生成时间**: 2026-04-20T11:54:48.965Z
+- **原文链接**: https://www.sitepoint.com/clawflows-prebuilt-ai-workflows-openclaw/
+- **生成时间**: 2026-04-20T11:58:58.636Z
 
 ---
 

@@ -1,6 +1,6 @@
-# OpenClaw Workflow and Automation - The Developer Guide
+# Showcase — What People Are Building with OpenClaw
 
-> **Skill ID**: `skill-20260420-001`  
+> **Skill ID**: `skill-20260420-009`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,8 +16,7 @@
 
 ## 📋 简介
 
-```
-   openclaw cron add \ --name "Daily AI digest from Gmail label" \ --session isolated \ --cron "0 10   " \ --tz "Asia/Kolkata" \ --message 'Using gog with account "your-email-id", check Gmail label "AI digest" for emails from the last 24 hours. Extract the most important AI updates/news, deduplicate repeated stories, and send a concise WhatsApp digest with: (1) top updates as bullets, (2) why each matters in one line, and (3) links/sources when available. If no relevant emails are found, say...
+astuyve @astuyve⚡ Automation ❤️ 16 It may not be AGI, but OpenClaw is automatically negotiating with multiple dealers for my next car via browser, email, and imessage and it's amazing. Image 96: Screenshot View on X →Image 97: dreetje @dreetje⚡ Automation ❤️ 119 My @openclaw has managed to order things itself from @albertheijn (our supermarket) when our cleaning lady sent me a message. It logged in using shared credentials in my @1Password, then waited for the old style text message MFA (read it...
 
 ---
 
@@ -82,13 +81,13 @@
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-001
+openclaw skills run skill-20260420-009
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw Workflow and Automation - The Developer Guide" --schedule "0 */6 * * *" --skill "skill-20260420-001"
+openclaw cron add --name "Showcase — What People Are Building with OpenClaw" --schedule "0 */6 * * *" --skill "skill-20260420-009"
 ```
 
 ---
@@ -96,8 +95,8 @@ openclaw cron add --name "OpenClaw Workflow and Automation - The Developer Guide
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.devshorts.in/p/openclaw-workflow-and-automation
-- **生成时间**: 2026-04-20T11:54:48.824Z
+- **原文链接**: https://openclaw.ai/showcase
+- **生成时间**: 2026-04-20T11:58:58.924Z
 
 ---
 

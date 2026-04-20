@@ -191,7 +191,7 @@ const date = caseData.id.match(/case-(\d{8})-(\d+)/);
 const dateStr = date ? `${date[1].substring(0,4)}-${date[1].substring(4,6)}-${date[1].substring(6,8)}` : new Date().toISOString().split('T')[0];
 const seqNum = date ? date[2] : '001';
 const category = caseData.category[0] || 'automation';
-const chineseDesc = generateChineseDescription(caseData.title, caseData.category);
+const chineseDesc = generateChineseDescription(caseData);
 const outputName = `skill-${dateStr}-${seqNum}-${category}-${chineseDesc}.md`;
 const outputPath = path.join(outputDir, outputName);
 
@@ -270,39 +270,56 @@ function getEnvVars(integration) {
   return envMap[integration] || ['TODO'];
 }
 
-// 生成中文描述（用于文件名）
-function generateChineseDescription(title, categories) {
-  const categoryMap = {
-    'marketing': '营销',
-    'content-creation': '内容创作',
-    'automation': '自动化',
-    'finance': '金融',
-    'dashboard': '仪表盘',
-    'development': '开发',
-    'productivity': '效率'
-  };
+// 生成中文描述（用于文件名）- 贴合案例实际内容
+function generateChineseDescription(caseData) {
+  const title = caseData.title || '';
+  const problem = caseData.problem || '';
+  const workflow = caseData.workflow || {};
+  const output = workflow.output || '';
   
-  const titleMap = {
-    '内容机构': '内容机构工作流',
-    '投资者': '投资者监控',
-    '仪表盘': '数据监控',
+  // 关键词映射表
+  const keywordMap = {
+    // 内容创作类
+    '内容机构': '内容创作自动化',
+    '监控竞争对手': '竞品监控',
+    'SEO 优化': 'SEO 内容生成',
+    '文章': '自动写作',
+    
+    // 金融投资类
+    '投资者': '投资监控',
+    '投资组合': '投资管理',
+    '价格': '价格监控',
+    '警报': '实时警报',
+    'Binance': '加密货币监控',
+    
+    // 开发工具类
     'GitHub': 'GitHub 监控',
-    '自动化': '自动化任务',
-    'OpenClaw': 'OpenClaw 案例',
-    'Workflow': '工作流',
-    'Automation': '自动化'
+    'Trending': '热门项目',
+    '代码': '代码自动化',
+    
+    // 通用自动化
+    '自动化': '自动化工作流',
+    '定时': '定时任务',
+    '报告': '自动报告',
+    'OpenClaw': 'OpenClaw 应用'
   };
   
-  // 优先使用标题映射
-  for (const [key, value] of Object.entries(titleMap)) {
-    if (title.includes(key)) {
+  // 组合文本用于匹配
+  const fullText = title + ' ' + problem + ' ' + output;
+  
+  // 查找匹配的关键词
+  for (const [key, value] of Object.entries(keywordMap)) {
+    if (fullText.toLowerCase().includes(key.toLowerCase())) {
       return value;
     }
   }
   
-  // 否则使用分类
-  const catName = categories && categories[0] ? categoryMap[categories[0]] : '通用';
-  return catName + '案例';
+  // 如果没有匹配，从标题提取前 20 个字符
+  if (title.length > 0) {
+    return title.substring(0, 20).replace(/[^a-zA-Z0-9\u4e00-\u9fa5]/g, '');
+  }
+  
+  return '自动化案例';
 }
 
 // 生成一句话用途说明

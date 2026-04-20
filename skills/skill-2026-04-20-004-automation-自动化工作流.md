@@ -1,6 +1,6 @@
-# OpenClaw Full Tutorial for Beginners (Step by Step | One-Click Setup)
+# Meet OpenClaw - A Revolution in AI Workflow Automation - VPSBG.eu
 
-> **Skill ID**: `skill-20260420-010`  
+> **Skill ID**: `skill-20260420-004`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,13 +16,14 @@
 
 ## 📋 简介
 
-build intelligent workflows without needing advanced coding skills. In simple terms: It’s a way to create your own AI assistant that can actually do things — not just chat. 👉 What you’ll learn in this OpenClaw tutorial: ✅ How OpenClaw works (explained simply) ✅ How to install OpenClaw step-by-step ✅ How to use the one-click setup ✅ How to create your first AI agent ✅ How to connect tools and automate tasks ✅ Beginner tips to avoid common mistakes 🚀 Why this OpenClaw guide is different Most Ope...
+Unlike other automation platforms like n8n and Zapier, OpenClaw takes into account additional factors like context and task priority, and then makes decisions based on them. This allows it to always be ready for anything you throw at it. This versatility means that it can combine multiple different actions or tasks into one flow that it can execute and learn from should it fail. This, ultimately, means that complex multi-staged tasks like research, writing, editing, notification, delegation and ...
 
 ---
 
 ## 🛠️ 所需技能
 
-- `cron`
+- `web_search`
+- `api_integration`
 
 ---
 
@@ -58,7 +59,8 @@ build intelligent workflows without needing advanced coding skills. In simple te
 
 ### 所需工具
 
-- `cron`
+- `web_search`
+- `api_integration`
 
 ### 环境变量
 
@@ -81,13 +83,13 @@ build intelligent workflows without needing advanced coding skills. In simple te
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-010
+openclaw skills run skill-20260420-004
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw Full Tutorial for Beginners (Step by Step | One-Click Setup)" --schedule "0 */6 * * *" --skill "skill-20260420-010"
+openclaw cron add --name "Meet OpenClaw - A Revolution in AI Workflow Automation - VPSBG.eu" --schedule "0 */6 * * *" --skill "skill-20260420-004"
 ```
 
 ---
@@ -95,8 +97,8 @@ openclaw cron add --name "OpenClaw Full Tutorial for Beginners (Step by Step | O
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.youtube.com/watch?v=HNAv85MfGUI
-- **生成时间**: 2026-04-20T11:54:49.472Z
+- **原文链接**: https://www.vpsbg.eu/blog/meet-openclaw-a-revolution-in-ai-workflow-automation
+- **生成时间**: 2026-04-20T11:58:58.574Z
 
 ---
 

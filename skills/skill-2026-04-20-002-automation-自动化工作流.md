@@ -1,6 +1,6 @@
-# Meet OpenClaw - A Revolution in AI Workflow Automation - VPSBG.eu
+# OpenClaw Automation Tools - Process Design and Execution Tools - Tencent Cloud
 
-> **Skill ID**: `skill-20260420-004`  
+> **Skill ID**: `skill-20260420-002`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,13 +16,18 @@
 
 ## 📋 简介
 
-Unlike other automation platforms like n8n and Zapier, OpenClaw takes into account additional factors like context and task priority, and then makes decisions based on them. This allows it to always be ready for anything you throw at it. This versatility means that it can combine multiple different actions or tasks into one flow that it can execute and learn from should it fail. This, ultimately, means that complex multi-staged tasks like research, writing, editing, notification, delegation and ...
+```
+workflow: customer_onboardingtriggers: -event: new_signupsteps: -name: validate_emailtype: ruleaction: check_email_deliverabilityon_fail: send_verification_email -name: classify_customertype: aiprompt:"Based on this signup data, classify the customer as: enterprise, smb, or individual" -name: route_to_teamtype: switchinput:classify_customer.outputcases:enterprise: assign_to_enterprise_salessmb: assign_to_smb_teamindividual: send_self_serve_onboarding
+```
+
+Notice how rule-based steps (email v...
 
 ---
 
 ## 🛠️ 所需技能
 
-- `web_search`
+- `file_ops`
+- `cron`
 - `api_integration`
 
 ---
@@ -59,7 +64,8 @@ Unlike other automation platforms like n8n and Zapier, OpenClaw takes into accou
 
 ### 所需工具
 
-- `web_search`
+- `file_ops`
+- `cron`
 - `api_integration`
 
 ### 环境变量
@@ -83,13 +89,13 @@ Unlike other automation platforms like n8n and Zapier, OpenClaw takes into accou
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-004
+openclaw skills run skill-20260420-002
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "Meet OpenClaw - A Revolution in AI Workflow Automation - VPSBG.eu" --schedule "0 */6 * * *" --skill "skill-20260420-004"
+openclaw cron add --name "OpenClaw Automation Tools - Process Design and Execution Tools - Tencent Cloud" --schedule "0 */6 * * *" --skill "skill-20260420-002"
 ```
 
 ---
@@ -97,8 +103,8 @@ openclaw cron add --name "Meet OpenClaw - A Revolution in AI Workflow Automation
 ## 📎 来源
 
 - **案例来源**: Tavily Search
-- **原文链接**: https://www.vpsbg.eu/blog/meet-openclaw-a-revolution-in-ai-workflow-automation
-- **生成时间**: 2026-04-20T11:54:49.034Z
+- **原文链接**: https://www.tencentcloud.com/techpedia/140762
+- **生成时间**: 2026-04-20T11:58:58.443Z
 
 ---
 
