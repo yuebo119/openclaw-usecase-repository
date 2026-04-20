@@ -96,7 +96,7 @@ openclaw cron add --name "Showcase — What People Are Building with OpenClaw" -
 
 - **案例来源**: Tavily Search
 - **原文链接**: https://openclaw.ai/showcase
-- **生成时间**: 2026-04-20T11:58:58.924Z
+- **生成时间**: 2026-04-20T12:05:09.432Z
 
 ---
 

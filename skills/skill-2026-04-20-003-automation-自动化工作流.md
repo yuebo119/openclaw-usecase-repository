@@ -104,7 +104,7 @@ openclaw cron add --name "OpenClaw use cases: 25 ways to automate work and life 
 
 - **案例来源**: Tavily Search
 - **原文链接**: https://www.hostinger.com/tutorials/openclaw-use-cases
-- **生成时间**: 2026-04-20T11:58:58.514Z
+- **生成时间**: 2026-04-20T12:05:09.005Z
 
 ---
 
