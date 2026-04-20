@@ -1,0 +1,41 @@
+{
+  "id": "case-20260420-005",
+  "filename": "案例-20260420-005-自动化-GettingStartedOpenClawDocs-API 集成",
+  "title": "GettingStartedOpenClawDocs",
+  "category": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://docs.openclaw.ai/start/getting-started",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T12:45:35.977Z"
+  },
+  "problem": "The wizard walks you through choosing a model provider, setting an API key, and configuring the Gateway. It takes about 2 minutes.See Onboarding (CLI) for the full reference.\n\n3\n\nVerify the Gateway is running\n\n```\nopenclaw gateway status openclaw  gateway  status\n```\n\nYou should see the Gateway listening on port 18789.\n\n4\n\nOpen the dashboard\n\n```\nopenclaw dashboard openclaw  dashboard\n```\n\nThis opens the Control UI in your browser. If it loads, everything is working.\n\n5\n\nSend your first message\n",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T12:45:35.977Z",
+    "source": "tavily",
+    "chineseDesc": "API 集成",
+    "originalTitle": "Getting Started - OpenClaw Docs"
+  },
+  "status": "inbox"
+}

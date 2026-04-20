@@ -8,6 +8,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 const { translateTitle, translateProblem, translateSteps } = require('./translate-content');
+const { dedupCheck } = require('./dedup-check');
 
 // Tavily API 配置
 const TAVILY_API_KEY = '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';
@@ -198,16 +199,30 @@ function generateCaseFromResult(result, index) {
     const dateDir = path.join(JSON_DIR, new Date().toISOString().split('T')[0].replace(/-/g, ''));
     fs.mkdirSync(dateDir, { recursive: true });
     
-    // 生成案例文件
+    // 生成案例文件（带重复检查）
     let caseCount = 0;
+    let duplicateCount = 0;
+    
     for (const result of searchResult.results || []) {
       const caseData = generateCaseFromResult(result, caseCount);
-      const caseFile = path.join(dateDir, `${caseData.filename}.json`);
       
+      // 去重检查
+      const dedupResult = dedupCheck(caseData);
+      if (dedupResult.isDuplicate) {
+        console.log(`⚠️  跳过重复案例：${caseData.filename}`);
+        console.log(`   原因：${dedupResult.reason}`);
+        duplicateCount++;
+        continue;
+      }
+      
+      const caseFile = path.join(dateDir, `${caseData.filename}.json`);
       fs.writeFileSync(caseFile, JSON.stringify(caseData, null, 2), 'utf8');
       console.log(`✓ 案例已保存：${caseData.filename}.json`);
       caseCount++;
     }
+    
+    console.log('');
+    console.log(`📊 统计：新增 ${caseCount} 个，跳过 ${duplicateCount} 个重复`);
     
     console.log('');
     console.log('========================================');

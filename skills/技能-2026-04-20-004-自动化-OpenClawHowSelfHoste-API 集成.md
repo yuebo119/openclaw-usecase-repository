@@ -101,7 +101,7 @@ openclaw cron add --name "OpenClawHowSelfHostedAI智能体Chan" --schedule "0 */
 
 - **案例来源**: Tavily 搜索
 - **原文链接**: https://medium.com/@kanerika/openclaw-how-a-self-hosted-ai-agent-changed-automation-in-2026-6ba728345d53
-- **生成时间**: 2026-04-20T12:36:56.120Z
+- **生成时间**: 2026-04-20T12:45:36.496Z
 
 ---
 

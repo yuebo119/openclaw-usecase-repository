@@ -1,6 +1,6 @@
-# OpenClaw用例202625RealExamplesTL
+# onlyOpenClaw教程youlleverneedMar
 
-> **Skill ID**: `skill-20260420-005`  
+> **Skill ID**: `skill-20260420-006`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
 > **难度**: 中级 ⭐⭐  
 > **分类**: automation / productivity  
@@ -16,15 +16,13 @@
 
 ## 📋 简介
 
-That gap tells us something real about how people adopt agent frameworks. Developers who invest in code review and documentation 工作流s report the highest returns, but many users never get past content-related automation. Not because content 工作流s are inferior — they genuinely save the most time per hour of setup. A newsletter 工作流 that takes two hours to configure starts paying for itself the same week. A code review pipeline that takes six hours to tune might deliver more value long
+OpenClaw is the greatest AI tool ever made. Here's your COMPLETE guide on building your first AI employee FULL OpenClaw bootcamp in the Vibe Coding Academy:  Sign up for my free newsletter:  Follow my X:  My $300k/yr AI app:  OpenClaw:  Prompts: Hi Henry, please send me a daily brief every day at 1pm. Please find me the stocks that stand to gain the most from the upcoming AI buildout. I 想要 know which companies with massive moats will stand the benefit from my thesis of AI expanding even mor
 
 ---
 
 ## 🛠️ 所需技能
 
-- `web_search`
 - `file_ops`
-- `api_integration`
 
 ---
 
@@ -60,9 +58,7 @@ That gap tells us something real about how people adopt agent frameworks. Develo
 
 ### 所需工具
 
-- `web_search`
 - `file_ops`
-- `api_integration`
 
 ### 环境变量
 
@@ -85,13 +81,13 @@ That gap tells us something real about how people adopt agent frameworks. Develo
 ### 运行 Skill
 
 ```bash
-openclaw skills run skill-20260420-005
+openclaw skills run skill-20260420-006
 ```
 
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw用例202625RealExamplesTL" --schedule "0 */6 * * *" --skill "skill-20260420-005"
+openclaw cron add --name "onlyOpenClaw教程youlleverneedMar" --schedule "0 */6 * * *" --skill "skill-20260420-006"
 ```
 
 ---
@@ -99,8 +95,8 @@ openclaw cron add --name "OpenClaw用例202625RealExamplesTL" --schedule "0 */6 
 ## 📎 来源
 
 - **案例来源**: Tavily 搜索
-- **原文链接**: https://www.tldl.io/blog/openclaw-use-cases-2026
-- **生成时间**: 2026-04-20T12:45:36.622Z
+- **原文链接**: https://www.youtube.com/watch?v=CxErCGVo-oo
+- **生成时间**: 2026-04-20T12:45:36.846Z
 
 ---
 

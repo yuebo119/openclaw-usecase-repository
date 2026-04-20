@@ -1,4 +1,4 @@
-# OpenClaw用例202625RealExamplesTL
+# GettingStartedOpenClawDocs
 
 > **Skill ID**: `skill-20260420-005`  
 > **用途**: 通过定时任务或事件触发，实现自动化任务完成  
@@ -16,14 +16,37 @@
 
 ## 📋 简介
 
-That gap tells us something real about how people adopt agent frameworks. Developers who invest in code review and documentation 工作流s report the highest returns, but many users never get past content-related automation. Not because content 工作流s are inferior — they genuinely save the most time per hour of setup. A newsletter 工作流 that takes two hours to configure starts paying for itself the same week. A code review pipeline that takes six hours to tune might deliver more value long
+The wizard walks you through choosing a model provider, setting an API key, and configuring the Gateway. It takes about 2 minutes.See Onboarding (CLI) for the full reference.
+
+3
+
+Verify the Gateway is running
+
+```
+openclaw gateway status openclaw  gateway  status
+```
+
+You should see the Gateway listening on port 18789.
+
+4
+
+Open the dashboard
+
+```
+openclaw dashboard openclaw  dashboard
+```
+
+This opens the Control UI in your browser. If it loads, everything is working.
+
+5
+
+Send your first message
+
 
 ---
 
 ## 🛠️ 所需技能
 
-- `web_search`
-- `file_ops`
 - `api_integration`
 
 ---
@@ -60,8 +83,6 @@ That gap tells us something real about how people adopt agent frameworks. Develo
 
 ### 所需工具
 
-- `web_search`
-- `file_ops`
 - `api_integration`
 
 ### 环境变量
@@ -91,7 +112,7 @@ openclaw skills run skill-20260420-005
 ### 添加到定时任务
 
 ```bash
-openclaw cron add --name "OpenClaw用例202625RealExamplesTL" --schedule "0 */6 * * *" --skill "skill-20260420-005"
+openclaw cron add --name "GettingStartedOpenClawDocs" --schedule "0 */6 * * *" --skill "skill-20260420-005"
 ```
 
 ---
@@ -99,8 +120,8 @@ openclaw cron add --name "OpenClaw用例202625RealExamplesTL" --schedule "0 */6 
 ## 📎 来源
 
 - **案例来源**: Tavily 搜索
-- **原文链接**: https://www.tldl.io/blog/openclaw-use-cases-2026
-- **生成时间**: 2026-04-20T12:45:36.622Z
+- **原文链接**: https://docs.openclaw.ai/start/getting-started
+- **生成时间**: 2026-04-20T12:45:36.701Z
 
 ---
 

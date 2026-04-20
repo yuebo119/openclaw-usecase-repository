@@ -1,0 +1,41 @@
+{
+  "id": "case-20260420-008",
+  "filename": "案例-20260420-008-文件操作-PDF工具OpenClaw-数据收集",
+  "title": "PDF工具OpenClaw",
+  "category": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://docs.openclaw.ai/tools/pdf",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-20T12:45:35.997Z"
+  },
+  "problem": "light logo\ndark logo\nUS\n\n##### Overview\n\n##### Plugins\n\n##### Skills\n\n##### Automation & Tasks\n\n##### Tools\n\n##### Agent coordination\n\n# PDF Tool\n\n# ​ PDF tool\n\n`pdf`\n`pdf`\n`pdfs`\n\n## ​ Availability\n\n`agents.defaults.pdfModel`\n`agents.defaults.imageModel`\n`pdf`\n`provider/model`\n\n## ​ Input reference\n\n`pdf`\n`string`\n`pdfs`\n`string[]`\n`prompt`\n`string`\n`Analyze this PDF document.`\n`pages`\n`string`\n`1-5`\n`1,3,7-9`\n`model`\n`string`\n`provider/model`\n`maxBytesMb`\n`number`\n`pdf`\n`pdfs`\n`pages`\n`maxByte",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "file_ops"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-20T12:45:35.997Z",
+    "source": "tavily",
+    "chineseDesc": "数据收集",
+    "originalTitle": "PDF Tool - OpenClaw"
+  },
+  "status": "inbox"
+}
