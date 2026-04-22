@@ -124,38 +124,182 @@ function translateTitle(title) {
 }
 
 /**
- * 翻译问题描述
+ * 翻译问题描述 - 增强版
  */
 function translateProblem(problem) {
   if (!problem) return '';
   
-  // 简单替换常见词汇
   let translated = problem;
   
-  const commonMap = {
+  // 扩展的翻译映射表（按长度排序）
+  const problemMap = {
+    'step-by-step': '逐步',
+    'Step-by-Step': '逐步',
+    'hands-on': '实战',
+    'Hands-on': '实战',
+    'real-world': '真实',
+    'Real-world': '真实',
+    'end-to-end': '端到端',
+    'End-to-End': '端到端',
+    'no-code': '无代码',
+    'low-code': '低代码',
     'need to': '需要',
     'want to': '想要',
-    'help': '帮助',
+    'have to': '必须',
+    'able to': '能够',
+    'help you': '帮助你',
+    'helps you': '帮助你',
+    'allows you': '让你可以',
+    'enables you': '使你能够',
+    'make it easy': '轻松',
+    'easy way': '简单方法',
+    'simple way': '简单方法',
+    'quick way': '快速方法',
+    'best way': '最佳方式',
     'save time': '节省时间',
+    'time-consuming': '耗时的',
     'automate': '自动化',
-    'manual': '手动',
-    'process': '流程',
-    'workflow': '工作流',
-    'OpenClaw': 'OpenClaw',
     'automation': '自动化',
+    'manual': '手动',
+    'manually': '手动地',
+    'process': '流程',
+    'processing': '处理',
+    'workflow': '工作流',
+    'workflows': '工作流',
+    'OpenClaw': 'OpenClaw',
     'task': '任务',
+    'tasks': '任务',
     'email': '邮件',
+    'emails': '邮件',
     'data': '数据',
     'collect': '收集',
+    'collection': '收集',
     'search': '搜索',
-    'API': 'API'
+    'searching': '搜索',
+    'API': 'API',
+    'APIs': 'API',
+    'integration': '集成',
+    'integrations': '集成',
+    'connect': '连接',
+    'connection': '连接',
+    'build': '构建',
+    'building': '构建',
+    'create': '创建',
+    'creating': '创建',
+    'setup': '设置',
+    'set up': '设置',
+    'install': '安装',
+    'installation': '安装',
+    'deploy': '部署',
+    'deployment': '部署',
+    'configure': '配置',
+    'configuration': '配置',
+    'manage': '管理',
+    'management': '管理',
+    'monitor': '监控',
+    'monitoring': '监控',
+    'track': '追踪',
+    'tracking': '追踪',
+    'analyze': '分析',
+    'analysis': '分析',
+    'generate': '生成',
+    'generation': '生成',
+    'report': '报告',
+    'reports': '报告',
+    'notification': '通知',
+    'notifications': '通知',
+    'alert': '提醒',
+    'alerts': '提醒',
+    'schedule': '定时',
+    'scheduled': '定时的',
+    'recurring': '周期性的',
+    'automatic': '自动的',
+    'automatically': '自动地',
+    'seamless': '无缝',
+    'efficient': '高效',
+    'productivity': '生产力',
+    'efficiency': '效率',
+    'beginner': '初学者',
+    'advanced': '高级',
+    'professional': '专业',
+    'enterprise': '企业',
+    'business': '商业',
+    'personal': '个人',
+    'team': '团队',
+    'collaboration': '协作',
+    'streamline': '简化',
+    'optimize': '优化',
+    'improve': '改进',
+    'enhance': '增强',
+    'boost': '提升',
+    'increase': '增加',
+    'reduce': '减少',
+    'eliminate': '消除',
+    'avoid': '避免',
+    'prevent': '防止',
+    'solve': '解决',
+    'solution': '解决方案',
+    'problem': '问题',
+    'challenge': '挑战',
+    'issue': '问题',
+    'complex': '复杂',
+    'complicated': '复杂',
+    'simple': '简单',
+    'simplicity': '简洁',
+    'powerful': '强大',
+    'flexible': '灵活',
+    'reliable': '可靠',
+    'secure': '安全',
+    'fast': '快速',
+    'quick': '快速',
+    'instant': '即时',
+    'real-time': '实时',
+    'custom': '自定义',
+    'customizable': '可定制',
+    'intuitive': '直观',
+    'user-friendly': '用户友好',
+    'easy to use': '易于使用',
+    'easy to set up': '易于设置',
+    'get started': '开始使用',
+    'getting started': '入门',
+    'learn how to': '学习如何',
+    'discover how to': '发现如何',
+    'find out how to': '了解如何',
+    'whether you': '无论你',
+    'even if you': '即使你',
+    'no experience': '无需经验',
+    'no coding': '无需编码',
+    'no technical': '无需技术',
+    'with this': '通过这个',
+    'using this': '使用这个',
+    'in this': '在这个',
+    'for your': '为你的',
+    'to your': '到你的',
+    'from your': '从你的',
+    'about': '关于',
+    'what': '什么',
+    'when': '何时',
+    'where': '哪里',
+    'why': '为什么',
+    'how': '如何'
   };
   
-  for (const [en, zh] of Object.entries(commonMap)) {
-    translated = translated.replace(new RegExp(en, 'gi'), zh);
+  // 按长度排序，优先替换长短语
+  const sortedKeys = Object.keys(problemMap).sort((a, b) => b.length - a.length);
+  
+  for (const key of sortedKeys) {
+    const value = problemMap[key];
+    const regex = new RegExp(`\\b${key}\\b`, 'gi');
+    translated = translated.replace(regex, value);
   }
   
-  return translated.substring(0, 500);
+  // 清理多余的空格和标点
+  translated = translated
+    .replace(/\s+/g, ' ')
+    .replace(/\s+([,.!?;:])/g, '$1')
+    .trim();
+  
+  return translated.substring(0, 1000);
 }
 
 /**
