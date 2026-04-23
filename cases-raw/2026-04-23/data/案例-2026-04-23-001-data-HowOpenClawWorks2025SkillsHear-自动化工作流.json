@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-23-001",
+  "filename": "案例-2026-04-23-001-data-HowOpenClawWorks2025SkillsHear-自动化工作流",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "HowOpenClawWorks2025SkillsHear",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://sparkco.ai/blog/how-openclaw-works-skills-heartbeat-memory-and-channels-explained",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-23T02:00:53.347Z"
+  },
+  "problem": "## Use cases and 真实 工作流 Explore OpenClaw use cases and OpenClaw 工作流 for 自动化 examples in developer and infrastructure scenarios, demonstrating 如何 OpenClaw components like Skills, Heartbeat, Memory, and Channels 解决 真实 problems with quantifiable benefits. ### 1. Customer Support 自动化 Target users: Developers and product managers. 问题 statement: Handling high-volume support tickets 手动地 leads to delays and inconsistent responses, with teams spe",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-23T02:00:53.348Z",
+    "source": "tavily",
+    "chineseDesc": "自动化工作流",
+    "originalTitle": "How OpenClaw Works 2025: Skills, Heartbeat, Memory, and Channels — Developer Guide"
+  },
+  "status": "raw"
+}

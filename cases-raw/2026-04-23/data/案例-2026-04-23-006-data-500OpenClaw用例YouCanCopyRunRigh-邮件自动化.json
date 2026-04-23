@@ -1,0 +1,45 @@
+{
+  "id": "case-2026-04-23-006",
+  "filename": "案例-2026-04-23-006-data-500OpenClaw用例YouCanCopyRunRigh-邮件自动化",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "500OpenClaw用例YouCanCopyRunRigh",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.reddit.com/r/AISEOInsider/comments/1rmixu6/500_openclaw_use_cases_you_can_copy_and_run_right/",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-23T02:00:53.370Z"
+  },
+  "problem": "A third 工作流 organizes the outlines into a publishing 定时. This layered system turns OpenClaw into a content planning assistant that constantly produces new ideas. Consistency improves because creators always have new topics ready to explore. # Marketing And SEO OpenClaw Use Cases Marketing teams spend a large portion of their time gathering information before launching campaigns. OpenClaw use cases can 自动化 much of this research 流程. An AI agent can 监控 industry news",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "cron",
+    "data_analysis"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-23T02:00:53.370Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化",
+    "originalTitle": "500 OpenClaw Use Cases You Can Copy And Run Right Now"
+  },
+  "status": "raw"
+}

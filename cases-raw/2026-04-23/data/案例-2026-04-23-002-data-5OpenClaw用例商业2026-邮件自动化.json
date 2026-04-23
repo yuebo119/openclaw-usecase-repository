@@ -1,0 +1,44 @@
+{
+  "id": "case-2026-04-23-002",
+  "filename": "案例-2026-04-23-002-data-5OpenClaw用例商业2026-邮件自动化",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "5OpenClaw用例商业2026",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://greennode.ai/blog/openclaw-use-cases-for-business",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-23T02:00:53.355Z"
+  },
+  "problem": "OpenClaw started as an open-source “个人 AI agent” that runs on your own infrastructure and connects directly 到你的 real tools: browser, terminal, messaging apps, CRMs, and internal web apps. By 2026, teams increasingly use it as a system-wide 自动化 layer that can execute multi-step 工作流 端到端 instead of just suggesting next steps. Under the hood, OpenClaw combines a reasoning model with skills: browser 自动化, shell access, API connectors, and memory 搜索, plus mult",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-23T02:00:53.355Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化",
+    "originalTitle": "5 OpenClaw Use Cases for Business in 2026"
+  },
+  "status": "raw"
+}

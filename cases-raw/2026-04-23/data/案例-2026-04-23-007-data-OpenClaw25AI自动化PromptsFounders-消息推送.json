@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-23-007",
+  "filename": "案例-2026-04-23-007-data-OpenClaw25AI自动化PromptsFounders-消息推送",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClaw25AI自动化PromptsFounders",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://gist.github.com/alirezarezvani/bb68f4f7444fcab00beb6ded31eeb028",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-23T02:00:53.373Z"
+  },
+  "problem": "## Related Resources []( 📖 OpenClaw Documentation — official 设置 and 配置 🛠️ ClawHub Skills Marketplace — community-built 自动化 skills 💬 OpenClaw Discord Community — support and discussions 💰 AI Model Cost Calculator — estimate your spending 📝 More OpenClaw guides on Medium — tutorials, 工作流, best practices _Built from daily use as a startup CTO running multiple companies. Not first-week experiments — battle-tested 工作流 in production since 202",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-23T02:00:53.373Z",
+    "source": "tavily",
+    "chineseDesc": "消息推送",
+    "originalTitle": "OpenClaw: 25 AI Automation Prompts for Founders ... - GitHub Gist"
+  },
+  "status": "raw"
+}

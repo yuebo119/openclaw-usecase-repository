@@ -1,0 +1,45 @@
+{
+  "id": "case-2026-04-23-005",
+  "filename": "案例-2026-04-23-005-data-OpenClaw用例25WaysAutomateWorkLi-邮件自动化",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClaw用例25WaysAutomateWorkLi",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.tencentcloud.com/techpedia/140931",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-23T02:00:53.363Z"
+  },
+  "problem": "1. Meeting Summarization: Integrate with meeting transcripts to 生成 concise summaries with action items and decisions highlighted. Distribute summaries to attendees 自动地 through your preferred channel. 2. 邮件 Triage: 分析 incoming 邮件 by priority and topic. OpenClaw drafts responses for routine inquiries, flags urgent messages, and organizes the rest for batch 处理. 3. 团队 Updates Aggregation: 收集 status updates from 团队 members through structured prompts, compi",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "cron",
+    "data_analysis"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-23T02:00:53.364Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化",
+    "originalTitle": "OpenClaw Use Cases: 25 Ways to Automate Work and Life - Tencent Cloud"
+  },
+  "status": "raw"
+}

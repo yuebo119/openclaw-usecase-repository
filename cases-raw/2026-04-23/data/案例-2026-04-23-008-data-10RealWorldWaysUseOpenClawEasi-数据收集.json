@@ -1,0 +1,44 @@
+{
+  "id": "case-2026-04-23-008",
+  "filename": "案例-2026-04-23-008-data-10RealWorldWaysUseOpenClawEasi-数据收集",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "10RealWorldWaysUseOpenClawEasi",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.aimagicx.com/blog/10-real-world-openclaw-use-cases-alternatives",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-23T02:00:53.377Z"
+  },
+  "problem": "OpenClaw is the most popular open-source AI agent framework on GitHub, with over 280,000 stars — more than React. Originally built by Peter Steinberger as a side project called \"Clawdbot\" in November 2025, it has grown into a massive ecosystem with 13,729+ community-built AgentSkills on ClawHub. But popularity does not always mean practicality. OpenClaw is a local autonomous AI agent that uses WhatsApp, Telegram, or Discord as its UI. That sounds cool until you realize you 需要 self-host it,",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-23T02:00:53.377Z",
+    "source": "tavily",
+    "chineseDesc": "数据收集",
+    "originalTitle": "10 Real-World Ways to Use OpenClaw (And Easier Alternatives for ..."
+  },
+  "status": "raw"
+}

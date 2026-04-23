@@ -1,0 +1,45 @@
+{
+  "id": "case-2026-04-23-003",
+  "filename": "案例-2026-04-23-003-data-ClawFlows111PrebuiltAIWorkflow-定时任务",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "ClawFlows111PrebuiltAIWorkflow",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.sitepoint.com/clawflows-prebuilt-ai-workflows-openclaw/",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-23T02:00:53.359Z"
+  },
+  "problem": "`# Illustrative output — requires OpenClaw 安装 # Enable the morning-briefing 工作流 $ OpenClaw flows enable morning-briefing Enabled: morning-briefing Trigger: 定时的 (daily at 07:00) Skills: weather-fetch, calendar-today, news-headlines, 任务-list Output: console + markdown file # Verify it appears in active 工作流 $ OpenClaw flows active Active 工作流 (1 of 111) 1. morning-briefing [定时的: daily 07:00] Status: READY # Trigger it 手动地 to test right now $ OpenClaw",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_fetch",
+    "file_ops",
+    "cron"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-23T02:00:53.359Z",
+    "source": "tavily",
+    "chineseDesc": "定时任务",
+    "originalTitle": "ClawFlows: 111 Prebuilt AI Workflows for Your OpenClaw Agent"
+  },
+  "status": "raw"
+}
