@@ -1,0 +1,46 @@
+{
+  "id": "case-2026-04-24-002",
+  "filename": "案例-2026-04-24-002-data-GitHubhesamsheikhawesomeOpenCl-邮件自动化",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "GitHubhesamsheikhawesomeOpenCl",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-24T02:01:23.114Z"
+  },
+  "problem": "| Podcast Production Pipeline | 自动化 the full podcast 工作流 — guest research, episode outlines, show notes, and social media promo — from topic to publish-ready assets. | | AI Video Editing via Chat | Edit videos by describing changes in natural language — trim, merge, add music, subtitles, color grade, crop to vertical. No timeline, no GUI. | [...] | Multi-Channel 个人 Assistant | Route 任务 across Telegram, Slack, 邮件, and calendar from a single AI assistant. | | Project State Ma",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "web_fetch",
+    "cron",
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-24T02:01:23.114Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化",
+    "originalTitle": "GitHub - hesamsheikh/awesome-openclaw-usecases: A community collection of OpenClaw use cases for making life easier. · GitHub"
+  },
+  "status": "raw"
+}

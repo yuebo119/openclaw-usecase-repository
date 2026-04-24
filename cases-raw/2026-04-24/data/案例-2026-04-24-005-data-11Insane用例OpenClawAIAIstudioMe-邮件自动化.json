@@ -1,0 +1,45 @@
+{
+  "id": "case-2026-04-24-005",
+  "filename": "案例-2026-04-24-005-data-11Insane用例OpenClawAIAIstudioMe-邮件自动化",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "11Insane用例OpenClawAIAIstudioMe",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://medium.com/the-ai-studio/11-insane-use-cases-of-openclaw-ai-a341e997a57f",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-24T02:01:23.131Z"
+  },
+  "problem": "# 11 Insane Use Cases of OpenClaw AI | by Ai studio | The Ai Studio | Mar, 2026 | Medium Sitemap Open in app Sign up Sign in Read here for FREE OpenClaw crossed 333,000 GitHub stars in early 2026, making it one of the fastest growing open source projects in recent memory. It runs on your own machine or a cheap VPS, connects to tools like Telegram, WhatsApp, Gmail, and Notion, and actually does things not just generates text. It can send messages, run code, read files, 定时 任务, an",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "file_ops",
+    "cron"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-24T02:01:23.131Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化",
+    "originalTitle": "11 Insane Use Cases of OpenClaw AI | by Ai studio - Medium"
+  },
+  "status": "raw"
+}

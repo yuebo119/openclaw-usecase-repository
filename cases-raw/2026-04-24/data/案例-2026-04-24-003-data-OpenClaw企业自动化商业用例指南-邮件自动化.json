@@ -1,0 +1,44 @@
+{
+  "id": "case-2026-04-24-003",
+  "filename": "案例-2026-04-24-003-data-OpenClaw企业自动化商业用例指南-邮件自动化",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClaw企业自动化商业用例指南",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.digitalapplied.com/blog/openclaw-enterprise-automation-business-use-cases-guide",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-24T02:01:23.118Z"
+  },
+  "problem": "Self-Hosted 数据 never leaves your network. Critical for regulated industries, client confidentiality, and GDPR compliance. Natural Language 无代码 自动化 via natural language instructions. Non- technical staff can 创建 and modify 工作流. Universal 集成 Works with any web app, API, or messaging platform — no waiting for vendor-specific connectors. Automating your 商业 工作流? We help enterprises design, 部署, and 安全 OpenClaw-powered 自动化. Explore our AI",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "api_integration",
+    "data_analysis"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-24T02:01:23.118Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化",
+    "originalTitle": "OpenClaw Enterprise Automation: Business Use Cases Guide"
+  },
+  "status": "raw"
+}

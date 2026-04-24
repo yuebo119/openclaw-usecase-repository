@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-24-001",
+  "filename": "案例-2026-04-24-001-data-OpenClaw用例商业2026ContaboBlog-数据收集",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClaw用例商业2026ContaboBlog",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://contabo.com/blog/openclaw-use-cases-for-business-in-2026/",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-24T02:01:23.094Z"
+  },
+  "problem": "什么 can OpenClaw do for 自动化? 什么 OpenClaw can do depends on 什么 services you 连接 and 如何 you 配置 工作流. OpenClaw use cases range from 简单 邮件 summaries to 复杂 multi-step automations involving API, shell commands, and browser interactions. AI agent use cases include 商业 流程 自动化, content creation, DevOps 任务, and 个人 生产力 工作流. If you can define the steps and the agent can access the necessary tools, it can probably be 自动化",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-24T02:01:23.094Z",
+    "source": "tavily",
+    "chineseDesc": "数据收集",
+    "originalTitle": "OpenClaw Use Cases for Business in 2026 | Contabo Blog"
+  },
+  "status": "raw"
+}
