@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-25-004",
+  "filename": "案例-2026-04-25-004-data-ShowcaseWhatPeopleAreBuildingO-邮件自动化",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "ShowcaseWhatPeopleAreBuildingO",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://openclaw.ai/showcase",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-25T02:02:07.822Z"
+  },
+  "problem": "X thread❤️ 119 ### 15+ Agent Army Running Across 3 Machines A full OpenClaw 设置 clearing 10,000 邮件, reviewing decks, 构建 CLI tools, optimizing Google Ads, drafting posts, and orchestrating Codex workers across a Discord-driven agent fleet. @jdrhyne multi-agent discord automationX thread❤️ 257 ### 个人 Operating System With Daily Briefings OpenClaw timeblocks 任务, runs weekly reviews from meeting notes, briefs before meetings, watches family school deadlines, researches projects,",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-25T02:02:07.822Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化",
+    "originalTitle": "Showcase — What People Are Building with OpenClaw"
+  },
+  "status": "raw"
+}

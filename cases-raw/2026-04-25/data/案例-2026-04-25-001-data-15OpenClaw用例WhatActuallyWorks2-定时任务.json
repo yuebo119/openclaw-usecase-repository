@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-25-001",
+  "filename": "案例-2026-04-25-001-data-15OpenClaw用例WhatActuallyWorks2-定时任务",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "15OpenClaw用例WhatActuallyWorks2",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://kanerika.com/blogs/openclaw-usecases/",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-25T02:02:07.779Z"
+  },
+  "problem": "### 1. 什么 are the main OpenClaw UseCases in enterprises? OpenClaw UseCases typically focus on 工作流 自动化, document 处理, system 集成, and intelligent 任务 execution. Enterprises use it to 减少 repetitive 手动 work, 改进 operational 效率, and 增强 数据 accuracy. It can support departments such as finance, HR, operations, and customer support by automating structured and semi-structured processes.` ### 2. 如何 does OpenClaw 改进 商业 生产力? [.",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "cron"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-25T02:02:07.779Z",
+    "source": "tavily",
+    "chineseDesc": "定时任务",
+    "originalTitle": "15 OpenClaw Use Cases: What Actually Works in 2026 - Kanerika"
+  },
+  "status": "raw"
+}

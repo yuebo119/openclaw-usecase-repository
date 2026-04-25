@@ -1,0 +1,45 @@
+{
+  "id": "case-2026-04-25-005",
+  "filename": "案例-2026-04-25-005-data-21INSANE用例OpenClawMatthewBerma-邮件自动化",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "21INSANE用例OpenClawMatthewBerma",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://podwise.ai/dashboard/episodes/7236298",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-25T02:02:07.829Z"
+  },
+  "problem": "### Part 1: Core Framework, Memory ### 00:00 OpenClaw: A 个人, Self-Evolving AI Assistant Overview #### OpenClaw: A 个人, Self-Evolving AI Assistant Overview ### 01:35 OpenClaw's Memory System and Self-Improvement Capabilities #### OpenClaw's Memory System and Self-Improvement Capabilities ### Part 2: CRM, 自动化, Knowledge 管理 ### 03:56 构建 a 自定义 CRM with OpenClaw: Ingestion, Filtering, and Contact 管理 #### 构建 a 自定义 CRM with OpenClaw: Ingestion,",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "cron",
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-25T02:02:07.829Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化",
+    "originalTitle": "21 INSANE Use Cases For OpenClaw... | Matthew Berman | Podwise"
+  },
+  "status": "raw"
+}

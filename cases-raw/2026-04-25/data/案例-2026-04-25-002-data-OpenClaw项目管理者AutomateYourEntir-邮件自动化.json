@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-25-002",
+  "filename": "案例-2026-04-25-002-data-OpenClaw项目管理者AutomateYourEntir-邮件自动化",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClaw项目管理者AutomateYourEntir",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://blink.new/blog/openclaw-for-project-managers-workflow-automation-2026",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-25T02:02:07.798Z"
+  },
+  "problem": "OpenClaw is an AI agent platform that connects to Jira, Asana, Notion, Slack, Google Calendar, and Gmail so project managers can draft status 报告, triage tickets, and answer stakeholder 邮件 in minutes instead of hours—often 处理 inbox work in under 60 seconds while you stay in control of approvals. If your week disappears into admin, OpenClaw turns 周期性的 PM work into repeatable agent 工作流 backed by 100+ built-in skills (per TechRadar, March 30, 2026), including calendar mana",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-25T02:02:07.798Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化",
+    "originalTitle": "OpenClaw for Project Managers: Automate Your Entire Workflow | Blink Blog"
+  },
+  "status": "raw"
+}
