@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-26-001",
+  "filename": "案例-2026-04-26-001-data-OpenClaw工作流自动化Developer指南-数据收集",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClaw工作流自动化Developer指南",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.devshorts.in/p/openclaw-workflow-and-automation",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-26T02:46:04.902Z"
+  },
+  "problem": "## 如何 I fix GitHub issues directly from slack Once Slack is connected, I can talk to OpenClaw directly from Slack and use it to handle GitHub issues. 何时 a new 问题 comes in, I ask OpenClaw to take a look. It reads the 问题, checks my local code, makes the fix, and pushes the change back to GitHub. It also posts a reply on the 问题 with a short note on 什么 it fixed. In short: I can go from 问题 → fix → update, without constantly switching tools. ## 如何 I use cron to check pull request",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "cron"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-26T02:46:04.902Z",
+    "source": "tavily",
+    "chineseDesc": "数据收集",
+    "originalTitle": "OpenClaw Workflow and Automation - The Developer Guide"
+  },
+  "status": "raw"
+}
