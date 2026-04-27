@@ -1,0 +1,45 @@
+{
+  "id": "case-2026-04-27-007",
+  "filename": "案例-2026-04-27-007-data-顶级10OpenClawWorkflowsAI自动化Fast-邮件自动化",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "顶级10OpenClawWorkflowsAI自动化Fast",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://fast.io/resources/top-10-openclaw-workflows-ai-automation/",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-27T02:17:18.585Z"
+  },
+  "problem": "## 3. Developer CI/CD 监控 with the GitHub Skill Engineering teams spend a lot of time 追踪 down 为什么 a 构建 failed. The GitHub skill by steipete lets OpenClaw agents interact with GitHub using the `gh` CLI — managing pull requests, 监控 工作流 runs, identifying failed steps, and executing 高级 API queries with JSON output. 何时 a pipeline breaks, the agent pulls the 工作流 run logs, analyzes the failure, and posts a comment on the pull request with the error summary an",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "file_ops",
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-27T02:17:18.585Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化",
+    "originalTitle": "Top 10 OpenClaw Workflows for AI Automation | Fastio"
+  },
+  "status": "raw"
+}

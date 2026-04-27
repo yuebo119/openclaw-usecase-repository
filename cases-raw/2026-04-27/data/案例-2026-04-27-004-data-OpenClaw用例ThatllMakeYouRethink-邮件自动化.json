@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-27-004",
+  "filename": "案例-2026-04-27-004-data-OpenClaw用例ThatllMakeYouRethink-邮件自动化",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClaw用例ThatllMakeYouRethink",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://aiblewmymind.substack.com/p/openclaw-ai-agent-use-cases-guide",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-27T02:17:18.560Z"
+  },
+  "problem": "OpenClaw is an open-source AI agent. It was created by Peter Steinberger, an Austrian developer, as a side project back in November 2025. It went through a few name changes (~~Clawdbot~~, then ~~Moltbot~~, then OpenClaw), exploded in popularity in late January (60,000 GitHub stars in 72 hours, now sitting at nearly 240,000), and as of mid-February, Steinberger announced he's joining OpenAI while the project moves to an open-source foundation. Things moved 快速. But none of that matters as much",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "file_ops"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-27T02:17:18.561Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化",
+    "originalTitle": "OpenClaw Use Cases That'll Make You Rethink What AI ..."
+  },
+  "status": "raw"
+}

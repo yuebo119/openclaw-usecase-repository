@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-27-003",
+  "filename": "案例-2026-04-27-003-data-OpenClaw用例AI自动化WorkLifeLark-报告生成",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClaw用例AI自动化WorkLifeLark",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.larksuite.com/en_us/blog/openclaw-use-cases",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-27T02:17:18.551Z"
+  },
+  "problem": "Log inContact salesTry for free Blog centerComparisonsSales & CRMProject managementAI & AutomationTeam collaborationPeople managementRetailFood & BeverageTechnology & ITMarketingLark newsNews mentions AI & 自动化 # OpenClaw Use Cases: AI 自动化 for Work & Life Lark 团队 Mar 24, 2026 Lark 团队 Mar 24, 2026 Try Lark for free In our always-on digital world, teams are tirelessly looking for solutions to 简化 工作流, 增强 communication, and 自动化 those repetitive 任务",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-27T02:17:18.551Z",
+    "source": "tavily",
+    "chineseDesc": "报告生成",
+    "originalTitle": "OpenClaw Use Cases: AI Automation for Work & Life - Lark"
+  },
+  "status": "raw"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "case-2026-04-27-005",
+  "filename": "案例-2026-04-27-005-data-7AI智能体WorkflowsYouCanAutomateO-邮件自动化",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "7AI智能体WorkflowsYouCanAutomateO",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://openclawlaunch.com/blog/ai-agent-workflows-automate-openclaw",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-27T02:17:18.570Z"
+  },
+  "problem": "OpenClaw Launch # 7 AI Agent 工作流 You Can 自动化 with OpenClaw By Zack AI agents aren't just chatbots — they're 自动化 engines. With the right 配置, an OpenClaw agent can handle repetitive 任务, research, content creation, and more — all from a 简单 Telegram or Discord message. Here are 7 practical 工作流 you can 设置 today, with 逐步 instructions for each. ## 1. Daily News Briefing 什么 it does: Every morning, your agent searches the web for the latest",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-27T02:17:18.570Z",
+    "source": "tavily",
+    "chineseDesc": "邮件自动化",
+    "originalTitle": "7 AI Agent Workflows You Can Automate with OpenClaw — OpenClaw Blog | OpenClaw Launch"
+  },
+  "status": "raw"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "case-2026-04-27-002",
+  "filename": "案例-2026-04-27-002-data-OpenClaw用例WhatYouCanActuallyDo-数据收集",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClaw用例WhatYouCanActuallyDo",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.ssdnodes.com/blog/openclaw-use-cases/",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-27T02:17:18.544Z"
+  },
+  "problem": "Before you 连接 your first 集成, the checklist is short: 设置 dedicated accounts for each service, lock down the VPS with Firewall Groups, take a snapshot of your clean 安装, and start with a read-only 工作流 like the morning brief. 构建 from there. Explore OpenClaw VPS Hosting → ### Leave a Reply Name \\ 邮件 \\ Website Post Comment ### You might also like: cloud based website hosting Apr 22, 2025 29 min read ##### 如何 to Host a Game Server in 2026 best vps server",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "file_ops",
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-27T02:17:18.544Z",
+    "source": "tavily",
+    "chineseDesc": "数据收集",
+    "originalTitle": "OpenClaw Use Cases: What You Can Actually Do With an AI Agent on a VPS - SSD Nodes"
+  },
+  "status": "raw"
+}

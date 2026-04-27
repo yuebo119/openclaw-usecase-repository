@@ -1,0 +1,45 @@
+{
+  "id": "case-2026-04-27-006",
+  "filename": "案例-2026-04-27-006-data-OpenClaw营销用例7自动化StrategiesImpr-数据收集",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClaw营销用例7自动化StrategiesImpr",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://improvado.io/blog/openclaw-marketing-use-cases",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-27T02:17:18.578Z"
+  },
+  "problem": "Cost structure: Small 商业 monthly cost is $25–50 with $7–15 hosting plus $15–35 tokens for 5K–10K AI calls per month. Scaling teams spend $50–100 monthly with $10–20 hosting plus $35–80 tokens for 10K–50K AI calls. Heavy 自动化 exceeds $100–$200+ monthly with $15–25 hosting plus $80–$150+ tokens for 50K+ AI calls. Claude 3.5 Sonnet costs $3–15 per million tokens; GPT-4o-mini runs approximately $0.00045 per 1,500-token interaction. Use case fit: OpenClaw excels at ad-hoc 数据 extraction",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "file_ops",
+    "api_integration"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-27T02:17:18.578Z",
+    "source": "tavily",
+    "chineseDesc": "数据收集",
+    "originalTitle": "OpenClaw Marketing Use Cases: 7 Automation Strategies - Improvado"
+  },
+  "status": "raw"
+}
