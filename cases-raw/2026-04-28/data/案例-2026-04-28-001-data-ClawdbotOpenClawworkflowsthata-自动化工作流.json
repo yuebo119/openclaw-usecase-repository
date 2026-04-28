@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-04-28-001",
+  "filename": "案例-2026-04-28-001-data-ClawdbotOpenClawworkflowsthata-自动化工作流",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "ClawdbotOpenClawworkflowsthata",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.reddit.com/r/AI_Agents/comments/1qsfr58/clawdbotopenclaw_workflows_that_are_actually/",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-04-28T02:02:05.584Z"
+  },
+  "problem": "Morning brief: Have OpenClaw brief you every morning on the things that are important to you. · Employee 为你的 商业: OpenClaw can check on",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-04-28T02:02:05.584Z",
+    "source": "tavily",
+    "chineseDesc": "自动化工作流",
+    "originalTitle": "Clawdbot/OpenClaw workflows that are actually useful : r/AI_Agents"
+  },
+  "status": "raw"
+}
