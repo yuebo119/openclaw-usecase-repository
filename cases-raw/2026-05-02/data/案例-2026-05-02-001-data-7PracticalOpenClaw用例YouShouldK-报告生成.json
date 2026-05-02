@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-05-02-001",
+  "filename": "案例-2026-05-02-001-data-7PracticalOpenClaw用例YouShouldK-报告生成",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "7PracticalOpenClaw用例YouShouldK",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.kdnuggets.com/7-practical-openclaw-use-cases-you-should-know",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-05-02T02:10:28.043Z"
+  },
+  "problem": "At its core, OpenClaw helps turn AI from something you chat with into something that can actually do work for you. It connects messaging apps, tools, memory, 自动化, and agents into one system, so instead of jumping between platforms all day, you can trigger 任务 from places you already use, like Telegram, WhatsApp, or Discord. 在这个 article, we look at seven practical ways people are using OpenClaw to 自动化 任务, stay organized, and 提升 生产力 with real agent 工作流. ##",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-05-02T02:10:28.044Z",
+    "source": "tavily",
+    "chineseDesc": "报告生成",
+    "originalTitle": "7 Practical OpenClaw Use Cases You Should Know - KDnuggets"
+  },
+  "status": "raw"
+}
