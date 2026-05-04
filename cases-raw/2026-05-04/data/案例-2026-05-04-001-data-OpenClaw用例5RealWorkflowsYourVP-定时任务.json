@@ -1,0 +1,46 @@
+{
+  "id": "case-2026-05-04-001",
+  "filename": "案例-2026-05-04-001-data-OpenClaw用例5RealWorkflowsYourVP-定时任务",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClaw用例5RealWorkflowsYourVP",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://blog.ishosting.com/en/openclaw-use-cases",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-05-04T02:01:01.604Z"
+  },
+  "problem": "A practical 工作流: Watch a tight list of keywords 为你的 product or a tech niche. Run the scrape twice a day. Filter by engagement or novelty to skip the zero-value posts. 生成 a 5-bullet brief with direct links and context. Pipe the results to Slack and archive the daily summary in Notion. 为什么 it fits: Text-first workloads are cheap and predictable. You can cap the number of sources per run. Caching prevents reprocessing the same threads. Keep it under control: Hard cap i",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "web_fetch",
+    "file_ops",
+    "cron"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-05-04T02:01:01.604Z",
+    "source": "tavily",
+    "chineseDesc": "定时任务",
+    "originalTitle": "OpenClaw Use Cases: 5 Real Workflows for Your VPS"
+  },
+  "status": "raw"
+}
