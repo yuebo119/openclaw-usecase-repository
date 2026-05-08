@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-05-08-001",
+  "filename": "案例-2026-05-08-001-data-OpenClawPowerUser指南WorkflowsTh-自动化工作流",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "OpenClawPowerUser指南WorkflowsTh",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://medium.com/@mohit15856/openclaw-power-user-guide-the-workflows-that-actually-changed-how-i-work-f793ade41396",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-05-08T02:00:29.399Z"
+  },
+  "problem": "A practical deep-dive into self-hosted AI 自动化 for developers and product managers who want their tools to work for them.",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-05-08T02:00:29.400Z",
+    "source": "tavily",
+    "chineseDesc": "自动化工作流",
+    "originalTitle": "OpenClaw Power User Guide: The Workflows That Actually ..."
+  },
+  "status": "raw"
+}

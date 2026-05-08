@@ -1,0 +1,44 @@
+{
+  "id": "case-2026-05-08-002",
+  "filename": "案例-2026-05-08-002-data-100OpenClaw用例YouCanTryTodaySph-自动化工作流",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "100OpenClaw用例YouCanTryTodaySph",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.sphereinc.com/blogs/100-openclaw-use-cases-you-can-try-today/",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-05-08T02:00:29.413Z"
+  },
+  "problem": "Category tags: 个人 (everyday life, home, health, learning) · 商业 (clients, operations, sales, finance) · Dev (coding, infrastructure, engineering) · Creative (writing, content, media, design) A note from Sphere: We’ve personally deployed or advised on more than 60 of these 工作流. 哪里 we’ve seen consistent patterns – good and bad – we’ve added observations throughout. These come from real production deployments, not theory. ## Daily Life & 个人 生产力 Uses Cases for Op",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "web_search",
+    "file_ops"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-05-08T02:00:29.413Z",
+    "source": "tavily",
+    "chineseDesc": "自动化工作流",
+    "originalTitle": "100 OpenClaw Use Cases You Can Try Today - Sphere Partners"
+  },
+  "status": "raw"
+}

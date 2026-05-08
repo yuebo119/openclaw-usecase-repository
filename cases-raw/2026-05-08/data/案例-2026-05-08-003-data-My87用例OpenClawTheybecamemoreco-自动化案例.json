@@ -1,0 +1,43 @@
+{
+  "id": "case-2026-05-08-003",
+  "filename": "案例-2026-05-08-003-data-My87用例OpenClawTheybecamemoreco-自动化案例",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "My87用例OpenClawTheybecamemoreco",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://www.reddit.com/r/openclaw/comments/1sjr3ep/my_87_use_cases_for_openclaw_they_became_more/",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-05-08T02:00:29.430Z"
+  },
+  "problem": "25. I bought a domain site for #23 and #24, and asked it to update the Docker Compose with nginx. It created a config, updated the file, and implemented 自动的 TLS 生成 with Cloudflare (I had to help 配置 Cloudflare directly and change the DNS on my Namecheap account). 在这个 流程, it stopped the old containers, pulled the new images, and restarted them. 26. In Step #25, I had to 配置 Cloudflare 灵活 TLS. I gave my bot a 个人 folder within my Dropbox and uploa",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "file_ops"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-05-08T02:00:29.430Z",
+    "source": "tavily",
+    "chineseDesc": "自动化案例",
+    "originalTitle": "My 87 use cases for OpenClaw (They became more complex over ..."
+  },
+  "status": "raw"
+}
