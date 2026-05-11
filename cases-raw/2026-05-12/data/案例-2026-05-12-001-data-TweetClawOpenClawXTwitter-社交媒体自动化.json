@@ -1,0 +1,54 @@
+{
+  "id": "case-2026-05-12-001",
+  "filename": "案例-2026-05-12-001-data-TweetClawOpenClawXTwitter-社交媒体自动化",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "TweetClawOpenClawXTwitter",
+  "categoryTags": [
+    "automation",
+    "social-media",
+    "api"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://github.com/Xquik-dev/tweetclaw",
+    "platform": "GitHub",
+    "collectedAt": "2026-05-11T23:34:07Z"
+  },
+  "problem": "OpenClaw operators who manage X/Twitter workflows need a repeatable way to search tweets, inspect replies, post tweets, post replies, upload media, export followers, look up users, monitor keywords, and send direct messages without building each endpoint integration from scratch. TweetClaw provides an OpenClaw plugin backed by the @xquik/tweetclaw npm package and Xquik endpoints, so an agent can call structured tools for read and write automation while keeping setup discoverable through GitHub, npm, and ClawHub.",
+  "workflow": {
+    "trigger": "需要监控关键词、发布内容或导出 X/Twitter 数据",
+    "steps": [
+      "在 OpenClaw 中安装 TweetClaw 插件或 npm 包",
+      "配置 Xquik API key",
+      "调用 TweetClaw 工具搜索 tweets、读取 replies 或导出 followers",
+      "按需要发布 tweet、回复、上传媒体或发送 direct message",
+      "把结果写入报告、CRM、Slack、Notion 或后续 OpenClaw 工作流"
+    ],
+    "output": "完成可审计的 X/Twitter 搜索、发布、回复、媒体和监控自动化"
+  },
+  "skills": [
+    "api_integration",
+    "web_search",
+    "data_analysis"
+  ],
+  "integrations": [
+    "TweetClaw",
+    "Xquik",
+    "X/Twitter",
+    "ClawHub",
+    "npm"
+  ],
+  "efficiency": {
+    "timeSaved": "减少手写 X/Twitter API 集成和人工监控时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "community-pr",
+    "collectedAt": "2026-05-11T23:34:07Z",
+    "source": "github",
+    "chineseDesc": "社交媒体自动化",
+    "originalTitle": "TweetClaw OpenClaw plugin for X/Twitter automation"
+  },
+  "status": "raw"
+}
