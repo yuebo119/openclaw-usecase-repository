@@ -1,0 +1,44 @@
+{
+  "id": "case-2026-05-11-001",
+  "filename": "案例-2026-05-11-001-data-10RealWorkTasksYouCanAutomateO-数据收集",
+  "category": "data",
+  "categoryCn": "数据",
+  "title": "10RealWorkTasksYouCanAutomateO",
+  "categoryTags": [
+    "automation",
+    "productivity"
+  ],
+  "difficulty": "intermediate",
+  "source": {
+    "url": "https://codefinity.com/blog/10-Real-Work-Tasks-You-Can-Automate-with-OpenClaw",
+    "platform": "Tavily 搜索",
+    "collectedAt": "2026-05-11T02:00:50.421Z"
+  },
+  "problem": "This ensures your pipeline stays updated and reduces time spent on repetitive 数据 entry, allowing you to focus on closing deals while your system continuously collects and organizes new leads. ## Start Learning Coding today and 提升 your Career Potential Start Learning Coding today and 提升 your Career Potential ## 数据 Extraction and Spreadsheet 自动化 OpenClaw can 自动化 数据 work by extracting information from 邮件, documents, or websites and updating spreadsheets 自动地",
+  "workflow": {
+    "trigger": "定时任务或事件触发",
+    "steps": [
+      "触发条件满足",
+      "执行自动化流程",
+      "输出结果"
+    ],
+    "output": "自动化任务完成"
+  },
+  "skills": [
+    "file_ops",
+    "data_analysis"
+  ],
+  "integrations": [],
+  "efficiency": {
+    "timeSaved": "自动化节省时间",
+    "automationLevel": "semi-auto"
+  },
+  "metadata": {
+    "nodeId": "node-01",
+    "collectedAt": "2026-05-11T02:00:50.421Z",
+    "source": "tavily",
+    "chineseDesc": "数据收集",
+    "originalTitle": "10 Real Work Tasks You Can Automate with OpenClaw"
+  },
+  "status": "raw"
+}
